@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 4-7
+当前阶段：Restart Phase 4-8
 
 ## 已完成
 
@@ -21,20 +21,22 @@
 - Phase 4-5：建立全局上下文文档
 - Phase 4-6：固化开发规范
 - Phase 4-7：指定参考文件夹和参考代码规则
+- Phase 4-8：建立 Git 回滚策略
 
-## 参考规则结论
+## Git 回滚策略结论
 
-当前没有可直接复用的参考代码。
-当前不下载外部代码，不复制外部模板，不引入外部素材。
-`references/` 只作为参考资料说明文件夹，不参与构建。
+后续每轮必须：
 
-后续如需使用外部参考代码，必须先确认：
+- 一个小任务一个 commit
+- commit 前后检查 git status
+- push 到 origin/main
+- 工作区不干净不进入下一轮
+- 代码阶段每轮 npm run build
+- 优先 git revert，不使用 reset --hard
+- 里程碑节点再打 tag
 
-- 来源
-- License
-- 用途
-- 是否引入依赖
-- 是否突破 MVP 边界
+当前不打 tag。
+下一步进行准备阶段总审计后，再决定是否打 prep-complete tag。
 
 ## 当前没有做
 
@@ -44,10 +46,9 @@
 - 没有创建 package.json
 - 没有创建 src/
 - 没有实现页面
-- 没有下载外部代码
-- 没有复制外部模板
 - 没有部署
+- 没有打 tag
 
 ## 下一步
 
-Phase 4-8：建立 Git 回滚策略。
+Phase 4-9：准备阶段总审计。
