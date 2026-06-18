@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 4-5
+当前阶段：Restart Phase 4-6
 
 ## 已完成
 
@@ -19,12 +19,20 @@
 - Phase 4-3：锁定技术栈
 - Phase 4-4：设计轻量架构
 - Phase 4-5：建立全局上下文文档
+- Phase 4-6：固化开发规范
 
-## 全局上下文结论
+## 开发规范结论
 
-已建立 docs/15_PROJECT_CONTEXT.md。
-后续每轮 Claude / Codex 开发前必须读取该文档。
-该文档是项目长期上下文和开发约束入口。
+后续代码开发必须遵守：
+
+- 每轮只做一个小任务
+- 每轮先读 00_WORKFLOW_LOCK / 15_PROJECT_CONTEXT / DEV_STATUS
+- 内容和组件分离
+- 链接集中管理
+- 不写一坨代码
+- 不新增未确认模块
+- 每轮代码阶段必须 npm run build
+- 工作区不干净不进入下一轮
 
 ## 当前没有做
 
@@ -38,4 +46,4 @@
 
 ## 下一步
 
-Phase 4-6：固化开发规范。
+Phase 4-7：指定参考文件夹和参考代码。
