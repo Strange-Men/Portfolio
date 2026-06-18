@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 4-2
+当前阶段：Restart Phase 4-3
 
 ## 已完成
 
@@ -16,30 +16,42 @@
 - Phase 3-3：规划核心交互流程
 - Phase 4-1：明确项目边界
 - Phase 4-2：明确非功能需求
+- Phase 4-3：锁定技术栈
 
-## 非功能需求结论
+## 技术栈结论
 
-当前 MVP 必须优先满足：
+第一版固定使用：
 
-- 真实性
-- 内容清晰
-- 可用性
-- 性能
-- 可访问性
-- 低成本
-- 可维护
-- 可上线
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- npm
+- 静态单页
+- Vercel 倾向部署
 
-当前禁止复杂动效、后端、数据库、AI 问答、假链接、空链接、未确认 Demo 和简历下载按钮。
+当前不使用：
+
+- 后端
+- 数据库
+- AI 问答
+- LLM API
+- ReactBits
+- GSAP
+- Framer Motion
+- WebGL
+- cursor spotlight
+- 图标库，除非后续确认
 
 ## 当前没有做
 
 - 没有写代码
 - 没有初始化 Vite
 - 没有安装依赖
+- 没有创建 package.json
 - 没有实现页面
 - 没有部署
 
 ## 下一步
 
-Phase 4-3：锁定技术栈。
+Phase 4-4：设计轻量架构。
