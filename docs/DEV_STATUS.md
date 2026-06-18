@@ -34,12 +34,25 @@ CodePilot 当前实现：
 
 ## 版本状态
 
-当前最新代码阶段：v1.6.0-codepilot planned but not tagged
+当前最新版本：v1.6.0-codepilot
 
-说明：
+已完成页面模块：
 
-- 本轮完成 CodePilotSection 后，允许下一轮单独创建 v1.6.0-codepilot tag。
-- 本轮不要打 tag。
+- HeroSection
+- AboutSection
+- CodePilotSection
+
+当前未完成：
+
+- ContactSection
+- 完整页面组合
+- 部署
+
+v1.6.0-codepilot tag 已创建并推送，指向：
+
+112fc07 feat: implement codepilot section
+
+下一步版本计划：v1.7.0-contact
 
 ## 当前没有做
 

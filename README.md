@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.5.0-about
+v1.6.0-codepilot
 ```
 
 当前已完成：
@@ -25,10 +25,10 @@ v1.5.0-about
 - UI 基础组件
 - HeroSection
 - AboutSection
+- CodePilotSection
 
 当前未完成：
 
-- CodePilotSection
 - ContactSection
 - 完整页面组合
 - 部署
@@ -46,11 +46,12 @@ v1.5.0-about
 | v1.3.0-ui-components | Engineering | 创建 UI 基础组件 |
 | v1.4.0-hero | Page | 实现 HeroSection |
 | v1.5.0-about | Page | 实现 AboutSection |
+| v1.6.0-codepilot | Page | 实现 CodePilotSection |
 
 下一计划版本：
 
 ```txt
-v1.6.0-codepilot
+v1.7.0-contact
 ```
 
 ---

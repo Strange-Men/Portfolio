@@ -37,6 +37,7 @@
 | v1.3.0-ui-components | 52d14b0 | Phase 5-4 | 创建 UI 基础组件。 |
 | v1.4.0-hero | 86b07a7 | Phase 5-5 | 实现 HeroSection。 |
 | v1.5.0-about | 869727f | Phase 5-6 | 实现 AboutSection。 |
+| v1.6.0-codepilot | 112fc07 | Phase 5-7 | 实现 CodePilotSection，展示核心项目定位、流程、技术栈、可讲技术点和真实 GitHub 链接。 |
 
 ---
 
@@ -45,7 +46,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.5.0-about
+v1.6.0-codepilot
 ```
 
 当前已完成页面模块：
@@ -53,12 +54,12 @@ v1.5.0-about
 ```txt
 HeroSection
 AboutSection
+CodePilotSection
 ```
 
 当前未完成：
 
 ```txt
-CodePilotSection
 ContactSection
 完整页面组合
 部署
@@ -72,7 +73,6 @@ ContactSection
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.6.0-codepilot | Phase 5-7 | 实现 CodePilotSection。 |
 | v1.7.0-contact | Phase 5-8 | 实现 ContactSection。 |
 | v1.8.0-page-complete | Phase 5-9 | 完整组合 Hero / About / CodePilot / Contact。 |
 | v1.9.0-responsive-polish | Phase 5-10 | 响应式和细节修正。 |
