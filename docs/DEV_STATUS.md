@@ -27,6 +27,22 @@ About 当前实现：
 - 不展示 Demo
 - 不展示简历下载按钮
 
+## 版本状态
+
+已补充 v0 / v1 版本体系：
+
+- v0.0.0-prep-complete：准备阶段完成
+- v1.0.0-foundation-init：工程基线初始化
+- v1.1.0-tailwind：Tailwind 配置
+- v1.2.0-data-layer：Data 层
+- v1.3.0-ui-components：UI 组件
+- v1.4.0-hero：HeroSection
+- v1.5.0-about：AboutSection
+
+当前最新版本：v1.5.0-about
+
+下一步版本计划：v1.6.0-codepilot
+
 ## 当前没有做
 
 - 没有实现 CodePilot
@@ -36,12 +52,11 @@ About 当前实现：
 - 没有做 cursor spotlight
 - 没有做复杂动效
 - 没有部署
-- 没有打 tag
 - 没有安装新依赖
 
 ## 检查结果
 
-- npm run build：通过
+- npm run build：通过（Phase 5-6 构建）
 - 本地预览：待验证
 
 ## 下一步
