@@ -1,6 +1,7 @@
 import {
   AboutSection,
   CodePilotSection,
+  ContactSection,
   HeroSection,
 } from './components/sections';
 
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <CodePilotSection />
+      <ContactSection />
     </>
   );
 }
