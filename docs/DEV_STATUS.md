@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 3-3
+当前阶段：Restart Phase 4-1
 
 ## 已完成
 
@@ -14,20 +14,30 @@
 - Phase 3-1：确定设计基调
 - Phase 3-2：规划页面结构
 - Phase 3-3：规划核心交互流程
+- Phase 4-1：明确项目边界
 
-## 交互流程结论
+## 项目边界结论
 
-第一版核心路径：
+当前 MVP 只做：
 
-Hero → CodePilot → Contact
+1. Hero
+2. About
+3. CodePilot
+4. Contact
 
-核心 CTA：
+当前不做：
 
-- 查看 CodePilot
-- GitHub
-- 联系我
-
-当前只使用真实链接，不展示未确认 Demo，不展示简历下载按钮。
+- AI Agent
+- AI 问答
+- 后端
+- 登录
+- 数据库
+- 博客
+- Skills
+- Workflow
+- 简历下载
+- 复杂动效
+- cursor spotlight
 
 ## 当前没有做
 
@@ -35,9 +45,8 @@ Hero → CodePilot → Contact
 - 没有初始化 Vite
 - 没有安装依赖
 - 没有实现页面
-- 没有做动效
 - 没有部署
 
 ## 下一步
 
-Phase 4-1：明确项目边界。
+Phase 4-2：明确非功能需求。
