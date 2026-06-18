@@ -59,6 +59,20 @@ About 当前实现：
 - npm run build：通过（Phase 5-6 构建）
 - 本地预览：待验证
 
+## README 状态
+
+已补充根目录 README.md，用于在 GitHub 仓库首页展示：
+
+- 当前最新版本：v1.5.0-about
+- 当前已完成模块：HeroSection / AboutSection
+- 当前未完成模块：CodePilotSection / ContactSection
+- 版本 tag 表
+- MVP 范围
+- 技术栈
+- 开发规则入口
+
+本轮未修改源码。
+
 ## 下一步
 
 Phase 5-7：实现 CodePilotSection。
