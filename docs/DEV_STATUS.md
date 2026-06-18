@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 2-1
+当前阶段：Restart Phase 2-2
 
 ## 已完成
 
@@ -8,17 +8,12 @@
 - Phase 1-2：想法压力测试
 - Phase 1-3：输出想法判断结论
 - Phase 2-1：生成初版 PRD
+- Phase 2-2：生成 PRD 追问对齐清单
 
-## 当前 PRD 约束
+## 当前状态
 
-第一版 MVP 只围绕：
-
-- Hero
-- About
-- CodePilot
-- Contact
-
-Portfolio 是面向实习投递的静态作品集网站，不是 AI Agent 项目。
+初版 PRD 已生成，但还不能作为最终 PRD。
+当前正在等待用户回答 PRD 对齐问题。
 
 ## 当前没有做
 
@@ -27,8 +22,9 @@ Portfolio 是面向实习投递的静态作品集网站，不是 AI Agent 项目
 - 没有安装依赖
 - 没有做设计
 - 没有规划页面结构
+- 没有固化最终 PRD
 - 没有部署
 
 ## 下一步
 
-Phase 2-2：使用追问方式对齐 PRD。
+Phase 2-3：根据用户回答整理 PRD 对齐结果。
