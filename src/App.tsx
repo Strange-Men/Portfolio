@@ -1,10 +1,15 @@
-import { AboutSection, HeroSection } from './components/sections';
+import {
+  AboutSection,
+  CodePilotSection,
+  HeroSection,
+} from './components/sections';
 
 function App() {
   return (
     <>
       <HeroSection />
       <AboutSection />
+      <CodePilotSection />
     </>
   );
 }
