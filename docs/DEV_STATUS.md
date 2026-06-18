@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 3-1
+当前阶段：Restart Phase 3-2
 
 ## 已完成
 
@@ -12,32 +12,28 @@
 - Phase 2-3：整理 PRD 对齐结果
 - Phase 2-4：固化最终 PRD
 - Phase 3-1：确定设计基调
+- Phase 3-2：规划页面结构
 
-## 设计基调结论
+## 页面结构结论
 
-Portfolio 第一版采用 Dark Technical Editorial Portfolio 方向。
+第一版页面固定为单页结构：
 
-核心特征：
+1. Hero
+2. About
+3. CodePilot
+4. Contact
 
-- 暗色高级
-- 内容优先
-- CodePilot 优先
-- 大字号 Hero
-- serif italic 视觉点缀
-- 胶囊式导航参考
-- 轻动效可后置
-- cursor spotlight 仅作为后续增强，不进入当前 MVP
+CodePilot 是页面核心模块。
 
 ## 当前没有做
 
 - 没有写代码
 - 没有初始化 Vite
 - 没有安装依赖
-- 没有规划页面结构
-- 没有实现 Hero
-- 没有实现 cursor spotlight
+- 没有实现页面
+- 没有做动效
 - 没有部署
 
 ## 下一步
 
-Phase 3-2：规划页面结构。
+Phase 3-3：规划核心交互流程。
