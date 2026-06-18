@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 2-3
+当前阶段：Restart Phase 2-4
 
 ## 已完成
 
@@ -10,6 +10,14 @@
 - Phase 2-1：生成初版 PRD
 - Phase 2-2：生成 PRD 追问对齐清单
 - Phase 2-3：整理 PRD 对齐结果
+- Phase 2-4：固化最终 PRD
+
+## 最终 PRD 结论
+
+Portfolio 第一版是面向实习投递的静态个人作品集网站。
+当前只做 Hero、About、CodePilot、Contact。
+CodePilot 是核心项目，Portfolio 是展示载体。
+当前不做 AI Agent、AI 问答、后端、登录、数据库。
 
 ## 已确认信息
 
@@ -19,7 +27,6 @@
 - CodePilot Demo：TBD
 - 第一版不放简历下载按钮
 - 当前优先级是先做好静态网页并上线
-- AI Agent 能力可以作为后续方向，但不进入当前 MVP
 
 ## 当前没有做
 
@@ -28,9 +35,8 @@
 - 没有安装依赖
 - 没有做设计
 - 没有规划页面结构
-- 没有固化最终 PRD
 - 没有部署
 
 ## 下一步
 
-Phase 2-4：固化最终 PRD。
+Phase 3-1：确定设计基调。
