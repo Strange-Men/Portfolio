@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 3-2
+当前阶段：Restart Phase 3-3
 
 ## 已完成
 
@@ -13,17 +13,21 @@
 - Phase 2-4：固化最终 PRD
 - Phase 3-1：确定设计基调
 - Phase 3-2：规划页面结构
+- Phase 3-3：规划核心交互流程
 
-## 页面结构结论
+## 交互流程结论
 
-第一版页面固定为单页结构：
+第一版核心路径：
 
-1. Hero
-2. About
-3. CodePilot
-4. Contact
+Hero → CodePilot → Contact
 
-CodePilot 是页面核心模块。
+核心 CTA：
+
+- 查看 CodePilot
+- GitHub
+- 联系我
+
+当前只使用真实链接，不展示未确认 Demo，不展示简历下载按钮。
 
 ## 当前没有做
 
@@ -36,4 +40,4 @@ CodePilot 是页面核心模块。
 
 ## 下一步
 
-Phase 3-3：规划核心交互流程。
+Phase 4-1：明确项目边界。
