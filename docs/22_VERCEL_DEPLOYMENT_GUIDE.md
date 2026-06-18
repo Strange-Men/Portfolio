@@ -5,7 +5,7 @@
 Current version:
 
 ```txt
-v1.11.0-deploy-ready
+v1.12.0-deployed
 ```
 
 Base MVP version:
@@ -23,7 +23,7 @@ sealed
 Deployment status:
 
 ```txt
-not deployed
+deployed
 ```
 
 ---
@@ -147,10 +147,24 @@ Do not write a deployment URL before the real Vercel URL exists.
 
 ---
 
+## Production URL
+
+```txt
+https://portfolio-rosy-ten-41.vercel.app/
+```
+
+## Deployment Result
+
+* Platform: Vercel
+* Status: deployed
+* Production URL: https://portfolio-rosy-ten-41.vercel.app/
+* Environment Variables: none
+* Build Command: npm run build
+* Output Directory: dist
+
 ## Known Limitations
 
 * No custom domain yet.
-* No online URL yet.
 * No resume download.
 * No demo link.
 * No backend.

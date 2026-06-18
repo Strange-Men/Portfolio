@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.10.0-mvp-build
+v1.12.0-deployed
 ```
 
 当前已完成：
@@ -31,10 +31,13 @@ v1.10.0-mvp-build
 - 响应式专项优化
 - 最终 MVP 构建审计
 - MVP 封板
+- Vercel 部署
+- 线上 URL 记录
 
 当前未完成：
 
-- 部署
+- 自定义域名
+- 后续内容增强
 
 ---
 
@@ -54,12 +57,8 @@ v1.10.0-mvp-build
 | v1.8.0-page-complete | Page | 完整组合 Hero / About / CodePilot / Contact |
 | v1.9.0-responsive-polish | Polish | 响应式专项优化 |
 | v1.10.0-mvp-build | Audit | 最终 MVP 构建审计，MVP 封板 |
-
-下一计划版本：
-
-```txt
-v1.11.0-deploy-ready
-```
+| v1.11.0-deploy-ready | Deploy | 部署前检查与 Vercel 部署准备 |
+| v1.12.0-deployed | Deploy | 完成 Vercel 线上部署并记录访问地址 |
 
 ---
 
@@ -89,7 +88,13 @@ v1.11.0-deploy-ready
 
 ## MVP Status
 
-当前 MVP 已封板。
+当前 MVP 已封板并完成线上部署。
+
+线上访问地址：
+
+```txt
+https://portfolio-rosy-ten-41.vercel.app/
+```
 
 已包含：
 
@@ -97,8 +102,6 @@ v1.11.0-deploy-ready
 - About
 - CodePilot
 - Contact
-
-当前未部署，因此 README 暂不提供线上访问链接。
 
 ---
 
