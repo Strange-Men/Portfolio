@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-10.1
+当前阶段：Phase 5-11
 
 ## 已完成
 
@@ -23,83 +23,48 @@
 - Phase 5-9.1：创建 v1.8.0-page-complete tag
 - Phase 5-10：响应式专项优化
 - Phase 5-10.1：创建 v1.9.0-responsive-polish tag
+- Phase 5-11：最终 MVP 构建审计
 
-## v1.9.0-responsive-polish 结论
+## v1.10.0-mvp-build 结论
 
-本轮完成响应式专项检查与必要修正：
+本轮完成最终 MVP 构建审计：
 
-- 375px 手机宽度检查
-- 430px 大屏手机检查
-- 768px 平板检查
-- 1024px 小桌面检查
-- 1440px 桌面检查
-- 导航换行 / 溢出检查
-- CTA 点击区域检查
-- Email 长链接溢出检查
-- 卡片堆叠检查
-- 文本可读性检查
-
-修复内容：
-
-- App.tsx：main 增加 overflow-x-hidden 防止横向溢出
-- HeroSection：header 在小屏改为 flex-col 堆叠，sm 以上恢复 flex-row
-- HeroSection：nav 增加 overflow-x-auto 和 gap-1，小屏允许横向滚动
-- HeroSection：h1 基础字号从 text-5xl 降至 text-4xl，响应式阶梯整体下调一档
-- AboutSection：无修改，三列卡片已在小屏自动堆叠
-- CodePilotSection：无修改，网格已在小屏自动堆叠，标签已 flex-wrap
-- ContactSection：无修改，网格已在小屏自动堆叠，CTA 已 flex-wrap
+- npm run build：通过（229ms，无 TS/Vite 错误）
+- dist 产物检查：dist/index.html 存在，CSS 19.18 kB，JS 203.09 kB
+- 页面范围检查：只含 Hero / About / CodePilot / Contact，无多余模块
+- 链接检查：所有链接来自 Data 层，无空链接，无假链接
+- 可访问性检查：main / section / aria-labelledby / nav aria-label / rel 属性均通过
+- 本地预览检查：dev server 正常启动
+- 禁用词检查：源码中无禁用词
+- MVP Build Audit 文档：已创建 docs/21_MVP_BUILD_AUDIT.md
 
 ## 版本状态
 
-当前最新版本：v1.9.0-responsive-polish
+当前最新已打 tag 版本：v1.9.0-responsive-polish
 
-已完成：
+本轮完成 MVP 构建审计后，允许下一轮单独创建：
 
-- HeroSection
-- AboutSection
-- CodePilotSection
-- ContactSection
-- 完整页面组合
-- 响应式专项优化
+v1.10.0-mvp-build
 
-当前未完成：
-
-- 最终 MVP 构建审计
-- 部署
-
-v1.9.0-responsive-polish tag 已创建并推送，指向：
-
-d6c8bca fix(v1.9.0-responsive-polish): polish responsive layout
-
-下一步版本计划：v1.10.0-mvp-build
+本轮不要打 tag。
 
 ## 当前没有做
 
 - 没有部署
+- 没有打 tag
 - 没有安装新依赖
 - 没有新增 Section
 - 没有新增项目
 - 没有新增未确认链接
-- 没有新增复杂动效
 - 没有接入后端
-
-## 本地预览补充记录
-
-Phase 5-10.1 已补充本地 dev server 预览记录：
-
-- npm run dev：正常启动（localhost:5173），HTTP 200
-- 页面能打开：是
-- 四个 Section 均由 React 客户端渲染，build 已确认通过
 
 ## 检查结果
 
-- npm run build：通过（Phase 5-10 已确认）
-- 本地预览：dev server 正常启动
-- 禁用词检查：通过
-- Section 顺序检查：通过
-- 锚点检查：通过
-- CTA / 链接检查：通过
+- npm run build：通过
+- dist 检查：通过
+- 本地预览：dev server 正常启动（localhost:5174）
+- MVP 审计：通过，Ready for MVP tag
 
 ## 下一步
 
-Phase 5-11：v1.10.0-mvp-build 最终 MVP 构建审计。
+Phase 5-11.1：创建 v1.10.0-mvp-build tag。
