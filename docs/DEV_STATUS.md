@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-11
+当前阶段：Phase 5-11.1
 
 ## 已完成
 
@@ -24,6 +24,7 @@
 - Phase 5-10：响应式专项优化
 - Phase 5-10.1：创建 v1.9.0-responsive-polish tag
 - Phase 5-11：最终 MVP 构建审计
+- Phase 5-11.1：创建 v1.10.0-mvp-build tag 并更新版本文档
 
 ## v1.10.0-mvp-build 结论
 
@@ -40,13 +41,30 @@
 
 ## 版本状态
 
-当前最新已打 tag 版本：v1.9.0-responsive-polish
+当前最新版本：v1.10.0-mvp-build
 
-本轮完成 MVP 构建审计后，允许下一轮单独创建：
+MVP 状态：已封板
 
-v1.10.0-mvp-build
+已完成：
 
-本轮不要打 tag。
+- HeroSection
+- AboutSection
+- CodePilotSection
+- ContactSection
+- 完整页面组合
+- 响应式专项优化
+- 最终 MVP 构建审计
+- MVP 封板
+
+当前未完成：
+
+- 部署
+
+v1.10.0-mvp-build tag 已创建并推送，指向：
+
+834f1a1 chore(v1.10.0-mvp-build): audit mvp build
+
+下一步版本计划：v1.11.0-deploy-ready
 
 ## 当前没有做
 
@@ -67,4 +85,4 @@ v1.10.0-mvp-build
 
 ## 下一步
 
-Phase 5-11.1：创建 v1.10.0-mvp-build tag。
+Phase 5-12：部署前检查与部署准备。

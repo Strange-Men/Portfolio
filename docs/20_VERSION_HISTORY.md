@@ -41,6 +41,7 @@
 | v1.7.0-contact | c01d844 | Phase 5-8 | 实现 ContactSection，提供 Email、GitHub、CodePilot GitHub 三个真实联系入口。 |
 | v1.8.0-page-complete | f53ca34 | Phase 5-9 | 完整组合 Hero / About / CodePilot / Contact 四个 Section，并完成页面顺序、锚点、CTA、真实链接和禁止项检查。 |
 | v1.9.0-responsive-polish | d6c8bca | Phase 5-10 | 完成响应式专项优化，修复小屏导航、Hero 标题字号和页面横向溢出风险。 |
+| v1.10.0-mvp-build | 834f1a1 | Phase 5-11 | 完成最终 MVP 构建审计，确认构建、dist、页面范围、链接、语义、响应式与禁用词检查通过。 |
 
 ---
 
@@ -49,7 +50,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.9.0-responsive-polish
+v1.10.0-mvp-build
 ```
 
 当前已完成页面模块：
@@ -61,12 +62,13 @@ CodePilotSection
 ContactSection
 完整页面组合
 响应式专项优化
+最终 MVP 构建审计
+MVP 封板
 ```
 
 当前未完成：
 
 ```txt
-最终 MVP 构建审计
 部署
 ```
 
@@ -78,8 +80,42 @@ ContactSection
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.10.0-mvp-build | Phase 5-11 | MVP 构建检查完成。 |
 | v1.11.0-deploy-ready | Phase 5-12 | 部署前检查与部署准备。 |
+| v1.12.0-deployed | Phase 5-13 | 完成线上部署并记录访问地址。 |
+
+---
+
+## MVP 封板结论
+
+`v1.10.0-mvp-build` 是 Portfolio 第一版 MVP 的封板版本。
+
+该版本包含：
+
+- Hero
+- About
+- CodePilot
+- Contact
+
+该版本已完成：
+
+- Vite React TypeScript 工程构建
+- Tailwind CSS 样式基线
+- Data / UI / Section 分层
+- 四个 MVP Section
+- 页面完整性检查
+- 响应式专项优化
+- 最终 MVP 构建审计
+
+该版本不包含：
+
+- 部署链接
+- Demo 链接
+- 简历下载
+- 后端
+- 数据库
+- 登录
+- 表单提交
+- 多项目展示
 
 ---
 

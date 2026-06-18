@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.9.0-responsive-polish
+v1.10.0-mvp-build
 ```
 
 当前已完成：
@@ -29,10 +29,11 @@ v1.9.0-responsive-polish
 - ContactSection
 - 完整页面组合
 - 响应式专项优化
+- 最终 MVP 构建审计
+- MVP 封板
 
 当前未完成：
 
-- 最终 MVP 构建审计
 - 部署
 
 ---
@@ -52,11 +53,12 @@ v1.9.0-responsive-polish
 | v1.7.0-contact | Page | 实现 ContactSection |
 | v1.8.0-page-complete | Page | 完整组合 Hero / About / CodePilot / Contact |
 | v1.9.0-responsive-polish | Polish | 响应式专项优化 |
+| v1.10.0-mvp-build | Audit | 最终 MVP 构建审计，MVP 封板 |
 
 下一计划版本：
 
 ```txt
-v1.10.0-mvp-build
+v1.11.0-deploy-ready
 ```
 
 ---
@@ -82,6 +84,21 @@ v1.10.0-mvp-build
 - cursor spotlight
 - 简历下载按钮
 - 未确认 Demo 链接
+
+---
+
+## MVP Status
+
+当前 MVP 已封板。
+
+已包含：
+
+- Hero
+- About
+- CodePilot
+- Contact
+
+当前未部署，因此 README 暂不提供线上访问链接。
 
 ---
 
