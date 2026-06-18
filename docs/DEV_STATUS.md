@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-5
+当前阶段：Phase 5-6
 
 ## 已完成
 
@@ -11,27 +11,26 @@
 - Phase 5-3：创建 Data 层
 - Phase 5-4：创建 UI 基础组件
 - Phase 5-5：实现 HeroSection
+- Phase 5-6：实现 AboutSection
 
-## HeroSection 结论
+## AboutSection 结论
 
-已创建 `src/components/sections/HeroSection.tsx`，并在 `src/App.tsx` 中临时渲染 HeroSection 方便预览。
+已创建 `src/components/sections/AboutSection.tsx`，并在 `src/App.tsx` 中临时渲染 HeroSection + AboutSection 方便预览。
 
-Hero 当前实现：
+About 当前实现：
 
 - 使用 Data 层内容
-- 展示身份、求职方向、CodePilot 简述
-- 提供查看 CodePilot / GitHub / 联系我 CTA
+- 展示身份、求职方向、核心项目
 - 使用 UI 基础组件
 - 不硬编码真实链接
-- 不使用图片背景
-- 不使用复杂动效
+- 不展示完整 CodePilot 项目详情
+- 不展示 Demo
+- 不展示简历下载按钮
 
 ## 当前没有做
 
-- 没有实现 About
 - 没有实现 CodePilot
 - 没有实现 Contact
-- 没有创建 AboutSection
 - 没有创建 CodePilotSection
 - 没有创建 ContactSection
 - 没有做 cursor spotlight
@@ -47,4 +46,4 @@ Hero 当前实现：
 
 ## 下一步
 
-Phase 5-6：实现 AboutSection。
+Phase 5-7：实现 CodePilotSection。
