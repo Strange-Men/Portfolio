@@ -1,27 +1,30 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-2
+当前阶段：Phase 5-3
 
 ## 已完成
 
 - prep-complete tag 已创建并推送
 - Phase 5-1：初始化 Vite React TypeScript 工程基线
 - Phase 5-2：配置 Tailwind CSS
+- Phase 5-2.1：确认 npm cache 路径正确
+- Phase 5-3：创建 Data 层
 
-## Tailwind 配置结论
+## Data 层结论
 
-已使用 Tailwind CSS 的 Vite plugin 方式完成配置。
+已创建 `src/data/`，集中管理 Portfolio 第一版真实数据和文案：
 
-当前完成：
+- `src/data/links.ts`
+- `src/data/profile.ts`
+- `src/data/codepilot.ts`
 
-- 安装 tailwindcss
-- 安装 @tailwindcss/vite
-- vite.config.ts 接入 Tailwind Vite plugin
-- src/index.css 引入 Tailwind
-- src/App.tsx 使用最小 Tailwind 占位验证
-- npm run build 通过
+当前真实链接集中管理：
 
-当前没有实现正式 Portfolio 页面。
+- Email：1643229721@qq.com
+- GitHub：https://github.com/Strange-Men
+- CodePilot GitHub：https://github.com/Strange-Men/CodePilot
+
+CodePilot Demo 当前为 null，不展示 Demo。
 
 ## 当前没有做
 
@@ -29,13 +32,14 @@
 - 没有实现 About
 - 没有实现 CodePilot
 - 没有实现 Contact
-- 没有创建 Data 层
 - 没有创建 UI 组件
+- 没有创建 Section 组件
 - 没有创建 components/
-- 没有创建 data/
+- 没有创建 styles/
 - 没有做动效
 - 没有部署
 - 没有打 tag
+- 没有安装新依赖
 
 ## 检查结果
 
@@ -43,4 +47,4 @@
 
 ## 下一步
 
-Phase 5-3：创建 Data 层。
+Phase 5-4：创建 UI 基础组件。
