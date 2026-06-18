@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 4-3
+当前阶段：Restart Phase 4-4
 
 ## 已完成
 
@@ -17,31 +17,27 @@
 - Phase 4-1：明确项目边界
 - Phase 4-2：明确非功能需求
 - Phase 4-3：锁定技术栈
+- Phase 4-4：设计轻量架构
 
-## 技术栈结论
+## 轻量架构结论
 
-第一版固定使用：
+后续代码采用：
 
-- React
-- Vite
-- TypeScript
-- Tailwind CSS
-- npm
-- 静态单页
-- Vercel 倾向部署
+- App 层
+- Section 组件层
+- UI 组件层
+- Data 数据层
+- Style 样式层
+- Asset 静态资源层
 
-当前不使用：
+第一版只包含：
 
-- 后端
-- 数据库
-- AI 问答
-- LLM API
-- ReactBits
-- GSAP
-- Framer Motion
-- WebGL
-- cursor spotlight
-- 图标库，除非后续确认
+- HeroSection
+- AboutSection
+- CodePilotSection
+- ContactSection
+
+内容和链接必须集中管理。
 
 ## 当前没有做
 
@@ -49,9 +45,10 @@
 - 没有初始化 Vite
 - 没有安装依赖
 - 没有创建 package.json
+- 没有创建 src/
 - 没有实现页面
 - 没有部署
 
 ## 下一步
 
-Phase 4-4：设计轻量架构。
+Phase 4-5：建立全局上下文文档。
