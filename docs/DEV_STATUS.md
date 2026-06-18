@@ -1,88 +1,60 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-11.1
+当前阶段：Phase 5-12
 
 ## 已完成
 
 - prep-complete tag 已创建并推送
-- 版本体系已补充至 v1.9.0-responsive-polish
-- README 已补充远程仓库版本展示
-- Commit Message 版本命名规则已固化
-- Phase 5-1：初始化 Vite React TypeScript 工程基线
-- Phase 5-2：配置 Tailwind CSS
-- Phase 5-2.1：确认 npm cache 路径正确
-- Phase 5-3：创建 Data 层
-- Phase 5-4：创建 UI 基础组件
-- Phase 5-5：实现 HeroSection
-- Phase 5-6：实现 AboutSection
-- Phase 5-7：实现 CodePilotSection
-- Phase 5-7.1：创建 v1.6.0-codepilot tag
-- Phase 5-8：实现 ContactSection
-- Phase 5-8.1：创建 v1.7.0-contact tag
-- Phase 5-9：完整页面组合与检查
-- Phase 5-9.1：创建 v1.8.0-page-complete tag
-- Phase 5-10：响应式专项优化
-- Phase 5-10.1：创建 v1.9.0-responsive-polish tag
-- Phase 5-11：最终 MVP 构建审计
-- Phase 5-11.1：创建 v1.10.0-mvp-build tag 并更新版本文档
+- 版本体系已补充至 v1.10.0-mvp-build
+- Portfolio MVP 已封板
+- Phase 5-11.1：创建 v1.10.0-mvp-build tag
+- Phase 5-12：部署前检查与 Vercel 部署准备
 
-## v1.10.0-mvp-build 结论
+## v1.11.0-deploy-ready 结论
 
-本轮完成最终 MVP 构建审计：
+本轮完成 Vercel 部署前准备：
 
-- npm run build：通过（229ms，无 TS/Vite 错误）
-- dist 产物检查：dist/index.html 存在，CSS 19.18 kB，JS 203.09 kB
-- 页面范围检查：只含 Hero / About / CodePilot / Contact，无多余模块
-- 链接检查：所有链接来自 Data 层，无空链接，无假链接
-- 可访问性检查：main / section / aria-labelledby / nav aria-label / rel 属性均通过
-- 本地预览检查：dev server 正常启动
-- 禁用词检查：源码中无禁用词
-- MVP Build Audit 文档：已创建 docs/21_MVP_BUILD_AUDIT.md
+- npm run build 检查
+- npm run preview 检查
+- dist 产物确认
+- Vercel 部署参数确认
+- Vercel 部署指南文档创建
 
 ## 版本状态
 
-当前最新版本：v1.10.0-mvp-build
+当前最新已打 tag 版本：v1.10.0-mvp-build
 
-MVP 状态：已封板
+本轮完成部署前检查后，允许下一轮单独创建：
 
-已完成：
+v1.11.0-deploy-ready
 
-- HeroSection
-- AboutSection
-- CodePilotSection
-- ContactSection
-- 完整页面组合
-- 响应式专项优化
-- 最终 MVP 构建审计
-- MVP 封板
-
-当前未完成：
-
-- 部署
-
-v1.10.0-mvp-build tag 已创建并推送，指向：
-
-834f1a1 chore(v1.10.0-mvp-build): audit mvp build
-
-下一步版本计划：v1.11.0-deploy-ready
+本轮不要打 tag。
 
 ## 当前没有做
 
 - 没有部署
 - 没有打 tag
 - 没有安装新依赖
+- 没有修改源码
 - 没有新增 Section
 - 没有新增项目
 - 没有新增未确认链接
-- 没有接入后端
+- 没有写线上 URL
 
 ## 检查结果
 
-- npm run build：通过
-- dist 检查：通过
-- 本地预览：dev server 正常启动（localhost:5174）
-- MVP 审计：通过，Ready for MVP tag
+- npm run build：通过（172ms，无 TS/Vite 错误）
+- npm run preview：通过（localhost:4173，HTTP 200）
+- dist 产物：index.html 397B，CSS 19.06kB，JS 203.09kB
+- 页面 section：Hero / About / CodePilot / Contact 全部存在
+- 链接：Email mailto、GitHub、CodePilot GitHub 全部真实
+- 导航锚点：#hero / #about / #codepilot / #contact 全部存在
+- Vercel 部署准备：参数确认，指南文档已创建
 
 ## 下一步
 
-Phase 5-12：部署前检查与部署准备。
+用户手动在 Vercel 网页导入 GitHub 仓库部署。
+
+部署成功后进入：
+
+Phase 5-13：记录线上部署地址并创建 v1.12.0-deployed。
