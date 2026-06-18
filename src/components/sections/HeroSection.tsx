@@ -13,7 +13,7 @@ export function HeroSection() {
       <div className="absolute left-1/2 top-24 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-white/5 blur-3xl" />
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
-        <header className="flex items-center justify-between gap-4">
+        <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <a
             href="#hero"
             className="text-sm font-semibold tracking-[0.24em] text-zinc-200 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
@@ -22,7 +22,7 @@ export function HeroSection() {
           </a>
 
           <nav
-            className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 p-1"
+            className="flex items-center gap-1 overflow-x-auto rounded-full border border-white/10 bg-white/5 p-1 sm:gap-2"
             aria-label="Primary navigation"
           >
             <a
@@ -58,7 +58,7 @@ export function HeroSection() {
 
             <h1
               id="hero-title"
-              className="mt-6 max-w-4xl text-5xl font-semibold tracking-[-0.08em] text-white sm:text-6xl md:text-7xl lg:text-8xl"
+              className="mt-6 text-4xl font-semibold tracking-[-0.08em] text-white sm:text-5xl md:text-6xl lg:text-7xl"
             >
               {profile.heroTitle}
             </h1>

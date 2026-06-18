@@ -7,7 +7,7 @@ import {
 
 function App() {
   return (
-    <main className="min-h-screen bg-zinc-950" aria-label="Portfolio homepage">
+    <main className="min-h-screen overflow-x-hidden bg-zinc-950" aria-label="Portfolio homepage">
       <HeroSection />
       <AboutSection />
       <CodePilotSection />
