@@ -43,7 +43,7 @@
 | v1.9.0-responsive-polish | d6c8bca | Phase 5-10 | 完成响应式专项优化，修复小屏导航、Hero 标题字号和页面横向溢出风险。 |
 | v1.10.0-mvp-build | 834f1a1 | Phase 5-11 | 完成最终 MVP 构建审计，确认构建、dist、页面范围、链接、语义、响应式与禁用词检查通过。 |
 | v1.11.0-deploy-ready | e3c012e | Phase 5-12 | 完成 Vercel 部署前检查与部署指南，确认 Vite / build / dist / preview / Vercel 参数。 |
-| v1.12.0-deployed | 待提交后用实际 commit hash 补充 | Phase 5-13 | 完成 Vercel 线上部署记录，线上地址为 https://portfolio-rosy-ten-41.vercel.app/。 |
+| v1.12.0-deployed | b1bf0df | Phase 5-13 | 完成 Vercel 线上部署记录，线上地址为 https://portfolio-rosy-ten-41.vercel.app/。 |
 
 ---
 
