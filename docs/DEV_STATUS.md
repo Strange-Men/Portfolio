@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-4
+当前阶段：Phase 5-5
 
 ## 已完成
 
@@ -10,29 +10,32 @@
 - Phase 5-2.1：确认 npm cache 路径正确
 - Phase 5-3：创建 Data 层
 - Phase 5-4：创建 UI 基础组件
+- Phase 5-5：实现 HeroSection
 
-## UI 基础组件结论
+## HeroSection 结论
 
-已创建 `src/components/ui/`，包含：
+已创建 `src/components/sections/HeroSection.tsx`，并在 `src/App.tsx` 中临时渲染 HeroSection 方便预览。
 
-- `Button.tsx`
-- `ExternalLink.tsx`
-- `Tag.tsx`
-- `SectionLabel.tsx`
-- `index.ts`
+Hero 当前实现：
 
-这些组件只作为复用视觉单元，不硬编码业务文案，不硬编码真实链接。
+- 使用 Data 层内容
+- 展示身份、求职方向、CodePilot 简述
+- 提供查看 CodePilot / GitHub / 联系我 CTA
+- 使用 UI 基础组件
+- 不硬编码真实链接
+- 不使用图片背景
+- 不使用复杂动效
 
 ## 当前没有做
 
-- 没有实现 Hero
 - 没有实现 About
 - 没有实现 CodePilot
 - 没有实现 Contact
-- 没有创建 Section 组件
-- 没有创建 sections/
-- 没有创建 styles/
-- 没有做动效
+- 没有创建 AboutSection
+- 没有创建 CodePilotSection
+- 没有创建 ContactSection
+- 没有做 cursor spotlight
+- 没有做复杂动效
 - 没有部署
 - 没有打 tag
 - 没有安装新依赖
@@ -40,7 +43,8 @@
 ## 检查结果
 
 - npm run build：通过
+- 本地预览：待验证
 
 ## 下一步
 
-Phase 5-5：实现 HeroSection。
+Phase 5-6：实现 AboutSection。
