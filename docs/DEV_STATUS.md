@@ -42,13 +42,30 @@
 
 ## 版本状态
 
-当前最新已打 tag 版本：v1.7.0-contact
+当前最新版本：v1.8.0-page-complete
 
-本轮完成页面完整性检查后，允许下一轮单独创建：
+已完成：
 
-v1.8.0-page-complete
+- HeroSection
+- AboutSection
+- CodePilotSection
+- ContactSection
+- 完整页面组合
+- 页面顺序检查
+- 锚点检查
+- CTA / 链接检查
 
-本轮不要打 tag。
+当前未完成：
+
+- 响应式专项优化
+- 最终 MVP 构建审计
+- 部署
+
+v1.8.0-page-complete tag 已创建并推送，指向：
+
+f53ca34 feat(v1.8.0-page-complete): compose final page
+
+下一步版本计划：v1.9.0-responsive-polish
 
 ## 当前没有做
 

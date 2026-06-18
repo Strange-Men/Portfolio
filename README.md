@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.7.0-contact
+v1.8.0-page-complete
 ```
 
 当前已完成：
@@ -27,11 +27,13 @@ v1.7.0-contact
 - AboutSection
 - CodePilotSection
 - ContactSection
+- 完整页面组合
 
 当前未完成：
 
-- 完整页面组合
 - 部署
+- 响应式专项优化
+- 最终 MVP 构建审计
 
 ---
 
@@ -48,11 +50,12 @@ v1.7.0-contact
 | v1.5.0-about | Page | 实现 AboutSection |
 | v1.6.0-codepilot | Page | 实现 CodePilotSection |
 | v1.7.0-contact | Page | 实现 ContactSection |
+| v1.8.0-page-complete | Page | 完整组合 Hero / About / CodePilot / Contact |
 
 下一计划版本：
 
 ```txt
-v1.8.0-page-complete
+v1.9.0-responsive-polish
 ```
 
 ---
