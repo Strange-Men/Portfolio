@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.6.0-codepilot
+v1.7.0-contact
 ```
 
 当前已完成：
@@ -26,10 +26,10 @@ v1.6.0-codepilot
 - HeroSection
 - AboutSection
 - CodePilotSection
+- ContactSection
 
 当前未完成：
 
-- ContactSection
 - 完整页面组合
 - 部署
 
@@ -47,11 +47,12 @@ v1.6.0-codepilot
 | v1.4.0-hero | Page | 实现 HeroSection |
 | v1.5.0-about | Page | 实现 AboutSection |
 | v1.6.0-codepilot | Page | 实现 CodePilotSection |
+| v1.7.0-contact | Page | 实现 ContactSection |
 
 下一计划版本：
 
 ```txt
-v1.7.0-contact
+v1.8.0-page-complete
 ```
 
 ---
@@ -129,6 +130,7 @@ https://github.com/Strange-Men/CodePilot
 - 不编造项目、链接、数据和经历
 - 不复制外部模板或未确认代码
 - 重要版本通过 Git tag 记录
+- 后续阶段性 commit message 必须带版本号，例如 `feat(v1.8.0-page-complete): compose final page`
 
 详细规则见：
 

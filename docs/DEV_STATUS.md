@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-8
+当前阶段：Phase 5-8.1
 
 ## 已完成
 
@@ -41,13 +41,49 @@ Contact 当前实现：
 
 ## 版本状态
 
-当前最新版本：v1.6.0-codepilot
+当前最新版本：v1.7.0-contact
 
-本轮完成 ContactSection 后，允许下一轮单独创建：
+已完成页面模块：
 
-v1.7.0-contact
+- HeroSection
+- AboutSection
+- CodePilotSection
+- ContactSection
 
-本轮不要打 tag。
+当前未完成：
+
+- 完整页面组合
+- 部署
+
+v1.7.0-contact tag 已创建并推送，指向：
+
+c01d844 feat: implement contact section
+
+## Commit Message 命名规则修正
+
+从下一阶段开始，所有阶段性 commit message 必须带版本号。
+
+格式：
+
+```txt
+<type>(<version>): <description>
+```
+
+示例：
+
+```txt
+feat(v1.8.0-page-complete): compose final page
+docs(v1.8.0-page-complete): update version docs
+fix(v1.9.0-responsive-polish): fix mobile spacing
+```
+
+说明：
+
+* 旧 commit 不改写。
+* 不 rebase。
+* 不 force push。
+* 不 amend 旧 commit。
+* 后续 prompt 必须明确 commit message 中包含版本号。
 
 ## 当前没有做
 
@@ -55,14 +91,14 @@ v1.7.0-contact
 - 没有做复杂动效
 - 没有使用图片背景
 - 没有部署
-- 没有打 tag
 - 没有安装新依赖
 
 ## 检查结果
 
-- npm run build：通过
-- 本地预览：未执行（构建通过即可确认组件正确）
+- npm run build：通过（Phase 5-8 已验证）
+- tag 创建：v1.7.0-contact → c01d844
+- tag 推送：成功
 
 ## 下一步
 
-Phase 5-8.1：创建 v1.7.0-contact tag。
+下一步版本计划：v1.8.0-page-complete

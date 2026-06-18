@@ -38,6 +38,7 @@
 | v1.4.0-hero | 86b07a7 | Phase 5-5 | 实现 HeroSection。 |
 | v1.5.0-about | 869727f | Phase 5-6 | 实现 AboutSection。 |
 | v1.6.0-codepilot | 112fc07 | Phase 5-7 | 实现 CodePilotSection，展示核心项目定位、流程、技术栈、可讲技术点和真实 GitHub 链接。 |
+| v1.7.0-contact | c01d844 | Phase 5-8 | 实现 ContactSection，提供 Email、GitHub、CodePilot GitHub 三个真实联系入口。 |
 
 ---
 
@@ -46,7 +47,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.6.0-codepilot
+v1.7.0-contact
 ```
 
 当前已完成页面模块：
@@ -55,12 +56,12 @@ v1.6.0-codepilot
 HeroSection
 AboutSection
 CodePilotSection
+ContactSection
 ```
 
 当前未完成：
 
 ```txt
-ContactSection
 完整页面组合
 部署
 ```
@@ -73,8 +74,7 @@ ContactSection
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.7.0-contact | Phase 5-8 | 实现 ContactSection。 |
-| v1.8.0-page-complete | Phase 5-9 | 完整组合 Hero / About / CodePilot / Contact。 |
+| v1.8.0-page-complete | Phase 5-9 | 完整组合 Hero / About / CodePilot / Contact，并做页面完整性检查。 |
 | v1.9.0-responsive-polish | Phase 5-10 | 响应式和细节修正。 |
 | v1.10.0-mvp-build | Phase 5-11 | MVP 构建检查完成。 |
 
@@ -91,3 +91,43 @@ ContactSection
 5. 每个重要阶段完成后再创建 tag。
 6. tag 必须指向 build 通过、working tree clean 的 commit。
 7. 每次新增 tag 后更新本文档。
+
+---
+
+## Commit Message 版本命名规则
+
+从 `v1.7.0-contact` 之后，所有阶段性 commit message 必须带版本号。
+
+格式：
+
+```txt
+<type>(<version>): <description>
+```
+
+允许类型：
+
+```txt
+feat
+fix
+docs
+refactor
+style
+chore
+test
+```
+
+示例：
+
+```txt
+feat(v1.8.0-page-complete): compose final page
+docs(v1.8.0-page-complete): update version docs
+fix(v1.9.0-responsive-polish): fix mobile spacing
+```
+
+说明：
+
+* 旧 commit 不改写。
+* 不 rebase。
+* 不 force push。
+* 不 amend 旧 commit。
+* 版本号同时维护在 Git tag、README、VERSION_HISTORY 和 DEV_STATUS 中。
