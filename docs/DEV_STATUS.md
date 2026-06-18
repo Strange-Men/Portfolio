@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 4-4
+当前阶段：Restart Phase 4-5
 
 ## 已完成
 
@@ -18,26 +18,13 @@
 - Phase 4-2：明确非功能需求
 - Phase 4-3：锁定技术栈
 - Phase 4-4：设计轻量架构
+- Phase 4-5：建立全局上下文文档
 
-## 轻量架构结论
+## 全局上下文结论
 
-后续代码采用：
-
-- App 层
-- Section 组件层
-- UI 组件层
-- Data 数据层
-- Style 样式层
-- Asset 静态资源层
-
-第一版只包含：
-
-- HeroSection
-- AboutSection
-- CodePilotSection
-- ContactSection
-
-内容和链接必须集中管理。
+已建立 docs/15_PROJECT_CONTEXT.md。
+后续每轮 Claude / Codex 开发前必须读取该文档。
+该文档是项目长期上下文和开发约束入口。
 
 ## 当前没有做
 
@@ -51,4 +38,4 @@
 
 ## 下一步
 
-Phase 4-5：建立全局上下文文档。
+Phase 4-6：固化开发规范。
