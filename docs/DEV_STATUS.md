@@ -1,11 +1,11 @@
 # DEV_STATUS
 
-当前阶段：Phase 5-10
+当前阶段：Phase 5-10.1
 
 ## 已完成
 
 - prep-complete tag 已创建并推送
-- 版本体系已补充至 v1.8.0-page-complete
+- 版本体系已补充至 v1.9.0-responsive-polish
 - README 已补充远程仓库版本展示
 - Commit Message 版本命名规则已固化
 - Phase 5-1：初始化 Vite React TypeScript 工程基线
@@ -22,6 +22,7 @@
 - Phase 5-9：完整页面组合与检查
 - Phase 5-9.1：创建 v1.8.0-page-complete tag
 - Phase 5-10：响应式专项优化
+- Phase 5-10.1：创建 v1.9.0-responsive-polish tag
 
 ## v1.9.0-responsive-polish 结论
 
@@ -50,18 +51,31 @@
 
 ## 版本状态
 
-当前最新已打 tag 版本：v1.8.0-page-complete
+当前最新版本：v1.9.0-responsive-polish
 
-本轮完成响应式优化后，允许下一轮单独创建：
+已完成：
 
-v1.9.0-responsive-polish
+- HeroSection
+- AboutSection
+- CodePilotSection
+- ContactSection
+- 完整页面组合
+- 响应式专项优化
 
-本轮不要打 tag。
+当前未完成：
+
+- 最终 MVP 构建审计
+- 部署
+
+v1.9.0-responsive-polish tag 已创建并推送，指向：
+
+d6c8bca fix(v1.9.0-responsive-polish): polish responsive layout
+
+下一步版本计划：v1.10.0-mvp-build
 
 ## 当前没有做
 
 - 没有部署
-- 没有打 tag
 - 没有安装新依赖
 - 没有新增 Section
 - 没有新增项目
@@ -69,9 +83,18 @@ v1.9.0-responsive-polish
 - 没有新增复杂动效
 - 没有接入后端
 
+## 本地预览补充记录
+
+Phase 5-10.1 已补充本地 dev server 预览记录：
+
+- npm run dev：正常启动（localhost:5173），HTTP 200
+- 页面能打开：是
+- 四个 Section 均由 React 客户端渲染，build 已确认通过
+
 ## 检查结果
 
-- npm run build：通过
+- npm run build：通过（Phase 5-10 已确认）
+- 本地预览：dev server 正常启动
 - 禁用词检查：通过
 - Section 顺序检查：通过
 - 锚点检查：通过
@@ -79,4 +102,4 @@ v1.9.0-responsive-polish
 
 ## 下一步
 
-Phase 5-10.1：创建 v1.9.0-responsive-polish tag。
+Phase 5-11：v1.10.0-mvp-build 最终 MVP 构建审计。

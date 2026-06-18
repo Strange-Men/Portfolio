@@ -40,6 +40,7 @@
 | v1.6.0-codepilot | 112fc07 | Phase 5-7 | 实现 CodePilotSection，展示核心项目定位、流程、技术栈、可讲技术点和真实 GitHub 链接。 |
 | v1.7.0-contact | c01d844 | Phase 5-8 | 实现 ContactSection，提供 Email、GitHub、CodePilot GitHub 三个真实联系入口。 |
 | v1.8.0-page-complete | f53ca34 | Phase 5-9 | 完整组合 Hero / About / CodePilot / Contact 四个 Section，并完成页面顺序、锚点、CTA、真实链接和禁止项检查。 |
+| v1.9.0-responsive-polish | d6c8bca | Phase 5-10 | 完成响应式专项优化，修复小屏导航、Hero 标题字号和页面横向溢出风险。 |
 
 ---
 
@@ -48,7 +49,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.8.0-page-complete
+v1.9.0-responsive-polish
 ```
 
 当前已完成页面模块：
@@ -59,14 +60,14 @@ AboutSection
 CodePilotSection
 ContactSection
 完整页面组合
+响应式专项优化
 ```
 
 当前未完成：
 
 ```txt
-部署
-响应式专项优化
 最终 MVP 构建审计
+部署
 ```
 
 ---
@@ -77,7 +78,6 @@ ContactSection
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.9.0-responsive-polish | Phase 5-10 | 响应式和细节修正。 |
 | v1.10.0-mvp-build | Phase 5-11 | MVP 构建检查完成。 |
 | v1.11.0-deploy-ready | Phase 5-12 | 部署前检查与部署准备。 |
 

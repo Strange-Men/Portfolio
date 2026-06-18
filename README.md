@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.8.0-page-complete
+v1.9.0-responsive-polish
 ```
 
 当前已完成：
@@ -28,12 +28,12 @@ v1.8.0-page-complete
 - CodePilotSection
 - ContactSection
 - 完整页面组合
+- 响应式专项优化
 
 当前未完成：
 
-- 部署
-- 响应式专项优化
 - 最终 MVP 构建审计
+- 部署
 
 ---
 
@@ -51,11 +51,12 @@ v1.8.0-page-complete
 | v1.6.0-codepilot | Page | 实现 CodePilotSection |
 | v1.7.0-contact | Page | 实现 ContactSection |
 | v1.8.0-page-complete | Page | 完整组合 Hero / About / CodePilot / Contact |
+| v1.9.0-responsive-polish | Polish | 响应式专项优化 |
 
 下一计划版本：
 
 ```txt
-v1.9.0-responsive-polish
+v1.10.0-mvp-build
 ```
 
 ---
