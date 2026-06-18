@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Restart Phase 2-4
+当前阶段：Restart Phase 3-1
 
 ## 已完成
 
@@ -11,32 +11,33 @@
 - Phase 2-2：生成 PRD 追问对齐清单
 - Phase 2-3：整理 PRD 对齐结果
 - Phase 2-4：固化最终 PRD
+- Phase 3-1：确定设计基调
 
-## 最终 PRD 结论
+## 设计基调结论
 
-Portfolio 第一版是面向实习投递的静态个人作品集网站。
-当前只做 Hero、About、CodePilot、Contact。
-CodePilot 是核心项目，Portfolio 是展示载体。
-当前不做 AI Agent、AI 问答、后端、登录、数据库。
+Portfolio 第一版采用 Dark Technical Editorial Portfolio 方向。
 
-## 已确认信息
+核心特征：
 
-- Email：1643229721@qq.com
-- GitHub：Strange-Men
-- CodePilot GitHub：https://github.com/Strange-Men/CodePilot
-- CodePilot Demo：TBD
-- 第一版不放简历下载按钮
-- 当前优先级是先做好静态网页并上线
+- 暗色高级
+- 内容优先
+- CodePilot 优先
+- 大字号 Hero
+- serif italic 视觉点缀
+- 胶囊式导航参考
+- 轻动效可后置
+- cursor spotlight 仅作为后续增强，不进入当前 MVP
 
 ## 当前没有做
 
 - 没有写代码
 - 没有初始化 Vite
 - 没有安装依赖
-- 没有做设计
 - 没有规划页面结构
+- 没有实现 Hero
+- 没有实现 cursor spotlight
 - 没有部署
 
 ## 下一步
 
-Phase 3-1：确定设计基调。
+Phase 3-2：规划页面结构。
