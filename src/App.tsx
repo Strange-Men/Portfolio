@@ -11,13 +11,16 @@ function App() {
     <>
       <StickyNav />
       <main
-        className="page-ambient-bg min-h-screen overflow-x-hidden bg-zinc-950"
+        className="relative min-h-screen overflow-x-hidden bg-zinc-950"
         aria-label="Portfolio homepage"
       >
-        <HeroSection />
-        <AboutSection />
-        <CodePilotSection />
-        <ContactSection />
+        <div className="site-ambient-bg" aria-hidden="true" />
+        <div className="relative z-10">
+          <HeroSection />
+          <AboutSection />
+          <CodePilotSection />
+          <ContactSection />
+        </div>
       </main>
     </>
   );

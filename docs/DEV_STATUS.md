@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 7-5
+当前阶段：Phase 7-5.1
 
 ## 已完成
 
@@ -90,7 +90,7 @@ https://portfolio-rosy-ten-41.vercel.app/
 当前最新版本：
 
 ```txt
-v1.26.0-layout-copy-background-polish
+v1.26.1-layout-copy-background-hotfix
 ```
 
 当前线上地址：
@@ -120,6 +120,31 @@ https://portfolio-rosy-ten-41.vercel.app/
 - 未新增简历下载
 - 未接入 LineWaves / ProfileCard
 
+## Phase 7-5.1：Layout / Meta / Ambient Background Hotfix
+
+用户检查 Phase 7-5 后发现：
+
+- 小字有发糊感
+- About 三个信息卡仍未真正等宽
+- 身份卡不应显示 "· 求职方向"
+- Hero 后背景仍不明显
+
+本轮调整：
+
+- 修复 RevealOnScroll 初始 blur 从 8px 降至 4px，is-visible 后使用 filter: none + will-change: auto
+- 修复 About 三个信息卡桌面端等宽等高（RevealOnScroll wrapper 加 h-full min-w-0）
+- 拆分 `identity` 与 `heroMeta`：identity = "2027 届人工智能本科生"，heroMeta = "2027 届人工智能本科生 · 求职方向"
+- Hero 使用 `profile.heroMeta`
+- About 身份卡使用 `profile.identity`
+- 修复 ambient background 层级：从负 z-index 伪元素改为正 z-index 显式 div 层
+- 移除 About / CodePilot / Contact section 的 bg-zinc-950，让 ambient 背景可见
+- 保持 BorderGlow 核心机制不变
+- 保持 RevealOnScroll 组件逻辑不变
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未接入 LineWaves / ProfileCard
+
 ## 下一步
 
 建议进入：
@@ -128,4 +153,4 @@ https://portfolio-rosy-ten-41.vercel.app/
 v1.27.0-production-verify
 ```
 
-目标：人工确认 Vercel 线上页面已更新到 v1.26 打磨版本，并做最终线上可用性检查。
+目标：人工确认 Vercel 线上页面已更新到 v1.26.1 hotfix 版本，并做最终线上可用性检查。

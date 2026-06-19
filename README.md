@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.26.0-layout-copy-background-polish
+v1.26.1-layout-copy-background-hotfix
 ```
 
 当前已完成：
@@ -91,6 +91,7 @@ v1.26.0-layout-copy-background-polish
 | v1.24.0-borderglow-motion-system | Motion System | 合并 BorderGlow、Section 入场动效和页面背景，并锁定设计规范 |
 | v1.25.0-docs-context-index | Docs | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则 |
 | v1.26.0-layout-copy-background-polish | Polish | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和页面背景层次 |
+| v1.26.1-layout-copy-background-hotfix | Hotfix | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题 |
 
 ---
 

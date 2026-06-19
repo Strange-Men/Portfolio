@@ -1,6 +1,7 @@
 export const profile = {
   name: '李泓轩',
-  identity: '2027 届人工智能本科生 · 求职方向',
+  identity: '2027 届人工智能本科生',
+  heroMeta: '2027 届人工智能本科生 · 求职方向',
   directions: ['AI 应用开发', 'Agent 开发', 'Python 后端'],
   heroTitle: 'AI 应用开发\nAgent 开发\nPython 后端',
   heroDescription:

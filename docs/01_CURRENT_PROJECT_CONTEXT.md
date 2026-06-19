@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.26.0-layout-copy-background-polish`
+`v1.26.1-layout-copy-background-hotfix`
 
 当前线上地址：
 

@@ -37,7 +37,7 @@ export function HeroSection() {
           {/* left: title / description / CTA */}
           <div>
             <div className="hero-anim hero-fade" style={{ animationDelay: '0.12s' }}>
-              <SectionLabel>{profile.identity}</SectionLabel>
+              <SectionLabel>{profile.heroMeta}</SectionLabel>
             </div>
 
             <h1

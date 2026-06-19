@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="bg-zinc-950 px-6 section-y text-zinc-50"
+      className="px-6 section-y text-zinc-50"
       aria-labelledby="about-title"
     >
       <div className="mx-auto grid w-full max-w-6xl gap-10 border-t border-white/10 pt-16 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
@@ -30,9 +30,9 @@ export function AboutSection() {
           </RevealOnScroll>
 
           <div className="grid gap-4 sm:grid-cols-3">
-            <RevealOnScroll delay={80} className="w-full">
+            <RevealOnScroll delay={80} className="h-full min-w-0 w-full">
               <BorderGlowCard
-                className="w-full rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
                 edgeSensitivity={34}
                 glowColor="315 90 78"
                 backgroundColor="#120F17"
@@ -50,9 +50,9 @@ export function AboutSection() {
               </BorderGlowCard>
             </RevealOnScroll>
 
-            <RevealOnScroll delay={140} className="w-full">
+            <RevealOnScroll delay={140} className="h-full min-w-0 w-full">
               <BorderGlowCard
-                className="w-full rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
                 edgeSensitivity={34}
                 glowColor="315 90 78"
                 backgroundColor="#120F17"
@@ -70,9 +70,9 @@ export function AboutSection() {
               </BorderGlowCard>
             </RevealOnScroll>
 
-            <RevealOnScroll delay={200} className="w-full">
+            <RevealOnScroll delay={200} className="h-full min-w-0 w-full">
               <BorderGlowCard
-                className="w-full rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
                 edgeSensitivity={34}
                 glowColor="315 90 78"
                 backgroundColor="#120F17"

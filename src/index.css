@@ -176,8 +176,8 @@
 @layer utilities {
   .reveal-on-scroll {
     opacity: 0;
-    transform: translateY(18px);
-    filter: blur(8px);
+    transform: translateY(14px);
+    filter: blur(4px);
     transition:
       opacity 700ms ease,
       transform 700ms ease,
@@ -188,8 +188,9 @@
 
   .reveal-on-scroll.is-visible {
     opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
+    transform: none;
+    filter: none;
+    will-change: auto;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -203,39 +204,29 @@
   }
 }
 
-/* Ambient background for post-Hero sections */
-@layer utilities {
-  .page-ambient-bg {
-    position: relative;
-    isolation: isolate;
-  }
+/* Ambient background — explicit div layer with positive z-index */
+.site-ambient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 78% 34%, rgba(192, 132, 252, 0.12), transparent 30rem),
+    radial-gradient(circle at 20% 64%, rgba(235, 31, 148, 0.07), transparent 26rem),
+    radial-gradient(circle at 52% 88%, rgba(120, 80, 170, 0.06), transparent 30rem),
+    linear-gradient(180deg, #09090b 0%, #0d0a12 38%, #0a090d 100%);
+}
 
-  .page-ambient-bg::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -2;
-    background:
-      radial-gradient(circle at 78% 34%, rgba(192, 132, 252, 0.11), transparent 30rem),
-      radial-gradient(circle at 20% 64%, rgba(235, 31, 148, 0.065), transparent 26rem),
-      radial-gradient(circle at 52% 88%, rgba(120, 80, 170, 0.05), transparent 30rem),
-      linear-gradient(180deg, #09090b 0%, #0d0a12 38%, #0a090d 100%);
-  }
-
-  .page-ambient-bg::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    opacity: 0.28;
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 72px 72px;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 86%, transparent 100%);
-  }
+.site-ambient-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.24;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 16%, black 88%, transparent 100%);
 }
 
 /* BorderGlow card — faithful React Bits border glow mechanism */

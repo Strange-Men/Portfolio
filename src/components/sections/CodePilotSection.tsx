@@ -5,7 +5,7 @@ export function CodePilotSection() {
   return (
     <section
       id="codepilot"
-      className="bg-zinc-950 px-6 section-y text-zinc-50"
+      className="px-6 section-y text-zinc-50"
       aria-labelledby="codepilot-title"
     >
       <div className="mx-auto w-full max-w-6xl border-t border-white/10 pt-16">
