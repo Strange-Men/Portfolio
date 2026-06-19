@@ -172,6 +172,71 @@
   }
 }
 
+/* Section scroll-reveal */
+@layer utilities {
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(8px);
+    transition:
+      opacity 700ms ease,
+      transform 700ms ease,
+      filter 700ms ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform, filter;
+  }
+
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll {
+      opacity: 1;
+      transform: none;
+      filter: none;
+      transition: none;
+      will-change: auto;
+    }
+  }
+}
+
+/* Ambient background for post-Hero sections */
+@layer utilities {
+  .page-ambient-bg {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .page-ambient-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+    background:
+      radial-gradient(circle at 78% 38%, rgba(192, 132, 252, 0.08), transparent 32rem),
+      radial-gradient(circle at 18% 62%, rgba(235, 31, 148, 0.045), transparent 28rem),
+      linear-gradient(180deg, #09090b 0%, #0b0910 42%, #09090b 100%);
+  }
+
+  .page-ambient-bg::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.22;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 86%, transparent 100%);
+  }
+}
+
 /* BorderGlow card — faithful React Bits border glow mechanism */
 @layer utilities {
   .border-glow-card {

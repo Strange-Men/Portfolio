@@ -143,6 +143,25 @@ https://portfolio-rosy-ten-41.vercel.app/
 * 没有表单提交
 * 没有新增更多项目
 
+## Motion System Polish
+
+用户反馈 BorderGlow 效果满意，希望继续完善页面其他区域的动效和背景。
+
+本轮调整：
+
+- 保留 Hero 独立 spotlight / glow 背景
+- 为 Hero 之后增加统一 low-contrast ambient background
+- 新增 RevealOnScroll 轻量组件（IntersectionObserver，无依赖）
+- 为 About / CodePilot / Contact 增加 scroll reveal（fade-up + blur-in + translateY）
+- About 三个卡片 stagger 80 / 140 / 200ms
+- CodePilot 左侧 delay 0，右侧 BorderGlowCard delay 120ms
+- Contact 左侧文案 delay 0，右侧联系卡 delay 120ms
+- 支持 prefers-reduced-motion
+- 保持 BorderGlow 作为主要卡片 hover 动效
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装动画依赖
+
 ## 下一步
 
 用户人工确认效果后再决定：

@@ -11,7 +11,7 @@ function App() {
     <>
       <StickyNav />
       <main
-        className="min-h-screen overflow-x-hidden bg-zinc-950"
+        className="page-ambient-bg min-h-screen overflow-x-hidden bg-zinc-950"
         aria-label="Portfolio homepage"
       >
         <HeroSection />
