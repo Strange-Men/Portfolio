@@ -171,3 +171,79 @@
     filter: none;
   }
 }
+
+/* BorderGlow card interaction */
+@layer utilities {
+  .border-glow-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    isolation: isolate;
+    --glow-opacity: 0;
+    --glow-x: 50%;
+    --glow-y: 50%;
+  }
+
+  .border-glow-card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .border-glow-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    opacity: var(--glow-opacity, 0);
+    transition: opacity 220ms ease;
+    background:
+      radial-gradient(
+        420px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+        rgba(129, 140, 248, 0.18),
+        rgba(34, 211, 238, 0.08) 32%,
+        transparent 62%
+      );
+    z-index: 0;
+  }
+
+  .border-glow-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+      0 0 0 1px rgba(129, 140, 248, calc(var(--glow-opacity, 0) * 0.2)),
+      0 0 36px rgba(34, 211, 238, calc(var(--glow-opacity, 0) * 0.08));
+    opacity: 1;
+    transition: box-shadow 220ms ease;
+    z-index: 1;
+  }
+
+  @media (hover: none) {
+    .border-glow-card::before {
+      opacity: 0;
+    }
+
+    .border-glow-card::after {
+      box-shadow: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .border-glow-card::before,
+    .border-glow-card::after {
+      transition: none;
+    }
+
+    .border-glow-card::before {
+      opacity: 0;
+    }
+
+    .border-glow-card::after {
+      box-shadow: none;
+    }
+  }
+}

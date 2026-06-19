@@ -1,5 +1,5 @@
 import { codepilot } from '../../data/codepilot';
-import { Button, SectionLabel, Tag } from '../ui';
+import { BorderGlowCard, Button, SectionLabel, Tag } from '../ui';
 
 export function CodePilotSection() {
   return (
@@ -44,7 +44,7 @@ export function CodePilotSection() {
           </div>
 
           {/* 右侧：紧凑流程与技术栈 */}
-          <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+          <BorderGlowCard className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
             <h3 className="text-lg font-semibold tracking-tight text-white">
               项目流程
             </h3>
@@ -70,7 +70,7 @@ export function CodePilotSection() {
                 ))}
               </div>
             </div>
-          </div>
+          </BorderGlowCard>
         </div>
       </div>
     </section>

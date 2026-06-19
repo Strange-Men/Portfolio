@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 6-12.2
+当前阶段：Phase 7-1
 
 ## 已完成
 
@@ -21,29 +21,38 @@
 - Phase 6-12：投递版本冻结文档
 - Phase 6-12.1：创建 v1.23.0-release-freeze tag
 - Phase 6-12.2：创建 v1.23.1-contact-copy tag
+- Phase 7-1：BorderGlow 项目卡片试点
 
-## v1.23.1-contact-copy 结论
+## v1.24.0-borderglow-experiment 结论
 
-本轮完成 Contact 文案 hotfix 版本记录：
+本轮在实验分支中完成 BorderGlow 项目卡片试点：
 
-- v1.23.1-contact-copy tag 已创建并推送
-- tag 指向 commit：6717336
-- 已将 Contact 区块改为 HR / 面试官视角的求职表达
-- 标题改为：期待实习机会，也欢迎进一步沟通。
-- 正文明确：正在寻找 AI 应用开发 / Agent 开发 / Python 后端相关实习机会
-- 保留 Email / GitHub 真实联系入口
+- 创建 experiment/borderglow-card 分支
+- 新增轻量 BorderGlowCard 组件
+- 只在 CodePilot 项目卡片上试点
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装 ogl
+- 未新增动画库
 - 未新增 Demo
 - 未新增简历下载
-- 未新增未确认链接
-- 未接入 BorderGlow / LineWaves / ProfileCard
-- 未安装依赖
+- 未新增项目
+- 支持移动端降级
+- 支持 prefers-reduced-motion
+- npm run build：待记录
 
 ## 版本状态
 
-当前最新版本：
+当前稳定投递版本：
 
 ```txt
 v1.23.1-contact-copy
+```
+
+当前实验分支：
+
+```txt
+experiment/borderglow-card
 ```
 
 当前线上地址：
@@ -55,7 +64,6 @@ https://portfolio-rosy-ten-41.vercel.app/
 ## 当前未做
 
 * 没有自定义域名
-* 没有接入 BorderGlow
 * 没有接入 LineWaves
 * 没有接入 ProfileCard
 * 没有安装 ogl
@@ -67,10 +75,7 @@ https://portfolio-rosy-ten-41.vercel.app/
 
 ## 下一步
 
-建议进入：
+用户人工确认效果后再决定：
 
-```txt
-v1.24.0-borderglow-experiment
-```
-
-目标：从当前 main 创建实验分支 experiment/borderglow-card，在实验分支中小范围试点 BorderGlow 项目卡片交互。
+1. 合并到 main 并创建 v1.24.0-borderglow-experiment tag
+2. 或放弃实验，保留 v1.23.1-contact-copy 作为稳定投递版本
