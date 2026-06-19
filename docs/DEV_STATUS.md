@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 6-2.2
+当前阶段：Phase 6-3
 
 ## 已完成
 
@@ -12,6 +12,7 @@
 - Phase 6-2：导航与排版优化
 - Phase 6-2.1：创建 v1.14.0-visual-nav-polish tag
 - Phase 6-2.2：前端阶段复盘
+- Phase 6-3：Typography System
 
 ## Frontend Stage Review
 
@@ -29,23 +30,18 @@ docs/24_FRONTEND_STAGE_REVIEW.md
 * 当前主要问题从功能转向视觉排版与求职表达
 * 下一阶段建议优先做 Typography / Layout System
 
-建议下一版本：
+## v1.15.0-typography-system 结论
 
-```txt
-v1.15.0-typography-system
-```
+本轮完成 Typography / Layout System 初版：
 
-## v1.14.0-visual-nav-polish 结论
-
-本轮已完成视觉导航优化版本记录：
-
-- v1.14.0-visual-nav-polish tag 已创建并推送
-- 顶部导航固定在页面顶部中央
-- 导航增加磨砂玻璃质感
-- Hero 内部重复导航已移除
-- Hero 标题压迫感降低
-- About / Contact 标题换行更自然
-- CodePilot 卡片可读性小幅优化
+- 新增 docs/25_TYPOGRAPHY_SYSTEM.md
+- 在 src/index.css 中定义字体栈与 Typography tokens
+- 定义 Display / Section Title / Body / Label 等基础排版规则
+- 统一 Hero / About / CodePilot / Contact 的标题层级
+- 改善 Hero 标题压迫感
+- 改善正文行高与卡片文字密度
+- 保持页面内容结构不变
+- 未修改文案内容
 - 未新增项目
 - 未新增假链接
 - 未新增 Demo
@@ -53,13 +49,19 @@ v1.15.0-typography-system
 
 ## 版本状态
 
-当前最新版本：v1.14.0-visual-nav-polish
+当前最新已打 tag 版本：v1.14.0-visual-nav-polish
 
-当前线上地址：
+本轮完成 Typography System 后，允许下一轮单独创建：
 
-```txt
-https://portfolio-rosy-ten-41.vercel.app/
-```
+v1.15.0-typography-system
+
+本轮不要打 tag。
+
+## 检查结果
+
+- npm run build：通过（244ms，无 TypeScript 错误，无 Vite 错误，dist 正常生成）
+- 本地预览：待验证
+- 禁用词检查：通过（src/ 中无禁用词）
 
 ## 当前未做
 
@@ -72,8 +74,4 @@ https://portfolio-rosy-ten-41.vercel.app/
 
 ## 下一步
 
-建议进入：
-
-v1.15.0-typography-system
-
-目标：定义字体层级，解决当前排版不够高级的问题。
+Phase 6-3.1：创建 v1.15.0-typography-system tag。

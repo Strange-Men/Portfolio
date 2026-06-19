@@ -5,7 +5,7 @@ export function CodePilotSection() {
   return (
     <section
       id="codepilot"
-      className="bg-zinc-950 px-6 py-24 text-zinc-50"
+      className="bg-zinc-950 px-6 section-y text-zinc-50"
       aria-labelledby="codepilot-title"
     >
       <div className="mx-auto w-full max-w-6xl border-t border-white/10 pt-16">
@@ -15,7 +15,7 @@ export function CodePilotSection() {
 
             <h2
               id="codepilot-title"
-              className="mt-5 text-4xl font-semibold tracking-[-0.06em] text-white sm:text-5xl"
+              className="text-section-title mt-5 font-semibold text-balance text-white"
             >
               {codepilot.name}
             </h2>
@@ -24,7 +24,7 @@ export function CodePilotSection() {
               {codepilot.subtitle}
             </p>
 
-            <p className="mt-6 max-w-xl text-base leading-8 text-zinc-300 sm:text-lg">
+            <p className="text-body-lg mt-6 max-w-xl text-zinc-300">
               {codepilot.description}
             </p>
 
@@ -47,7 +47,7 @@ export function CodePilotSection() {
 
           <div className="space-y-6">
             <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <h3 className="text-lg font-semibold tracking-[-0.03em] text-white">
+              <h3 className="text-lg font-semibold tracking-tight text-white">
                 核心流程
               </h3>
 
@@ -57,7 +57,7 @@ export function CodePilotSection() {
                     <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-zinc-300">
                       {index + 1}
                     </span>
-                    <span className="pt-1 text-sm leading-6 text-zinc-300">
+                    <span className="text-body-default pt-1 text-zinc-300">
                       {item}
                     </span>
                   </li>
@@ -66,7 +66,7 @@ export function CodePilotSection() {
             </div>
 
             <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <h3 className="text-lg font-semibold tracking-[-0.03em] text-white">
+              <h3 className="text-lg font-semibold tracking-tight text-white">
                 技术栈
               </h3>
 
@@ -78,7 +78,7 @@ export function CodePilotSection() {
             </div>
 
             <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <h3 className="text-lg font-semibold tracking-[-0.03em] text-white">
+              <h3 className="text-lg font-semibold tracking-tight text-white">
                 可讲技术点
               </h3>
 
@@ -86,7 +86,7 @@ export function CodePilotSection() {
                 {codepilot.talkingPoints.map((point) => (
                   <li
                     key={point}
-                    className="min-w-0 break-words rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 text-sm text-zinc-300"
+                    className="text-body-default min-w-0 break-words rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 text-zinc-300"
                   >
                     {point}
                   </li>

@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative isolate flex min-h-screen items-center overflow-hidden bg-zinc-950 px-6 py-24 text-zinc-50"
+      className="relative isolate flex min-h-screen items-center overflow-hidden bg-zinc-950 px-6 section-y text-zinc-50"
       aria-labelledby="hero-title"
     >
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.13),transparent_34%),linear-gradient(135deg,rgba(39,39,42,0.92),rgba(9,9,11,1)_58%)]" />
@@ -16,7 +16,7 @@ export function HeroSection() {
         <header>
           <a
             href="#hero"
-            className="text-sm font-semibold tracking-[0.24em] text-zinc-200 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
+            className="text-label text-zinc-200 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
           >
             PORTFOLIO
           </a>
@@ -28,12 +28,12 @@ export function HeroSection() {
 
             <h1
               id="hero-title"
-              className="mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[0.96] tracking-[-0.06em] text-white sm:text-5xl md:text-6xl lg:text-7xl"
+              className="text-display mt-6 max-w-4xl text-balance font-semibold text-white"
             >
               {profile.heroTitle}
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-300 sm:text-lg">
+            <p className="text-body-lg mt-6 max-w-2xl text-zinc-300">
               {profile.heroDescription}
             </p>
 
@@ -49,7 +49,7 @@ export function HeroSection() {
           </div>
 
           <aside className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30">
-            <p className="text-sm leading-7 text-zinc-300">{profile.about}</p>
+            <p className="text-body-default text-zinc-300">{profile.about}</p>
 
             <div className="mt-6 flex flex-wrap gap-2">
               {profile.focusTags.map((tag) => (
