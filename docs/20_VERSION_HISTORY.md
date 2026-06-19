@@ -54,6 +54,7 @@
 | v1.20.0-information-architecture-polish | c3d8885 | Phase 6-9 | 根据用户人工验收反馈修正页面信息架构：Hero 标题显式换行，About 改为自我介绍，CodePilot 补充项目痛点与清晰流程，Contact 移除单独项目仓库展示，仅保留联系入口。 |
 | v1.21.0-final-polish | a41ef8b | Phase 6-10 | 完成最终视觉、响应式、链接、构建和禁用词终检，并小范围统一 Hero padding，为投递版本冻结做准备。 |
 | v1.22.0-motion-interaction-spec | 1ebdcbe | Phase 6-11 | 新增动画交互规范文档，记录 BorderGlow / LineWaves / ProfileCard 的适用位置、优先级与风险，明确短期不接入重型动画，后续如需增强优先小范围试点 BorderGlow。 |
+| v1.23.0-release-freeze | 5a75cb6 | Phase 6-12 | 冻结 Portfolio 第一版投递稳定版本，记录线上地址、当前稳定版本、页面结构、投递使用方式、后续维护边界和未来扩展规则。 |
 
 ---
 
@@ -62,7 +63,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.22.0-motion-interaction-spec
+v1.23.0-release-freeze
 ```
 
 当前已完成页面模块：
@@ -88,13 +89,14 @@ CodePilot 紧凑项目证明
 信息架构与文案修正
 最终视觉、响应式、链接和构建终检
 动画交互规范沉淀
+投递版本冻结
 ```
 
 当前未完成：
 
 ```txt
-投递版本冻结
 自定义域名
+未来项目扩展
 BorderGlow 项目卡片试点
 ```
 
@@ -106,8 +108,8 @@ BorderGlow 项目卡片试点
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.23.0-release-freeze | Phase 6-12 | 冻结投递版本，记录最终上线状态、可投递链接和后续维护边界。 |
 | v1.24.0-borderglow-experiment | Optional | 可选：小范围试点 BorderGlow 项目卡片交互，前提是不影响投递稳定版本。 |
+| v2.0.0-multi-projects | Future | 未来新增更多真实项目时，扩展为多项目作品集。 |
 
 ---
 

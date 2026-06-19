@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.22.0-motion-interaction-spec
+v1.23.0-release-freeze
 ```
 
 当前已完成：
@@ -44,10 +44,10 @@ v1.22.0-motion-interaction-spec
 - 信息架构与文案修正
 - 最终视觉、响应式、链接和构建终检
 - 动画交互规范沉淀
+- 投递版本冻结
 
 当前未完成：
 
-- 投递版本冻结
 - 自定义域名
 - BorderGlow 项目卡片试点
 
@@ -81,6 +81,7 @@ v1.22.0-motion-interaction-spec
 | v1.20.0-information-architecture-polish | Content / IA | Hero、About、CodePilot、Contact 信息架构修正 |
 | v1.21.0-final-polish | Polish | 最终视觉、响应式、链接和构建终检 |
 | v1.22.0-motion-interaction-spec | Motion Spec | 记录 BorderGlow / LineWaves / ProfileCard 动画取舍与后续接入策略 |
+| v1.23.0-release-freeze | Release | 冻结 Portfolio 第一版投递稳定版本 |
 
 ---
 
