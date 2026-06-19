@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.15.0-typography-system
+v1.16.0-reference-style-spec
 ```
 
 当前已完成：
@@ -36,12 +36,15 @@ v1.15.0-typography-system
 - 内容表达优化
 - 导航与排版优化
 - 中文友好 Typography System
+- 参考风格转译与设计规格
 
 当前未完成：
 
-- 自定义域名
+- Hero Spotlight Layout
+- 轻量入场动画
+- CodePilot 项目证据展示
 - 简历联动
-- 后续内容增强
+- 自定义域名
 
 ---
 
@@ -66,6 +69,7 @@ v1.15.0-typography-system
 | v1.13.0-content-polish | Content | 优化 Portfolio 求职表达与 CodePilot 项目说明 |
 | v1.14.0-visual-nav-polish | Visual | 顶部固定导航与基础排版优化 |
 | v1.15.0-typography-system | Typography | 中文友好的字体层级、行高、字距与阅读节奏 |
+| v1.16.0-reference-style-spec | Design | 将参考 Hero 风格转译为 Portfolio 专用视觉方向 |
 
 ---
 
