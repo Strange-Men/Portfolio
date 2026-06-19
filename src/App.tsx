@@ -4,15 +4,22 @@ import {
   ContactSection,
   HeroSection,
 } from './components/sections';
+import { StickyNav } from './components/ui';
 
 function App() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-zinc-950" aria-label="Portfolio homepage">
-      <HeroSection />
-      <AboutSection />
-      <CodePilotSection />
-      <ContactSection />
-    </main>
+    <>
+      <StickyNav />
+      <main
+        className="min-h-screen overflow-x-hidden bg-zinc-950"
+        aria-label="Portfolio homepage"
+      >
+        <HeroSection />
+        <AboutSection />
+        <CodePilotSection />
+        <ContactSection />
+      </main>
+    </>
   );
 }
 

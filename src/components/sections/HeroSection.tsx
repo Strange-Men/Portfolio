@@ -13,43 +13,13 @@ export function HeroSection() {
       <div className="absolute left-1/2 top-24 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-white/5 blur-3xl" />
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
-        <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <header>
           <a
             href="#hero"
             className="text-sm font-semibold tracking-[0.24em] text-zinc-200 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
           >
             PORTFOLIO
           </a>
-
-          <nav
-            className="flex items-center gap-1 overflow-x-auto rounded-full border border-white/10 bg-white/5 p-1 sm:gap-2"
-            aria-label="Primary navigation"
-          >
-            <a
-              href="#hero"
-              className="rounded-full px-4 py-2 text-sm font-medium text-white"
-            >
-              Hero
-            </a>
-            <a
-              href="#about"
-              className="rounded-full px-4 py-2 text-sm font-medium text-zinc-400 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50"
-            >
-              About
-            </a>
-            <a
-              href="#codepilot"
-              className="rounded-full px-4 py-2 text-sm font-medium text-zinc-400 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50"
-            >
-              CodePilot
-            </a>
-            <a
-              href="#contact"
-              className="rounded-full px-4 py-2 text-sm font-medium text-zinc-400 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50"
-            >
-              Contact
-            </a>
-          </nav>
         </header>
 
         <div className="grid gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:items-end">
@@ -58,7 +28,7 @@ export function HeroSection() {
 
             <h1
               id="hero-title"
-              className="mt-6 text-4xl font-semibold tracking-[-0.08em] text-white sm:text-5xl md:text-6xl lg:text-7xl"
+              className="mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[0.96] tracking-[-0.06em] text-white sm:text-5xl md:text-6xl lg:text-7xl"
             >
               {profile.heroTitle}
             </h1>

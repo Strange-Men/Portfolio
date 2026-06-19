@@ -46,7 +46,7 @@ export function CodePilotSection() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
               <h3 className="text-lg font-semibold tracking-[-0.03em] text-white">
                 核心流程
               </h3>
@@ -65,7 +65,7 @@ export function CodePilotSection() {
               </ol>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
               <h3 className="text-lg font-semibold tracking-[-0.03em] text-white">
                 技术栈
               </h3>
@@ -77,7 +77,7 @@ export function CodePilotSection() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
               <h3 className="text-lg font-semibold tracking-[-0.03em] text-white">
                 可讲技术点
               </h3>
@@ -86,7 +86,7 @@ export function CodePilotSection() {
                 {codepilot.talkingPoints.map((point) => (
                   <li
                     key={point}
-                    className="rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 text-sm text-zinc-300"
+                    className="min-w-0 break-words rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 text-sm text-zinc-300"
                   >
                     {point}
                   </li>

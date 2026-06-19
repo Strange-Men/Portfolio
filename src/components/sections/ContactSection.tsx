@@ -16,7 +16,7 @@ export function ContactSection() {
 
             <h2
               id="contact-title"
-              className="mt-5 text-4xl font-semibold tracking-[-0.06em] text-white sm:text-5xl"
+              className="mt-5 text-3xl font-semibold leading-tight tracking-[-0.06em] text-balance text-white sm:text-4xl md:text-5xl"
             >
               保持联系，继续聊项目。
             </h2>

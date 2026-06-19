@@ -14,7 +14,7 @@ export function AboutSection() {
           <SectionLabel>About</SectionLabel>
           <h2
             id="about-title"
-            className="mt-5 text-3xl font-semibold tracking-[-0.05em] text-white sm:text-4xl"
+            className="mt-5 text-3xl font-semibold leading-tight tracking-[-0.05em] text-balance text-white sm:text-4xl md:text-5xl"
           >
             先把一个核心项目讲清楚。
           </h2>
