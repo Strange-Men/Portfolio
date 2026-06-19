@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 6-2.1
+当前阶段：Phase 6-2.2
 
 ## 已完成
 
@@ -11,6 +11,29 @@
 - Phase 6-1.1：创建 v1.13.0-content-polish tag
 - Phase 6-2：导航与排版优化
 - Phase 6-2.1：创建 v1.14.0-visual-nav-polish tag
+- Phase 6-2.2：前端阶段复盘
+
+## Frontend Stage Review
+
+已完成前端阶段复盘文档：
+
+```txt
+docs/24_FRONTEND_STAGE_REVIEW.md
+```
+
+当前结论：
+
+* Portfolio 已上线
+* MVP 已完成
+* 工程结构可继续迭代
+* 当前主要问题从功能转向视觉排版与求职表达
+* 下一阶段建议优先做 Typography / Layout System
+
+建议下一版本：
+
+```txt
+v1.15.0-typography-system
+```
 
 ## v1.14.0-visual-nav-polish 结论
 
@@ -51,6 +74,6 @@ https://portfolio-rosy-ten-41.vercel.app/
 
 建议进入：
 
-v1.15.0-resume-ready
+v1.15.0-typography-system
 
-目标：对齐简历项目经历与投递表达。
+目标：定义字体层级，解决当前排版不够高级的问题。
