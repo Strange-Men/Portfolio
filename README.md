@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.13.0-content-polish
+v1.14.0-visual-nav-polish
 ```
 
 当前已完成：
@@ -34,6 +34,7 @@ v1.13.0-content-polish
 - Vercel 部署
 - 线上 URL 记录
 - 内容表达优化
+- 导航与排版优化
 
 当前未完成：
 
@@ -62,6 +63,7 @@ v1.13.0-content-polish
 | v1.11.0-deploy-ready | Deploy | 部署前检查与 Vercel 部署准备 |
 | v1.12.0-deployed | Deploy | 完成 Vercel 线上部署并记录访问地址 |
 | v1.13.0-content-polish | Content | 优化 Portfolio 求职表达与 CodePilot 项目说明 |
+| v1.14.0-visual-nav-polish | Visual | 顶部固定导航与基础排版优化 |
 
 ---
 
