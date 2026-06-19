@@ -30,9 +30,9 @@ export function AboutSection() {
           </RevealOnScroll>
 
           <div className="grid gap-4 sm:grid-cols-3">
-            <RevealOnScroll delay={80}>
+            <RevealOnScroll delay={80} className="w-full">
               <BorderGlowCard
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+                className="w-full rounded-3xl border border-white/10 bg-white/[0.04] p-5"
                 edgeSensitivity={34}
                 glowColor="315 90 78"
                 backgroundColor="#120F17"
@@ -50,9 +50,9 @@ export function AboutSection() {
               </BorderGlowCard>
             </RevealOnScroll>
 
-            <RevealOnScroll delay={140}>
+            <RevealOnScroll delay={140} className="w-full">
               <BorderGlowCard
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+                className="w-full rounded-3xl border border-white/10 bg-white/[0.04] p-5"
                 edgeSensitivity={34}
                 glowColor="315 90 78"
                 backgroundColor="#120F17"
@@ -70,9 +70,9 @@ export function AboutSection() {
               </BorderGlowCard>
             </RevealOnScroll>
 
-            <RevealOnScroll delay={200}>
+            <RevealOnScroll delay={200} className="w-full">
               <BorderGlowCard
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+                className="w-full rounded-3xl border border-white/10 bg-white/[0.04] p-5"
                 edgeSensitivity={34}
                 glowColor="315 90 78"
                 backgroundColor="#120F17"

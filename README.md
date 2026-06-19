@@ -1,6 +1,6 @@
 # Portfolio
 
-面向实习投递的个人作品集网站。
+面向求职展示的个人作品集网站。
 
 当前项目用于展示：
 
@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.24.0-borderglow-motion-system
+v1.26.0-layout-copy-background-polish
 ```
 
 当前已完成：
@@ -89,6 +89,8 @@ v1.24.0-borderglow-motion-system
 | v1.23.0-release-freeze | Release | 冻结 Portfolio 第一版投递稳定版本 |
 | v1.23.1-contact-copy | Hotfix | 修正 Contact 区块为 HR / 面试官视角的求职表达 |
 | v1.24.0-borderglow-motion-system | Motion System | 合并 BorderGlow、Section 入场动效和页面背景，并锁定设计规范 |
+| v1.25.0-docs-context-index | Docs | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则 |
+| v1.26.0-layout-copy-background-polish | Polish | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和页面背景层次 |
 
 ---
 

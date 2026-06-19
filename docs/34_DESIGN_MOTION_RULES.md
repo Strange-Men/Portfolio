@@ -16,7 +16,7 @@ Low-contrast Ambient Background
 HR-readable Content First
 ```
 
-当前 Portfolio 是面向实习投递的个人作品集网站，不是动画实验页。视觉和动效必须服务于可读性、可信度和项目展示。
+当前 Portfolio 是面向求职展示的个人作品集网站，不是动画实验页。视觉和动效必须服务于可读性、可信度和项目展示。
 
 ---
 

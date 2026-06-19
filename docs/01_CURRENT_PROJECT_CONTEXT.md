@@ -9,7 +9,7 @@
 
 ## 1. Project Identity
 
-Portfolio 是一个面向实习投递的个人作品集网站。
+Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前定位：
 
@@ -64,7 +64,7 @@ Portfolio 是一个面向实习投递的个人作品集网站。
 
 当前最新版本：
 
-`v1.24.0-borderglow-motion-system`
+`v1.26.0-layout-copy-background-polish`
 
 当前线上地址：
 
@@ -171,14 +171,11 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-`v1.25.0-docs-context-index`
+`v1.27.0-production-verify`
 
 目标：
 
-- 完成文档上下文索引与防爆 token 规范
-- 后续进入 `v1.26.0-production-verify`
-- 人工确认 Vercel 线上页面已经更新到 v1.24 动效版本
+- 人工确认 Vercel 线上页面已更新到 v1.26 打磨版本
 - 检查线上链接
 - 检查移动端
-- 检查 Contact 文案
 - 检查 BorderGlow / RevealOnScroll 是否在线上正常

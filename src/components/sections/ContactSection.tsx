@@ -19,11 +19,11 @@ export function ContactSection() {
                 id="contact-title"
                 className="text-section-title mt-5 font-semibold text-balance text-white"
               >
-                期待实习机会，也欢迎进一步沟通。
+                期待工作机会，也欢迎进一步沟通。
               </h2>
 
               <p className="text-body-lg mt-6 max-w-2xl text-zinc-300">
-                我正在寻找 {profile.directions.join(' / ')} 相关实习机会。你可以通过
+                我正在寻找 {profile.directions.join(' / ')} 相关工作机会。你可以通过
                 Email 联系我，也可以查看 GitHub 了解我的项目代码与迭代记录。
               </p>
 

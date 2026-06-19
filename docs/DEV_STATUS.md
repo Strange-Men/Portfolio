@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 7-3.1
+当前阶段：Phase 7-5
 
 ## 已完成
 
@@ -90,7 +90,7 @@ https://portfolio-rosy-ten-41.vercel.app/
 当前最新版本：
 
 ```txt
-v1.24.0-borderglow-motion-system
+v1.26.0-layout-copy-background-polish
 ```
 
 当前线上地址：
@@ -99,12 +99,33 @@ v1.24.0-borderglow-motion-system
 https://portfolio-rosy-ten-41.vercel.app/
 ```
 
+## Phase 7-5：Layout / Copy / Background Polish
+
+用户在最终线上检查后提出 4 个细节优化：
+
+- About 并排信息卡需要等宽
+- 页面正式内容中的"实习"需要泛化为"工作 / 求职"
+- Hero 小字补充"求职方向"
+- Hero 之后背景需要比纯黑更有层次
+
+本轮调整：
+
+- 优化 About 信息卡布局，桌面端三卡等宽
+- 将页面正式内容中的"实习"改为"工作 / 求职"
+- 将 Hero 小字调整为 "2027 届人工智能本科生 · 求职方向"
+- 增强 Hero 后 low-contrast ambient background
+- 保持 BorderGlow / RevealOnScroll 不变
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未接入 LineWaves / ProfileCard
+
 ## 下一步
 
 建议进入：
 
 ```txt
-v1.26.0-production-verify
+v1.27.0-production-verify
 ```
 
-目标：人工确认 Vercel 线上页面是否已更新到 v1.24 动效版本，并做最终线上可用性检查。
+目标：人工确认 Vercel 线上页面已更新到 v1.26 打磨版本，并做最终线上可用性检查。
