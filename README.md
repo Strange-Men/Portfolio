@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.20.0-information-architecture-polish
+v1.21.0-final-polish
 ```
 
 当前已完成：
@@ -42,9 +42,12 @@ v1.20.0-information-architecture-polish
 - CodePilot 紧凑项目证明
 - 简历与投递表达对齐文档
 - 信息架构与文案修正
+- 最终视觉、响应式、链接和构建终检
 
 当前未完成：
 
+- 动画交互规范沉淀
+- 投递版本冻结
 - 自定义域名
 
 ---
@@ -75,6 +78,7 @@ v1.20.0-information-architecture-polish
 | v1.18.0-premium-motion | Motion | Hero 轻量 CSS 入场动画 |
 | v1.19.0-codepilot-compact-proof | Content | CodePilot 一句话定位、技术证明点与 GitHub / README 入口 |
 | v1.20.0-information-architecture-polish | Content / IA | Hero、About、CodePilot、Contact 信息架构修正 |
+| v1.21.0-final-polish | Polish | 最终视觉、响应式、链接和构建终检 |
 
 ---
 
