@@ -207,3 +207,21 @@ v1.21.0-final-polish 继续作为稳定投递版本。
 下一步如继续开发动画，只允许从 BorderGlow 项目卡片试点开始。
 
 LineWaves 和 ProfileCard 暂不进入实现阶段。
+
+---
+
+## 10. Final Decision After Experiment
+
+BorderGlow 已经完成实验验证，并被确认为当前 Portfolio 的主要卡片 hover 交互语言。
+
+最终保留：
+
+- BorderGlowCard：用于主要玻璃卡片
+- RevealOnScroll：用于 Hero 之后的 Section 入场
+- Hero 原有 spotlight / hero-anim 入场
+
+继续不接入：
+
+- LineWaves
+- ProfileCard
+- ogl / WebGL 背景动画

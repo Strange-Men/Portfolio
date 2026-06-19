@@ -117,3 +117,16 @@
 - 使用 #120F17 作为背景基准
 - 不启用 animated intro sweep
 - 不安装依赖
+
+## Experiment Result
+
+BorderGlow 实验最终被用户确认满意。
+
+当前结论：
+
+- 保留 React Bits BorderGlow 核心机制的 TypeScript 适配版
+- 应用于主要玻璃卡片
+- 不应用于按钮、tag、chip、导航和正文
+- 使用紫粉色边境光辉风格
+- 支持移动端和 reduced-motion 降级
+- 可以合并回 main

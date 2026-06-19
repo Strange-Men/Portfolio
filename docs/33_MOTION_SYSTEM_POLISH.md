@@ -63,3 +63,15 @@ prefers-reduced-motion 下：
 - BorderGlow 是否仍正常
 - 移动端是否正常
 - 是否值得合并 main
+
+## Experiment Result
+
+页面背景与 Section 入场动效已被用户确认满意。
+
+当前结论：
+
+- Hero 保留独立 spotlight 背景
+- Hero 之后统一使用 low-contrast ambient background
+- About / CodePilot / Contact 使用 RevealOnScroll
+- BorderGlow 继续作为主要卡片 hover 动效
+- 当前 motion system 可以作为后续页面扩展基础

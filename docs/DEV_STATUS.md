@@ -168,3 +168,40 @@ https://portfolio-rosy-ten-41.vercel.app/
 
 1. 合并到 main 并创建 v1.24.0-borderglow-experiment tag
 2. 或放弃实验，保留 v1.23.1-contact-copy 作为稳定投递版本
+
+## Phase 7-3：BorderGlow Motion System Merge
+
+用户人工确认 BorderGlow、页面背景和 Section 入场动效效果满意。
+
+本轮完成：
+
+- 将 experiment/borderglow-card 合并回 main
+- 保留 BorderGlowCard 作为主要玻璃卡片 hover 交互
+- 保留 RevealOnScroll 作为 Hero 之后 Section 入场动效
+- 保留 Hero 独立 spotlight / hero-anim 动效
+- 新增 docs/34_DESIGN_MOTION_RULES.md
+- 更新 Motion / BorderGlow / Motion System 文档最终结论
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装依赖
+- 未新增 Demo
+- 未新增简历下载
+- 未新增项目
+
+## 版本状态
+
+当前最新稳定 tag：
+
+```txt
+v1.23.1-contact-copy
+```
+
+当前 main 已合并 v1.24.0-borderglow-experiment 相关代码与规范文档。
+
+下一步允许单独创建：
+
+```txt
+v1.24.0-borderglow-motion-system
+```
+
+本轮不要打 tag。
