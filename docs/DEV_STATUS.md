@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 6-3.1
+当前阶段：Phase 6-4
 
 ## 已完成
 
@@ -11,6 +11,7 @@
 - Phase 6-2：导航与排版优化
 - Phase 6-3：Typography System 初版与中文排版修正
 - Phase 6-3.1：创建 v1.15.0-typography-system tag
+- Phase 6-4：参考风格转译与设计规格定稿
 
 ## v1.15.0-typography-system 结论
 
@@ -29,12 +30,30 @@
 - 未新增 Demo
 - 未新增简历下载
 
+## Reference Style Spec
+
+已完成参考风格转译文档：
+
+```txt
+docs/26_REFERENCE_STYLE_SPEC.md
+```
+
+当前结论：
+
+* 用户提供的 Lithos Hero 风格只作为视觉参考
+* 不直接复制品牌、图片、文案或依赖
+* Portfolio 后续视觉方向定为 Dark Technical Spotlight Portfolio
+* 可借鉴全屏暗色 Hero、玻璃导航、柔和聚光、轻量入场动画
+* 不把地质品牌内容写入 src/
+* 不引入 Google Fonts / lucide-react / 外部图片
+* 下一步建议进入 v1.17.0-hero-spotlight-layout
+
 ## 版本状态
 
 当前最新版本：
 
 ```txt
-v1.15.0-typography-system
+v1.16.0-reference-style-spec
 ```
 
 当前线上地址：
@@ -53,13 +72,16 @@ https://portfolio-rosy-ten-41.vercel.app/
 * 没有后端
 * 没有数据库
 * 没有表单提交
+* 没有 Hero 视觉重构（v1.17.0）
+* 没有入场动画（v1.18.0）
+* 没有 CodePilot 项目证据（v1.19.0）
 
 ## 下一步
 
 建议进入：
 
 ```txt
-v1.16.0-design-reference-audit
+v1.17.0-hero-spotlight-layout
 ```
 
-目标：根据用户选定的参考网站，重新确认 Portfolio 的视觉设计基调，避免继续凭感觉改样式。
+目标：重构 Hero 视觉结构，增加柔和背景光晕，优化首屏信息层级，保持中文友好字号和玻璃导航。
