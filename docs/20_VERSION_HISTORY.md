@@ -46,6 +46,7 @@
 | v1.12.0-deployed | b1bf0df | Phase 5-13 | 完成 Vercel 线上部署记录，线上地址为 https://portfolio-rosy-ten-41.vercel.app/。 |
 | v1.13.0-content-polish | 1692fc8 | Phase 6-1 | 优化 Hero、About 和 CodePilot 内容表达，让招聘方更快理解求职方向、项目价值和 AI 应用开发能力。 |
 | v1.14.0-visual-nav-polish | 8b81955 | Phase 6-2 | 新增顶部固定磨砂玻璃导航，移除 Hero 内部重复导航，并小幅优化 Hero、About、CodePilot、Contact 的排版可读性。 |
+| v1.15.0-typography-system | 8f1e2e1 | Phase 6-3 | 建立并修正中文友好的 Typography System，降低 Hero 中文标题压迫感，统一字体层级、行高、字距与正文阅读节奏。 |
 
 ---
 
@@ -54,7 +55,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.14.0-visual-nav-polish
+v1.15.0-typography-system
 ```
 
 当前已完成页面模块：
@@ -71,6 +72,7 @@ MVP 封板
 Vercel 线上部署
 内容表达优化
 导航与排版优化
+中文友好 Typography System
 ```
 
 当前未完成：
@@ -78,7 +80,8 @@ Vercel 线上部署
 ```txt
 自定义域名
 简历联动
-后续内容增强
+项目证据展示
+后续视觉增强
 ```
 
 ---
@@ -89,9 +92,9 @@ Vercel 线上部署
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.15.0-resume-ready | Phase 6-3 | 对齐简历项目经历与投递表达。 |
-| v1.16.0-codepilot-proof | Phase 6-4 | 补充 CodePilot 证据展示，如报告样例或截图，前提是内容真实可用。 |
-| v1.17.0-visual-polish | Phase 6-5 | 继续小幅视觉细节优化。 |
+| v1.16.0-design-reference-audit | Phase 6-4 | 基于用户选择的参考网站，确定视觉设计基调与排版方向。 |
+| v1.17.0-codepilot-proof | Phase 6-5 | 补充 CodePilot 真实项目证据，如报告样例或截图，前提是内容真实可用。 |
+| v1.18.0-resume-ready | Phase 6-6 | 对齐简历项目经历与投递表达。 |
 
 ---
 
