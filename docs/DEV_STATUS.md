@@ -1,6 +1,24 @@
 # DEV_STATUS
 
-当前阶段：Phase 6-5.1
+当前阶段：Phase 6-6
+
+## v1.18.0-premium-motion 结论
+
+本轮完成轻量 CSS 入场动画：
+
+- 新增 Hero 轻量入场动画
+- Hero 标题使用 fade-up / blur-in
+- Hero 描述、CTA、CodePilot 信息卡使用 stagger fade-up
+- 背景光晕使用轻量淡入
+- 尊重 prefers-reduced-motion
+- 未引入动画库
+- 未引入 Framer Motion
+- 未新增依赖
+- 未修改文案内容
+- 未新增项目
+- 未新增假链接
+- 未新增 Demo
+- 未新增简历下载
 
 ## 已完成
 
@@ -13,33 +31,17 @@
 - Phase 6-4：参考风格转译与设计规格
 - Phase 6-5：Hero Spotlight Layout
 - Phase 6-5.1：创建 v1.17.0-hero-spotlight-layout tag
-
-## v1.17.0-hero-spotlight-layout 结论
-
-本轮完成 Hero Spotlight Layout 版本记录：
-
-- v1.17.0-hero-spotlight-layout tag 已创建并推送
-- tag 指向 commit：02daa6e
-- 用户已人工确认 Hero 新视觉效果可接受
-- Hero 已增加柔和 radial-gradient 背景光晕
-- Hero 已增加微网格纹理
-- Hero 已加入 CodePilot 信息卡
-- CTA 仍保持真实链接
-- 未使用外部图片
-- 未引入新依赖
-- 未实现复杂 canvas reveal
-- 未新增项目
-- 未新增假链接
-- 未新增 Demo
-- 未新增简历下载
+- Phase 6-6：Premium Motion 轻量入场动画
 
 ## 版本状态
 
-当前最新版本：
+当前最新已打 tag 版本：v1.17.0-hero-spotlight-layout
 
-```txt
-v1.17.0-hero-spotlight-layout
-```
+本轮完成 Premium Motion 后，允许下一轮单独创建：
+
+v1.18.0-premium-motion
+
+本轮不要打 tag。
 
 当前线上地址：
 
@@ -47,9 +49,15 @@ v1.17.0-hero-spotlight-layout
 https://portfolio-rosy-ten-41.vercel.app/
 ```
 
+## 检查结果
+
+- npm run build：成功，无 TypeScript 错误，无 Vite 错误，dist 已生成
+- 本地预览：待人工确认
+- 响应式检查：待人工确认
+- 禁用词检查：通过，src/ 中未出现禁止词汇
+
 ## 当前未做
 
-* 没有轻量入场动画
 * 没有项目截图
 * 没有报告样例
 * 没有简历下载
@@ -60,10 +68,4 @@ https://portfolio-rosy-ten-41.vercel.app/
 
 ## 下一步
 
-建议进入：
-
-```txt
-v1.18.0-premium-motion
-```
-
-目标：增加轻量 CSS 入场动画，提升首屏高级感，但不引入动画库，并尊重 prefers-reduced-motion。
+Phase 6-6.1：创建 v1.18.0-premium-motion tag。

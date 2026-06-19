@@ -103,3 +103,71 @@
     mask-image: radial-gradient(circle at center, black, transparent 72%);
   }
 }
+
+/* hero motion keyframes */
+@keyframes heroReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroGlowIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@layer utilities {
+  .hero-anim {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hero-reveal {
+    animation-name: heroReveal;
+    animation-duration: 0.9s;
+  }
+
+  .hero-fade {
+    animation-name: heroFadeUp;
+    animation-duration: 0.85s;
+  }
+
+  .hero-glow {
+    animation-name: heroGlowIn;
+    animation-duration: 1.2s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim {
+    opacity: 1;
+    animation: none;
+    transform: none;
+    filter: none;
+  }
+}

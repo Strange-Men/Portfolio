@@ -12,7 +12,7 @@ export function HeroSection() {
       aria-labelledby="hero-title"
     >
       {/* background glow layers */}
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <div className="hero-anim hero-glow pointer-events-none absolute inset-0 -z-10 overflow-hidden" style={{ animationDelay: '0.05s' }}>
         <div className="absolute left-1/2 top-[-18rem] h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-indigo-500/20 blur-3xl" />
         <div className="absolute right-[-10rem] top-1/3 h-[30rem] w-[30rem] rounded-full bg-cyan-400/10 blur-3xl" />
         <div className="absolute bottom-[-12rem] left-[-8rem] h-[32rem] w-[32rem] rounded-full bg-violet-500/10 blur-3xl" />
@@ -23,7 +23,7 @@ export function HeroSection() {
       {/* content shell */}
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col">
         {/* portfolio label */}
-        <header className="mb-16 sm:mb-20">
+        <header className="hero-anim hero-fade mb-16 sm:mb-20" style={{ animationDelay: '0.12s' }}>
           <a
             href="#hero"
             className="text-label text-zinc-200 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
@@ -36,20 +36,23 @@ export function HeroSection() {
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-16">
           {/* left: title / description / CTA */}
           <div>
-            <SectionLabel>{profile.identity}</SectionLabel>
+            <div className="hero-anim hero-fade" style={{ animationDelay: '0.12s' }}>
+              <SectionLabel>{profile.identity}</SectionLabel>
+            </div>
 
             <h1
               id="hero-title"
-              className="text-display mt-6 max-w-3xl text-balance font-semibold"
+              className="hero-anim hero-reveal text-display mt-6 max-w-3xl text-balance font-semibold"
+              style={{ animationDelay: '0.22s' }}
             >
               {profile.heroTitle}
             </h1>
 
-            <p className="text-body-lg mt-6 max-w-2xl text-zinc-300">
+            <p className="hero-anim hero-fade text-body-lg mt-6 max-w-2xl text-zinc-300" style={{ animationDelay: '0.38s' }}>
               {profile.heroDescription}
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-3">
+            <div className="hero-anim hero-fade mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.52s' }}>
               <Button href="#codepilot">查看 CodePilot</Button>
               <Button href={links.github} variant="secondary" external>
                 GitHub
@@ -61,7 +64,7 @@ export function HeroSection() {
           </div>
 
           {/* right: CodePilot info card */}
-          <aside className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm">
+          <aside className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm" style={{ animationDelay: '0.62s' }}>
             <p className="text-label text-zinc-500">Core Project</p>
 
             <h2 className="mt-3 text-lg font-semibold tracking-tight text-white">
@@ -85,7 +88,7 @@ export function HeroSection() {
         </div>
 
         {/* bottom value tags */}
-        <div className="mt-16 flex flex-wrap items-center gap-3 sm:mt-20">
+        <div className="hero-anim hero-fade mt-16 flex flex-wrap items-center gap-3 sm:mt-20" style={{ animationDelay: '0.72s' }}>
           {profile.directions.map((d) => (
             <span
               key={d}
