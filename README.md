@@ -196,6 +196,20 @@ docs/20_VERSION_HISTORY.md
 
 ---
 
+## AI Context Entry
+
+For future AI-assisted development, do not read every file in `docs/` by default.
+
+Start with:
+
+- `docs/00_AI_CONTEXT_INDEX.md`
+- `docs/01_CURRENT_PROJECT_CONTEXT.md`
+- `docs/DEV_STATUS.md`
+
+Then read task-specific docs according to `docs/00_AI_CONTEXT_INDEX.md`.
+
+---
+
 ## Contact
 
 ```txt

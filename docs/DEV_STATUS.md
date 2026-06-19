@@ -70,12 +70,41 @@ https://portfolio-rosy-ten-41.vercel.app/
 * 没有接入 LineWaves
 * 没有接入 ProfileCard
 
+## Phase 7-4：Docs Context Index
+
+本轮完成文档上下文索引与防爆 token 规范：
+
+- 新增 docs/00_AI_CONTEXT_INDEX.md
+- 新增 docs/01_CURRENT_PROJECT_CONTEXT.md
+- 新增 docs/35_DOCS_MAINTENANCE_RULES.md
+- 明确后续 AI 接管时默认只读 hot context
+- 明确视觉、动效、版本、投递等任务按需读取专项文档
+- 明确历史阶段文档默认不读
+- 明确新增文档不应复制大段日志和重复内容
+- 未修改 src/
+- 未安装依赖
+- 未接入新功能
+
+## 版本状态
+
+当前最新版本：
+
+```txt
+v1.24.0-borderglow-motion-system
+```
+
+当前线上地址：
+
+```txt
+https://portfolio-rosy-ten-41.vercel.app/
+```
+
 ## 下一步
 
 建议进入：
 
 ```txt
-v1.25.0-production-verify
+v1.26.0-production-verify
 ```
 
 目标：人工确认 Vercel 线上页面是否已更新到 v1.24 动效版本，并做最终线上可用性检查。

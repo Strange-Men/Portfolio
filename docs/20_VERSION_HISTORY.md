@@ -115,7 +115,8 @@ Section 入场动效
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.25.0-production-verify | Phase 7-4 | 人工确认 Vercel 线上页面已更新到 v1.24 动效版本，并做最终链接、移动端和投递可用性检查。 |
+| v1.25.0-docs-context-index | Phase 7-4 | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则，防止后续 md 调用导致 token 爆炸。 |
+| v1.26.0-production-verify | Phase 7-5 | 人工确认 Vercel 线上页面已更新到最新动效版本，并完成线上可用性检查。 |
 | v2.0.0-multi-projects | Future | 未来新增更多真实项目时，扩展为多项目作品集。 |
 
 ---
