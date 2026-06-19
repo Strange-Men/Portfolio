@@ -18,12 +18,16 @@ export function ContactSection() {
               id="contact-title"
               className="text-section-title mt-5 font-semibold text-balance text-white"
             >
-              保持联系，继续聊项目。
+              期待实习机会，也欢迎进一步沟通。
             </h2>
 
             <p className="text-body-lg mt-6 max-w-2xl text-zinc-300">
-              如果你对 {profile.directions.join(' / ')} 实习方向感兴趣，可以通过
-              Email 或 GitHub 联系我。当前第一版只提供真实联系入口，不放未确认链接。
+              我正在寻找 {profile.directions.join(' / ')} 相关实习机会。你可以通过
+              Email 联系我，也可以查看 GitHub 了解我的项目代码与迭代记录。
+            </p>
+
+            <p className="text-body-default mt-4 max-w-2xl text-zinc-500">
+              当前页面只保留真实联系方式，不放未确认的 Demo 或下载链接。
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">

@@ -69,6 +69,19 @@ https://portfolio-rosy-ten-41.vercel.app/
 * 没有表单提交
 * 没有新增更多项目
 
+## Contact Copy Hotfix
+
+本轮修正 Contact 区块文案，使其更符合 HR / 面试官视角：
+
+- 将"如果你对……感兴趣"改为明确的实习求职表达
+- 标题改为"期待实习机会，也欢迎进一步沟通。"
+- 正文改为"我正在寻找 …… 相关实习机会。你可以通过 Email 联系我，也可以查看 GitHub 了解我的项目代码与迭代记录。"
+- 保留 Email / GitHub 真实联系入口
+- 未新增 Demo
+- 未新增简历下载
+- 未新增未确认链接
+- npm run build 通过
+
 ## 下一步
 
 当前 Portfolio 第一版已经可以作为投递稳定版本使用。
