@@ -102,3 +102,18 @@
 - 大卡片：edgeSensitivity=30, glowRadius=40, glowIntensity=1, fillOpacity=0.03
 - 小卡片：edgeSensitivity=34, glowRadius=28, glowIntensity=0.72, fillOpacity=0.02
 - 按钮 / tag / chip / 导航 / 正文未应用
+
+## Phase 7-1.5 Faithful Reference Port
+
+用户认为前几轮自制简化版仍然不达标，要求参考 React Bits BorderGlow 原始机制。
+
+本轮调整：
+
+- 恢复 React Bits BorderGlow 的核心结构
+- 恢复 edge-proximity / cursor-angle / cone mask 机制
+- 恢复 mesh-gradient border
+- 恢复 edge-light 边缘外侧光层，但压低外部 glow，避免大雾团
+- 使用紫粉色系：#c084fc / #eb1f94 / #f838ea
+- 使用 #120F17 作为背景基准
+- 不启用 animated intro sweep
+- 不安装依赖

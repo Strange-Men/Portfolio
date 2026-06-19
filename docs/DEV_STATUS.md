@@ -93,6 +93,24 @@
 - 未接入 ProfileCard
 - 未安装依赖
 
+## BorderGlow Faithful Reference Port
+
+用户反馈自制简化版 BorderGlow 仍不接近目标效果，本轮改为忠实移植 React Bits BorderGlow 的核心机制：
+
+- 恢复 edge-proximity / cursor-angle 方向控制
+- 恢复 mesh-gradient border（7 层 radial-gradient + conic-gradient base）
+- 恢复 edge-light 边缘外侧光层（conic mask + box-shadow glow）
+- 恢复 ::before conic-gradient cone mask 方向性
+- 恢复 ::after 多层 mask-composite 内部填充
+- 压低 fillOpacity 和外部 glow，避免大面积光晕
+- 使用紫粉色参考配色 #c084fc / #eb1f94 / #f838ea
+- 大卡片：glowIntensity=0.82, fillOpacity=0.08
+- 小卡片：glowIntensity=0.58, fillOpacity=0.04
+- 保持主要卡片统一动效
+- 不接入 LineWaves
+- 不接入 ProfileCard
+- 不安装依赖
+
 ## 版本状态
 
 当前稳定投递版本：

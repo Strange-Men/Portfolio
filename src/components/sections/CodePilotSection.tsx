@@ -47,12 +47,14 @@ export function CodePilotSection() {
           <BorderGlowCard
             className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6"
             edgeSensitivity={30}
+            glowColor="315 90 78"
             backgroundColor="#120F17"
             borderRadius={28}
             glowRadius={40}
-            glowIntensity={1}
+            glowIntensity={0.82}
+            coneSpread={25}
             colors={['#c084fc', '#eb1f94', '#f838ea']}
-            fillOpacity={0.03}
+            fillOpacity={0.08}
           >
             <h3 className="text-lg font-semibold tracking-tight text-white">
               项目流程
