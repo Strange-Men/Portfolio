@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative isolate min-h-screen overflow-hidden bg-zinc-950 px-5 py-28 text-white sm:px-6"
+      className="relative isolate min-h-screen overflow-hidden bg-zinc-950 px-6 py-28 text-white"
       style={{ minHeight: '100dvh' }}
       aria-labelledby="hero-title"
     >
