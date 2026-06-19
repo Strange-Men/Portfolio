@@ -9,7 +9,8 @@ export function CodePilotSection() {
       aria-labelledby="codepilot-title"
     >
       <div className="mx-auto w-full max-w-6xl border-t border-white/10 pt-16">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16 items-start">
+          {/* 左侧：项目定位与入口 */}
           <div>
             <SectionLabel>Core Project</SectionLabel>
 
@@ -20,78 +21,52 @@ export function CodePilotSection() {
               {codepilot.name}
             </h2>
 
-            <p className="mt-3 text-base font-medium text-zinc-400">
-              {codepilot.subtitle}
-            </p>
-
             <p className="text-body-lg mt-6 max-w-xl text-zinc-300">
               {codepilot.description}
             </p>
 
+            {/* 证明关键词 */}
+            <div className="mt-6 flex flex-wrap gap-2">
+              {codepilot.proofPoints.map((point) => (
+                <Tag key={point}>{point}</Tag>
+              ))}
+            </div>
+
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href={codepilot.githubUrl} external>
-                查看 CodePilot GitHub
+                查看 GitHub / README
               </Button>
             </div>
-
-            {codepilot.demoUrl ? (
-              <p className="mt-4 text-sm text-zinc-500">
-                Demo link is available.
-              </p>
-            ) : (
-              <p className="mt-4 text-sm text-zinc-500">
-                Demo 暂未展示，当前只提供真实 GitHub 仓库链接。
-              </p>
-            )}
           </div>
 
-          <div className="space-y-6">
-            <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <h3 className="text-lg font-semibold tracking-tight text-white">
-                核心流程
-              </h3>
+          {/* 右侧：紧凑流程与技术栈 */}
+          <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <h3 className="text-lg font-semibold tracking-tight text-white">
+              项目流程
+            </h3>
 
-              <ol className="mt-6 space-y-4">
-                {codepilot.flow.map((item, index) => (
-                  <li key={item} className="flex gap-4">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-zinc-300">
-                      {index + 1}
-                    </span>
-                    <span className="text-body-default pt-1 text-zinc-300">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ol>
+            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-zinc-400">
+              {codepilot.flow.map((step, index) => (
+                <span key={step} className="flex items-center gap-2">
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-zinc-300">
+                    {step}
+                  </span>
+                  {index < codepilot.flow.length - 1 && (
+                    <span className="text-zinc-600">→</span>
+                  )}
+                </span>
+              ))}
             </div>
 
-            <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <h3 className="text-lg font-semibold tracking-tight text-white">
-                技术栈
-              </h3>
-
-              <div className="mt-5 flex flex-wrap gap-2">
+            <div className="mt-6 pt-6 border-t border-white/10">
+              <p className="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-3">
+                Tech Stack
+              </p>
+              <div className="flex flex-wrap gap-2">
                 {codepilot.techStack.map((tech) => (
                   <Tag key={tech}>{tech}</Tag>
                 ))}
               </div>
-            </div>
-
-            <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <h3 className="text-lg font-semibold tracking-tight text-white">
-                可讲技术点
-              </h3>
-
-              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-                {codepilot.talkingPoints.map((point) => (
-                  <li
-                    key={point}
-                    className="text-body-default min-w-0 break-words rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 text-zinc-300"
-                  >
-                    {point}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
