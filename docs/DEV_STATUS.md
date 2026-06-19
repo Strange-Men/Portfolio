@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 6-12.1
+当前阶段：Phase 6-12.2
 
 ## 已完成
 
@@ -20,34 +20,30 @@
 - Phase 6-11：动画交互规范沉淀
 - Phase 6-12：投递版本冻结文档
 - Phase 6-12.1：创建 v1.23.0-release-freeze tag
+- Phase 6-12.2：创建 v1.23.1-contact-copy tag
 
-## v1.23.0-release-freeze 结论
+## v1.23.1-contact-copy 结论
 
-本轮完成投递冻结版本记录：
+本轮完成 Contact 文案 hotfix 版本记录：
 
-- v1.23.0-release-freeze tag 已创建并推送
-- tag 指向 commit：5a75cb6
-- 已新增 docs/31_RELEASE_FREEZE.md
-- 已记录当前 Portfolio 可作为实习投递稳定版本
-- 已记录线上地址：https://portfolio-rosy-ten-41.vercel.app/
-- 已记录 Portfolio / CodePilot / GitHub / Email 链接
-- 已明确页面结构：Hero / About / CodePilot / Contact
-- 已明确 Contact 只保留联系方式，项目链接放在对应项目区块
-- 已明确后续维护边界
-- 已明确未来动画增强优先从 BorderGlow 项目卡片小范围试点开始
-- 未修改 src/
-- 未安装依赖
-- 未接入动画组件
+- v1.23.1-contact-copy tag 已创建并推送
+- tag 指向 commit：6717336
+- 已将 Contact 区块改为 HR / 面试官视角的求职表达
+- 标题改为：期待实习机会，也欢迎进一步沟通。
+- 正文明确：正在寻找 AI 应用开发 / Agent 开发 / Python 后端相关实习机会
+- 保留 Email / GitHub 真实联系入口
 - 未新增 Demo
 - 未新增简历下载
-- 未新增项目
+- 未新增未确认链接
+- 未接入 BorderGlow / LineWaves / ProfileCard
+- 未安装依赖
 
 ## 版本状态
 
 当前最新版本：
 
 ```txt
-v1.23.0-release-freeze
+v1.23.1-contact-copy
 ```
 
 当前线上地址：
@@ -69,31 +65,12 @@ https://portfolio-rosy-ten-41.vercel.app/
 * 没有表单提交
 * 没有新增更多项目
 
-## Contact Copy Hotfix
-
-本轮修正 Contact 区块文案，使其更符合 HR / 面试官视角：
-
-- 将"如果你对……感兴趣"改为明确的实习求职表达
-- 标题改为"期待实习机会，也欢迎进一步沟通。"
-- 正文改为"我正在寻找 …… 相关实习机会。你可以通过 Email 联系我，也可以查看 GitHub 了解我的项目代码与迭代记录。"
-- 保留 Email / GitHub 真实联系入口
-- 未新增 Demo
-- 未新增简历下载
-- 未新增未确认链接
-- npm run build 通过
-
 ## 下一步
 
-当前 Portfolio 第一版已经可以作为投递稳定版本使用。
-
-后续如继续开发，应作为可选增强进行：
+建议进入：
 
 ```txt
-v1.24.0-borderglow-experiment（可选）
+v1.24.0-borderglow-experiment
 ```
 
-或在有真实新项目后进入：
-
-```txt
-v2.0.0-multi-projects
-```
+目标：从当前 main 创建实验分支 experiment/borderglow-card，在实验分支中小范围试点 BorderGlow 项目卡片交互。
