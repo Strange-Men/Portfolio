@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.19.0-codepilot-compact-proof
+v1.20.0-information-architecture-polish
 ```
 
 当前已完成：
@@ -40,10 +40,11 @@ v1.19.0-codepilot-compact-proof
 - Hero Spotlight Layout
 - 轻量 Hero 入场动画
 - CodePilot 紧凑项目证明
+- 简历与投递表达对齐文档
+- 信息架构与文案修正
 
 当前未完成：
 
-- 简历联动
 - 自定义域名
 
 ---
@@ -73,6 +74,7 @@ v1.19.0-codepilot-compact-proof
 | v1.17.0-hero-spotlight-layout | Visual | Hero 首屏视觉重构、柔和背景光晕与 CodePilot 信息卡 |
 | v1.18.0-premium-motion | Motion | Hero 轻量 CSS 入场动画 |
 | v1.19.0-codepilot-compact-proof | Content | CodePilot 一句话定位、技术证明点与 GitHub / README 入口 |
+| v1.20.0-information-architecture-polish | Content / IA | Hero、About、CodePilot、Contact 信息架构修正 |
 
 ---
 

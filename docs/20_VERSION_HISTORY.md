@@ -51,6 +51,7 @@
 | v1.17.0-hero-spotlight-layout | 02daa6e | Phase 6-5 | 基于 Dark Technical Spotlight Portfolio 方向重构 Hero 首屏布局，增加柔和背景光晕、网格纹理、CodePilot 信息卡和更强首屏视觉锚点。 |
 | v1.18.0-premium-motion | f240dd4 | Phase 6-6 | 为 Hero 首屏增加轻量 CSS 入场动画，包括标题 fade-up / blur-in、描述与卡片 stagger fade-up，并支持 prefers-reduced-motion。 |
 | v1.19.0-codepilot-compact-proof | 4466f0d | Phase 6-7 | 将 CodePilot 区块从详细说明改为紧凑项目证明，保留一句话定位、3 个技术证明点、极简流程和 GitHub / README 入口，提升 HR 快速浏览体验。 |
+| v1.20.0-information-architecture-polish | c3d8885 | Phase 6-9 | 根据用户人工验收反馈修正页面信息架构：Hero 标题显式换行，About 改为自我介绍，CodePilot 补充项目痛点与清晰流程，Contact 移除单独项目仓库展示，仅保留联系入口。 |
 
 ---
 
@@ -59,7 +60,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.19.0-codepilot-compact-proof
+v1.20.0-information-architecture-polish
 ```
 
 当前已完成页面模块：
@@ -81,14 +82,18 @@ Vercel 线上部署
 Hero Spotlight Layout
 轻量 Hero 入场动画
 CodePilot 紧凑项目证明
+简历与投递表达对齐文档
+信息架构与文案修正
 ```
 
 当前未完成：
 
 ```txt
-简历联动
-自定义域名
 最终视觉微调
+响应式终检
+线上状态终检
+自定义域名
+投递版本冻结
 ```
 
 ---
@@ -99,9 +104,8 @@ CodePilot 紧凑项目证明
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.20.0-resume-ready | Phase 6-8 | 对齐简历项目经历与投递表达。 |
-| v1.21.0-final-polish | Phase 6-9 | 最终视觉、响应式和链接微调。 |
-| v1.22.0-release-freeze | Phase 6-10 | 冻结投递版本，记录最终上线状态。 |
+| v1.21.0-final-polish | Phase 6-10 | 最终视觉、响应式、链接和线上状态微调。 |
+| v1.22.0-release-freeze | Phase 6-11 | 冻结投递版本，记录最终上线状态。 |
 
 ---
 
