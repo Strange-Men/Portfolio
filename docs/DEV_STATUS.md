@@ -41,6 +41,20 @@
 - 支持 prefers-reduced-motion
 - npm run build：待记录
 
+## BorderGlow Experiment Adjustment
+
+用户人工测试后反馈：上一版效果不符合预期，更像内部径向光，不像参考图中的边缘追光。
+
+本轮调整：
+
+- 将 BorderGlowCard 从 cursor radial glow 改为 edge-proximity / cursor-angle 逻辑
+- 增加 edge-light 外侧光辉层
+- 目标效果：靠近卡片边缘时出现方向性边缘光
+- 仍只在 CodePilot 项目流程卡片试点
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装依赖
+
 ## 版本状态
 
 当前稳定投递版本：

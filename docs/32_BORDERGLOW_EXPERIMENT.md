@@ -26,6 +26,19 @@
 - 不新增假链接
 - 不改变页面信息架构
 
+## Phase 7-1.1 Adjustment
+
+用户人工测试后认为上一版效果更像普通内部光晕，不像参考图里的边缘追光。
+
+本轮将实现从 cursor radial fill 调整为 edge-proximity + cursor-angle 的边缘光辉逻辑：
+
+- 使用 --edge-proximity 判断鼠标是否靠近边缘
+- 使用 --cursor-angle 控制光辉方向
+- 使用 .edge-light 提供外侧边缘 glow
+- 继续只作用于 CodePilot 项目流程卡片
+- 不接入 LineWaves / ProfileCard
+- 不安装依赖
+
 ## Review Notes
 
 用户需要人工确认：
