@@ -29,13 +29,12 @@ export function AboutSection() {
             <BorderGlowCard
               className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
               edgeSensitivity={34}
-              glowColor="225 90 78"
-              backgroundColor="#101014"
+              backgroundColor="#120F17"
               borderRadius={24}
-              glowRadius={26}
-              glowIntensity={0.5}
-              colors={['#818cf8', '#22d3ee', '#c084fc']}
-              fillOpacity={0.06}
+              glowRadius={28}
+              glowIntensity={0.72}
+              colors={['#c084fc', '#eb1f94', '#f838ea']}
+              fillOpacity={0.02}
             >
               <p className="text-label text-zinc-500">身份</p>
               <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
@@ -46,13 +45,12 @@ export function AboutSection() {
             <BorderGlowCard
               className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
               edgeSensitivity={34}
-              glowColor="225 90 78"
-              backgroundColor="#101014"
+              backgroundColor="#120F17"
               borderRadius={24}
-              glowRadius={26}
-              glowIntensity={0.5}
-              colors={['#818cf8', '#22d3ee', '#c084fc']}
-              fillOpacity={0.06}
+              glowRadius={28}
+              glowIntensity={0.72}
+              colors={['#c084fc', '#eb1f94', '#f838ea']}
+              fillOpacity={0.02}
             >
               <p className="text-label text-zinc-500">方向</p>
               <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
@@ -63,13 +61,12 @@ export function AboutSection() {
             <BorderGlowCard
               className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
               edgeSensitivity={34}
-              glowColor="225 90 78"
-              backgroundColor="#101014"
+              backgroundColor="#120F17"
               borderRadius={24}
-              glowRadius={26}
-              glowIntensity={0.5}
-              colors={['#818cf8', '#22d3ee', '#c084fc']}
-              fillOpacity={0.06}
+              glowRadius={28}
+              glowIntensity={0.72}
+              colors={['#c084fc', '#eb1f94', '#f838ea']}
+              fillOpacity={0.02}
             >
               <p className="text-label text-zinc-500">当前重点</p>
               <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">

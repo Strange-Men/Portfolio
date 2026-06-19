@@ -172,100 +172,99 @@
   }
 }
 
-/* BorderGlow card edge glow effect */
+/* BorderGlow card — purple/pink border follow glow */
 @layer utilities {
   .border-glow-card {
     --edge-proximity: 0;
-    --edge-sensitivity: 28;
+    --edge-sensitivity: 30;
     --border-radius: 28px;
-    --glow-padding: 38px;
+    --glow-padding: 40px;
+    --glow-intensity: 1;
     --glow-x: 50%;
     --glow-y: 50%;
-    --fill-opacity: 0.12;
+    --card-bg: #120f17;
+    --glow-color-1: #c084fc;
+    --glow-color-2: #eb1f94;
+    --glow-color-3: #f838ea;
+    --fill-opacity: 0.03;
 
     position: relative;
     border-radius: var(--border-radius);
     isolation: isolate;
-    overflow: visible;
+    overflow: hidden;
     transform: translate3d(0, 0, 0.01px);
   }
 
-  .border-glow-card::before,
-  .border-glow-card::after,
-  .border-glow-card > .edge-light {
+  /* border-only glow — follows mouse along edges */
+  .border-glow-card::before {
     content: "";
     position: absolute;
-    pointer-events: none;
-    border-radius: inherit;
-    transition: opacity 220ms ease-out, box-shadow 220ms ease-out;
-  }
-
-  .border-glow-card:not(:hover)::before,
-  .border-glow-card:not(:hover)::after,
-  .border-glow-card:not(:hover) > .edge-light {
-    opacity: 0;
-    transition: opacity 450ms ease-in-out;
-  }
-
-  /* border-only glow：光源位置直接跟随鼠标 */
-  .border-glow-card::before {
     inset: 0;
     z-index: 0;
+    pointer-events: none;
+    border-radius: inherit;
     padding: 1px;
+
     opacity: clamp(
       0,
-      calc((var(--edge-proximity) - var(--edge-sensitivity)) / (100 - var(--edge-sensitivity))),
-      0.95
+      calc(
+        ((var(--edge-proximity) - var(--edge-sensitivity)) / (100 - var(--edge-sensitivity)))
+        * var(--glow-intensity)
+      ),
+      1
     );
+
     background:
       radial-gradient(
-        260px circle at var(--glow-x) var(--glow-y),
-        rgba(129, 140, 248, 0.95),
-        rgba(34, 211, 238, 0.55) 30%,
-        rgba(192, 132, 252, 0.22) 52%,
-        transparent 72%
+        160px circle at var(--glow-x) var(--glow-y),
+        rgba(255, 255, 255, 0.95) 0%,
+        var(--glow-color-1) 18%,
+        var(--glow-color-2) 36%,
+        var(--glow-color-3) 50%,
+        transparent 68%
       );
+
     mask:
       linear-gradient(#000 0 0) content-box,
       linear-gradient(#000 0 0);
     mask-composite: exclude;
+
+    transition: opacity 160ms ease-out;
   }
 
-  /* very subtle inside fill，不能抢文字 */
+  /* very subtle edge fill — capped low to keep content readable */
   .border-glow-card::after {
-    inset: 1px;
+    content: "";
+    position: absolute;
+    inset: -1px;
     z-index: 0;
+    pointer-events: none;
+    border-radius: inherit;
+
     opacity: clamp(
       0,
-      calc(var(--fill-opacity) * (var(--edge-proximity) - var(--edge-sensitivity)) / (100 - var(--edge-sensitivity))),
-      0.16
+      calc(
+        var(--fill-opacity)
+        * ((var(--edge-proximity) - var(--edge-sensitivity)) / (100 - var(--edge-sensitivity)))
+      ),
+      0.05
     );
+
     background:
       radial-gradient(
-        360px circle at var(--glow-x) var(--glow-y),
-        rgba(129, 140, 248, 0.22),
-        rgba(34, 211, 238, 0.08) 36%,
-        transparent 68%
+        120px circle at var(--glow-x) var(--glow-y),
+        rgba(248, 56, 234, 0.18),
+        rgba(235, 31, 148, 0.08) 38%,
+        transparent 72%
       );
+
+    transition: opacity 160ms ease-out;
   }
 
-  /* outer glow：卡片外侧柔光，也跟随鼠标位置 */
-  .border-glow-card > .edge-light {
-    inset: calc(var(--glow-padding) * -1);
-    z-index: 0;
-    opacity: clamp(
-      0,
-      calc((var(--edge-proximity) - var(--edge-sensitivity)) / (100 - var(--edge-sensitivity))),
-      1
-    );
-    background:
-      radial-gradient(
-        220px circle at calc(var(--glow-x) + var(--glow-padding)) calc(var(--glow-y) + var(--glow-padding)),
-        rgba(129, 140, 248, 0.34),
-        rgba(34, 211, 238, 0.16) 36%,
-        transparent 70%
-      );
-    filter: blur(10px);
+  .border-glow-card:not(:hover)::before,
+  .border-glow-card:not(:hover)::after {
+    opacity: 0;
+    transition: opacity 240ms ease-in-out;
   }
 
   .border-glow-inner {
@@ -276,16 +275,14 @@
 
   @media (hover: none) {
     .border-glow-card::before,
-    .border-glow-card::after,
-    .border-glow-card > .edge-light {
+    .border-glow-card::after {
       display: none;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .border-glow-card::before,
-    .border-glow-card::after,
-    .border-glow-card > .edge-light {
+    .border-glow-card::after {
       display: none;
       transition: none;
     }

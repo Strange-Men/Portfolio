@@ -72,3 +72,33 @@
 - 移动端是否正常降级
 - 文字是否始终清晰
 - 是否值得合并 main
+
+## Phase 7-1.4 Visual Style Tuning
+
+用户提供了更明确的参考参数：
+
+- backgroundColor: #120F17
+- colors: #c084fc / #eb1f94 / #f838ea
+- edgeSensitivity: 30
+- borderRadius: 28
+- glowRadius: 40
+- glowIntensity: 1
+
+本轮调整目标：
+
+- 从蓝青色光效改为紫粉色边框追光
+- 保留鼠标跟随的边框局部高亮
+- 删除或压低内部光斑
+- 不恢复大面积外部 blur halo
+- 保持所有主要卡片风格统一
+
+具体修改：
+
+- 移除旧的 `.edge-light` span 层（含 `filter: blur(10px)` 的外部大光晕）
+- `::before` 使用 160px radial-gradient + 白色核心 + 紫粉颜色渐变，仅显示边框
+- `::after` 使用 120px radial-gradient，opacity 上限 0.05，仅极微弱边缘柔光
+- 移除所有 `#818cf8`（蓝）和 `#22d3ee`（青）颜色
+- CSS `overflow` 从 `visible` 改为 `hidden`
+- 大卡片：edgeSensitivity=30, glowRadius=40, glowIntensity=1, fillOpacity=0.03
+- 小卡片：edgeSensitivity=34, glowRadius=28, glowIntensity=0.72, fillOpacity=0.02
+- 按钮 / tag / chip / 导航 / 正文未应用

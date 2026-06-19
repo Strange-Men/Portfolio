@@ -76,6 +76,23 @@
 - 未接入 ProfileCard
 - 未安装依赖
 
+## BorderGlow Visual Style Tuning
+
+用户提供了更明确的参考图和参数，本轮根据参考调整 BorderGlow 视觉：
+
+- 使用 #120F17 作为卡片动效背景基准
+- 使用 #c084fc / #eb1f94 / #f838ea 作为紫粉色追光颜色
+- 移除旧的 .edge-light 外部 blur 层
+- ::before 仅用于边框追光（160px radial-gradient）
+- ::after 仅用于极微弱边缘柔光（opacity 上限 0.05）
+- CSS overflow 从 visible 改为 hidden
+- 不使用蓝青色 #818cf8 / #22d3ee
+- 不使用大范围 blur halo
+- 不应用到按钮、tag、chip、导航和正文
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装依赖
+
 ## 版本状态
 
 当前稳定投递版本：

@@ -70,14 +70,13 @@ export function HeroSection() {
           {/* right: CodePilot info card */}
           <BorderGlowCard
             className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm"
-            edgeSensitivity={28}
-            glowColor="225 90 78"
-            backgroundColor="#101014"
+            edgeSensitivity={30}
+            backgroundColor="#120F17"
             borderRadius={28}
-            glowRadius={38}
-            glowIntensity={0.72}
-            colors={['#818cf8', '#22d3ee', '#c084fc']}
-            fillOpacity={0.12}
+            glowRadius={40}
+            glowIntensity={1}
+            colors={['#c084fc', '#eb1f94', '#f838ea']}
+            fillOpacity={0.03}
           >
             <p className="text-label text-zinc-500">Core Project</p>
 
