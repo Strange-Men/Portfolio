@@ -5,25 +5,28 @@
     "Segoe UI", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB",
     sans-serif;
 
-  --text-display: clamp(3rem, 8vw, 6.5rem);
-  --leading-display: 1.02;
-  --tracking-display: -0.055em;
+  --text-display: clamp(2.75rem, 5.6vw, 4rem);
+  --leading-display: 1.14;
+  --tracking-display: -0.025em;
 
-  --text-section-title: clamp(2.25rem, 5vw, 4.5rem);
-  --leading-section-title: 1.08;
-  --tracking-section-title: -0.045em;
+  --text-section-title: clamp(2rem, 3.8vw, 3rem);
+  --leading-section-title: 1.18;
+  --tracking-section-title: -0.02em;
 
-  --text-body-lg: 1.125rem;
-  --leading-body-lg: 1.78;
+  --text-card-title: 1.125rem;
+  --leading-card-title: 1.45;
+
+  --text-body-lg: 1.0625rem;
+  --leading-body-lg: 1.72;
 
   --text-body: 1rem;
-  --leading-body: 1.72;
+  --leading-body: 1.68;
 
   --text-label: 0.75rem;
   --leading-label: 1;
-  --tracking-label: 0.16em;
+  --tracking-label: 0.14em;
 
-  --section-y: clamp(5rem, 10vw, 8rem);
+  --section-y: clamp(4.5rem, 8vw, 6.5rem);
 
   font-family: var(--font-sans);
   color: #fafafa;
@@ -73,6 +76,11 @@
   .text-body-default {
     font-size: var(--text-body);
     line-height: var(--leading-body);
+  }
+
+  .text-card-title {
+    font-size: var(--text-card-title);
+    line-height: var(--leading-card-title);
   }
 
   .text-label {

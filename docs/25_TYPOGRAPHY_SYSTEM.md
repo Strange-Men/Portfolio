@@ -21,31 +21,37 @@ v1.15.0-typography-system
 
 ## Typography Scale
 
+> **中文排版说明**
+>
+> 本项目主要是中文内容，不采用英文项目常见的超大 display scale。
+> 中文长标题优先保证稳定、易读、克制。
+> 参考方向：Ant Design 克制字号阶梯、Apple 中文官网短句留白、腾讯/阿里云技术产品页排版。
+
 ### Display / Hero Title
 
 用途：Hero 主标题。
-目标：强视觉锚点，但不压迫中文长句。
+目标：视觉锚点，但保证中文长句稳定、不压迫。
 
 建议：
 
 ```txt
-font-size: clamp(3rem, 8vw, 6.5rem)
-line-height: 1.02
-letter-spacing: -0.055em
+font-size: clamp(2.75rem, 5.6vw, 4rem)
+line-height: 1.14
+letter-spacing: -0.025em
 font-weight: 600
 ```
 
 ### Section Title
 
 用途：About / CodePilot / Contact 主标题。
-目标：统一区块层级。
+目标：统一区块层级，克制不夸张。
 
 建议：
 
 ```txt
-font-size: clamp(2.25rem, 5vw, 4.5rem)
-line-height: 1.08
-letter-spacing: -0.045em
+font-size: clamp(2rem, 3.8vw, 3rem)
+line-height: 1.18
+letter-spacing: -0.02em
 font-weight: 600
 ```
 
@@ -57,7 +63,7 @@ font-weight: 600
 
 ```txt
 font-size: 1.125rem
-line-height: 1.35
+line-height: 1.45
 font-weight: 600
 ```
 
@@ -68,8 +74,8 @@ font-weight: 600
 建议：
 
 ```txt
-font-size: 1.125rem
-line-height: 1.78
+font-size: 1.0625rem
+line-height: 1.72
 font-weight: 400
 ```
 
@@ -81,7 +87,7 @@ font-weight: 400
 
 ```txt
 font-size: 1rem
-line-height: 1.72
+line-height: 1.68
 font-weight: 400
 ```
 
@@ -94,7 +100,7 @@ font-weight: 400
 ```txt
 font-size: 0.75rem
 line-height: 1
-letter-spacing: 0.16em
+letter-spacing: 0.14em
 font-weight: 600
 text-transform: uppercase
 ```
@@ -106,7 +112,7 @@ text-transform: uppercase
 建议：
 
 ```txt
-section padding-y: clamp(5rem, 10vw, 8rem)
+section padding-y: clamp(4.5rem, 8vw, 6.5rem)
 ```
 
 ### Content Width
@@ -128,3 +134,6 @@ content shell: max-w-6xl or max-w-7xl
 * 标签统一 uppercase / tracking
 * 不通过加粗解决层级问题
 * 不新增未确认内容
+* 中文长标题控制在 2–3 行，不追求越大越高级
+* 中文标题 letter-spacing 不过度负值
+* 页面标题层级控制在 3–5 种

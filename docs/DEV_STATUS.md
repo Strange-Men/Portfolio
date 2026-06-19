@@ -30,38 +30,28 @@ docs/24_FRONTEND_STAGE_REVIEW.md
 * 当前主要问题从功能转向视觉排版与求职表达
 * 下一阶段建议优先做 Typography / Layout System
 
-## v1.15.0-typography-system 结论
+## v1.15.0-typography-system 修正
 
-本轮完成 Typography / Layout System 初版：
+上一轮 Typography System 初版将英文 Display Typography 直接套用到中文长标题，导致 Hero 标题过大、换行过多、视觉压迫感增强。
 
-- 新增 docs/25_TYPOGRAPHY_SYSTEM.md
-- 在 src/index.css 中定义字体栈与 Typography tokens
-- 定义 Display / Section Title / Body / Label 等基础排版规则
-- 统一 Hero / About / CodePilot / Contact 的标题层级
-- 改善 Hero 标题压迫感
-- 改善正文行高与卡片文字密度
-- 保持页面内容结构不变
+本轮已修正为中文友好的 Typography Scale：
+
+- 降低 Hero Display 最大字号（6.5rem → 4rem）
+- 放宽中文标题 line-height（1.02 → 1.14）
+- 减少负字距（-0.055em → -0.025em）
+- 降低 Section Title 最大字号（4.5rem → 3rem）
+- 调整正文行高和区块留白
+- 新增 Card Title token
+- 保持 Typography System，但改为适合中文内容的版本
 - 未修改文案内容
-- 未新增项目
-- 未新增假链接
-- 未新增 Demo
-- 未新增简历下载
+- 未新增功能
+- 未打 tag
+
+当前 v1.15.0-typography-system 暂不打 tag，等待用户确认修正后的视觉效果。
 
 ## 版本状态
 
 当前最新已打 tag 版本：v1.14.0-visual-nav-polish
-
-本轮完成 Typography System 后，允许下一轮单独创建：
-
-v1.15.0-typography-system
-
-本轮不要打 tag。
-
-## 检查结果
-
-- npm run build：通过（244ms，无 TypeScript 错误，无 Vite 错误，dist 正常生成）
-- 本地预览：待验证
-- 禁用词检查：通过（src/ 中无禁用词）
 
 ## 当前未做
 
@@ -74,4 +64,4 @@ v1.15.0-typography-system
 
 ## 下一步
 
-Phase 6-3.1：创建 v1.15.0-typography-system tag。
+确认修正视觉效果后，决定是否为 v1.15.0-typography-system 打 tag。
