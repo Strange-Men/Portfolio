@@ -39,11 +39,36 @@
 - 不接入 LineWaves / ProfileCard
 - 不安装依赖
 
+## Phase 7-1.2 Direction and Coverage Fix
+
+用户人工测试发现：
+
+- 鼠标位于右上角时，光出现在左上角，说明 cursor-angle / conic mask 方向存在反向问题。
+- 只有 CodePilot 流程卡有动效，其他主要玻璃卡片没有统一动态风格。
+
+本轮调整：
+
+- 将主光源从 cursor-angle / conic-gradient 改为 pointer-position border glow
+- 使用 --glow-x / --glow-y 让最亮位置直接跟随鼠标
+- 保留 --edge-proximity 控制只有靠近边缘时增强光效
+- 将 BorderGlowCard 扩展到 Hero 信息卡、About 信息卡、CodePilot 流程卡、Contact 信息卡
+- 不应用到按钮、tag、chip、导航和正文
+- 仍不接入 LineWaves / ProfileCard
+- 仍不安装依赖
+
 ## Review Notes
 
 用户需要人工确认：
 
-- glow 是否太亮
-- 是否影响文字阅读
-- 移动端是否自然
+- 鼠标在右上角，光是否在右上角
+- 鼠标在左上角，光是否在左上角
+- 鼠标在右下角，光是否在右下角
+- 光是否主要贴着边缘，不是整块内部大光斑
+- Hero 信息卡是否有统一效果
+- About 三个小卡是否有轻微统一效果
+- CodePilot 流程卡是否效果正常
+- Contact 联系卡是否效果正常
+- 按钮 / tag / chip 是否没有乱加动效
+- 移动端是否正常降级
+- 文字是否始终清晰
 - 是否值得合并 main

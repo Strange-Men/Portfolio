@@ -46,15 +46,14 @@ export function CodePilotSection() {
           {/* 右侧：紧凑流程与技术栈 */}
           <BorderGlowCard
             className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-6"
-            edgeSensitivity={30}
+            edgeSensitivity={28}
             glowColor="225 90 78"
             backgroundColor="#101014"
             borderRadius={28}
-            glowRadius={40}
-            glowIntensity={0.8}
-            coneSpread={25}
+            glowRadius={38}
+            glowIntensity={0.72}
             colors={['#818cf8', '#22d3ee', '#c084fc']}
-            fillOpacity={0.18}
+            fillOpacity={0.12}
           >
             <h3 className="text-lg font-semibold tracking-tight text-white">
               项目流程

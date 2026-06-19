@@ -1,6 +1,6 @@
 import { links } from '../../data/links';
 import { profile } from '../../data/profile';
-import { Button, ExternalLink, SectionLabel } from '../ui';
+import { BorderGlowCard, Button, ExternalLink, SectionLabel } from '../ui';
 
 export function ContactSection() {
   return (
@@ -38,7 +38,17 @@ export function ContactSection() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30">
+          <BorderGlowCard
+            className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30"
+            edgeSensitivity={28}
+            glowColor="225 90 78"
+            backgroundColor="#101014"
+            borderRadius={28}
+            glowRadius={38}
+            glowIntensity={0.72}
+            colors={['#818cf8', '#22d3ee', '#c084fc']}
+            fillOpacity={0.12}
+          >
             <div className="space-y-6">
               <div>
                 <p className="text-label text-zinc-500">Email</p>
@@ -60,7 +70,7 @@ export function ContactSection() {
             <p className="text-body-default mt-8 border-t border-white/10 pt-6 text-zinc-500">
               项目详情请在上方项目区块查看；这里仅保留联系入口。
             </p>
-          </div>
+          </BorderGlowCard>
         </div>
       </div>
     </section>

@@ -55,6 +55,27 @@
 - 未接入 ProfileCard
 - 未安装依赖
 
+## BorderGlow Direction and Coverage Fix
+
+用户反馈上一版存在两个问题：
+
+- 光效方向与鼠标位置相反
+- 只有单个 CodePilot 流程卡有动效，页面主要卡片动效不统一
+
+本轮调整：
+
+- 将光效方向改为直接跟随 --glow-x / --glow-y
+- 保留 --edge-proximity 控制边缘接近时才增强光效
+- 扩展到主要玻璃卡片：
+  - Hero CodePilot 信息卡
+  - About 三个信息卡
+  - CodePilot 项目流程卡
+  - Contact 联系信息卡
+- 不应用到按钮、tag、chip、导航和正文
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装依赖
+
 ## 版本状态
 
 当前稳定投递版本：
