@@ -16,7 +16,7 @@ export function AboutSection() {
             id="about-title"
             className="text-section-title mt-5 font-semibold text-balance text-white"
           >
-            先把一个核心项目讲清楚。
+            关于我
           </h2>
         </div>
 
@@ -41,7 +41,7 @@ export function AboutSection() {
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
-              <p className="text-label text-zinc-500">核心项目</p>
+              <p className="text-label text-zinc-500">当前重点</p>
               <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
                 {codepilot.name}
               </p>

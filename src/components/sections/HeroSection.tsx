@@ -45,7 +45,11 @@ export function HeroSection() {
               className="hero-anim hero-reveal text-display mt-6 max-w-3xl text-balance font-semibold"
               style={{ animationDelay: '0.22s' }}
             >
-              {profile.heroTitle}
+              {profile.heroTitle.split('\n').map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </h1>
 
             <p className="hero-anim hero-fade text-body-lg mt-6 max-w-2xl text-zinc-300" style={{ animationDelay: '0.38s' }}>

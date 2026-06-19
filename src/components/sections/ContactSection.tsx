@@ -31,9 +31,6 @@ export function ContactSection() {
               <Button href={links.github} variant="secondary" external>
                 GitHub
               </Button>
-              <Button href={links.codepilotGithub} variant="ghost" external>
-                CodePilot 仓库
-              </Button>
             </div>
           </div>
 
@@ -54,19 +51,10 @@ export function ContactSection() {
                   <ExternalLink href={links.github}>Strange-Men</ExternalLink>
                 </div>
               </div>
-
-              <div>
-                <p className="text-label text-zinc-500">Core Project</p>
-                <div className="mt-2">
-                  <ExternalLink href={links.codepilotGithub}>
-                    CodePilot Repository
-                  </ExternalLink>
-                </div>
-              </div>
             </div>
 
             <p className="text-body-default mt-8 border-t border-white/10 pt-6 text-zinc-500">
-              当前没有展示简历下载、未确认 Demo 或其他平台入口，避免出现空链接和假链接。
+              项目详情请在上方项目区块查看；这里仅保留联系入口。
             </p>
           </div>
         </div>

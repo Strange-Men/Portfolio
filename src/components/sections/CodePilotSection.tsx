@@ -25,6 +25,10 @@ export function CodePilotSection() {
               {codepilot.description}
             </p>
 
+            <p className="text-body-default mt-4 max-w-xl text-zinc-400">
+              {codepilot.painPoint}
+            </p>
+
             {/* 证明关键词 */}
             <div className="mt-6 flex flex-wrap gap-2">
               {codepilot.proofPoints.map((point) => (
@@ -45,16 +49,14 @@ export function CodePilotSection() {
               项目流程
             </h3>
 
-            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-zinc-400">
+            <div className="mt-5 space-y-2 text-sm">
               {codepilot.flow.map((step, index) => (
-                <span key={step} className="flex items-center gap-2">
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-zinc-300">
-                    {step}
+                <div key={step} className="flex items-center gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xs text-zinc-400">
+                    {index + 1}
                   </span>
-                  {index < codepilot.flow.length - 1 && (
-                    <span className="text-zinc-600">→</span>
-                  )}
-                </span>
+                  <span className="text-zinc-300">{step}</span>
+                </div>
               ))}
             </div>
 
