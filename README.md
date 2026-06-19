@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.23.1-contact-copy
+v1.24.0-borderglow-motion-system
 ```
 
 当前已完成：
@@ -46,11 +46,15 @@ v1.23.1-contact-copy
 - 动画交互规范沉淀
 - 投递版本冻结
 - Contact HR 视角文案 hotfix
+- BorderGlow 卡片边境光辉
+- Section 入场动效
+- 页面 ambient 背景
+- 设计与动效规范锁定
 
 当前未完成：
 
 - 自定义域名
-- BorderGlow 项目卡片试点
+- 线上最终人工确认
 
 ---
 
@@ -84,6 +88,7 @@ v1.23.1-contact-copy
 | v1.22.0-motion-interaction-spec | Motion Spec | 记录 BorderGlow / LineWaves / ProfileCard 动画取舍与后续接入策略 |
 | v1.23.0-release-freeze | Release | 冻结 Portfolio 第一版投递稳定版本 |
 | v1.23.1-contact-copy | Hotfix | 修正 Contact 区块为 HR / 面试官视角的求职表达 |
+| v1.24.0-borderglow-motion-system | Motion System | 合并 BorderGlow、Section 入场动效和页面背景，并锁定设计规范 |
 
 ---
 

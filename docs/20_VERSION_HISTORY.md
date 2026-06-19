@@ -56,6 +56,7 @@
 | v1.22.0-motion-interaction-spec | 1ebdcbe | Phase 6-11 | 新增动画交互规范文档，记录 BorderGlow / LineWaves / ProfileCard 的适用位置、优先级与风险，明确短期不接入重型动画，后续如需增强优先小范围试点 BorderGlow。 |
 | v1.23.0-release-freeze | 5a75cb6 | Phase 6-12 | 冻结 Portfolio 第一版投递稳定版本，记录线上地址、当前稳定版本、页面结构、投递使用方式、后续维护边界和未来扩展规则。 |
 | v1.23.1-contact-copy | 6717336 | Hotfix | 修正 Contact 区块为 HR / 面试官视角的求职表达，明确正在寻找 AI 应用开发 / Agent 开发 / Python 后端相关实习机会，保留 Email / GitHub 真实联系入口，不新增 Demo、简历下载或未确认链接。 |
+| v1.24.0-borderglow-motion-system | 64467c0 | Phase 7-3 | 合并 BorderGlow 卡片边境光辉、RevealOnScroll Section 入场动效和页面 ambient 背景，并新增设计与动效规范，锁定后续页面视觉与动效一致性。 |
 
 ---
 
@@ -64,7 +65,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.23.1-contact-copy
+v1.24.0-borderglow-motion-system
 ```
 
 当前已完成页面模块：
@@ -92,6 +93,10 @@ CodePilot 紧凑项目证明
 动画交互规范沉淀
 投递版本冻结
 Contact HR 视角文案 hotfix
+BorderGlow 卡片边境光辉
+Section 入场动效
+页面 ambient 背景
+设计与动效规范锁定
 ```
 
 当前未完成：
@@ -99,7 +104,7 @@ Contact HR 视角文案 hotfix
 ```txt
 自定义域名
 未来项目扩展
-BorderGlow 项目卡片试点
+线上最终人工确认
 ```
 
 ---
@@ -110,7 +115,7 @@ BorderGlow 项目卡片试点
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.24.0-borderglow-experiment | Phase 7-1 | 在实验分支小范围试点 BorderGlow 项目卡片交互，前提是不影响投递稳定版本。 |
+| v1.25.0-production-verify | Phase 7-4 | 人工确认 Vercel 线上页面已更新到 v1.24 动效版本，并做最终链接、移动端和投递可用性检查。 |
 | v2.0.0-multi-projects | Future | 未来新增更多真实项目时，扩展为多项目作品集。 |
 
 ---
