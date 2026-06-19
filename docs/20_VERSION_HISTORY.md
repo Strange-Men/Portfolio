@@ -49,6 +49,7 @@
 | v1.15.0-typography-system | 8f1e2e1 | Phase 6-3 | 建立并修正中文友好的 Typography System，降低 Hero 中文标题压迫感，统一字体层级、行高、字距与正文阅读节奏。 |
 | v1.16.0-reference-style-spec | 23a6dc2 | Phase 6-4 | 将用户提供的参考 Hero 风格转译为 Portfolio 专用视觉规格，确定 Dark Technical Spotlight Portfolio 方向，并明确后续 Hero、动效和项目证据展示路线。 |
 | v1.17.0-hero-spotlight-layout | 02daa6e | Phase 6-5 | 基于 Dark Technical Spotlight Portfolio 方向重构 Hero 首屏布局，增加柔和背景光晕、网格纹理、CodePilot 信息卡和更强首屏视觉锚点。 |
+| v1.18.0-premium-motion | f240dd4 | Phase 6-6 | 为 Hero 首屏增加轻量 CSS 入场动画，包括标题 fade-up / blur-in、描述与卡片 stagger fade-up，并支持 prefers-reduced-motion。 |
 
 ---
 
@@ -57,7 +58,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.17.0-hero-spotlight-layout
+v1.18.0-premium-motion
 ```
 
 当前已完成页面模块：
@@ -77,13 +78,13 @@ Vercel 线上部署
 中文友好 Typography System
 参考风格转译与设计规格
 Hero Spotlight Layout
+轻量 Hero 入场动画
 ```
 
 当前未完成：
 
 ```txt
-轻量入场动画
-CodePilot 项目证据展示
+CodePilot 紧凑项目证明
 简历联动
 自定义域名
 ```
@@ -96,9 +97,9 @@ CodePilot 项目证据展示
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.18.0-premium-motion | Phase 6-6 | 增加轻量 CSS 入场动画，尊重 reduced motion，不引入动画库。 |
-| v1.19.0-codepilot-proof | Phase 6-7 | 补充真实 CodePilot 项目证据，如报告样例或截图，前提是内容真实可用。 |
+| v1.19.0-codepilot-compact-proof | Phase 6-7 | 以一句话定位、3 个技术关键词和 GitHub / README 链接强化 CodePilot 可信度，避免把网页写成 README。 |
 | v1.20.0-resume-ready | Phase 6-8 | 对齐简历项目经历与投递表达。 |
+| v1.21.0-final-polish | Phase 6-9 | 最终视觉和响应式微调。 |
 
 ---
 
