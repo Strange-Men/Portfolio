@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.18.0-premium-motion
+v1.19.0-codepilot-compact-proof
 ```
 
 当前已完成：
@@ -39,10 +39,10 @@ v1.18.0-premium-motion
 - 参考风格转译与设计规格
 - Hero Spotlight Layout
 - 轻量 Hero 入场动画
+- CodePilot 紧凑项目证明
 
 当前未完成：
 
-- CodePilot 紧凑项目证明
 - 简历联动
 - 自定义域名
 
@@ -72,6 +72,7 @@ v1.18.0-premium-motion
 | v1.16.0-reference-style-spec | Design | 将参考 Hero 风格转译为 Portfolio 专用视觉方向 |
 | v1.17.0-hero-spotlight-layout | Visual | Hero 首屏视觉重构、柔和背景光晕与 CodePilot 信息卡 |
 | v1.18.0-premium-motion | Motion | Hero 轻量 CSS 入场动画 |
+| v1.19.0-codepilot-compact-proof | Content | CodePilot 一句话定位、技术证明点与 GitHub / README 入口 |
 
 ---
 
