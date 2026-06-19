@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 6-12.2
+当前阶段：Phase 7-1
 
 ## 已完成
 
@@ -21,29 +21,108 @@
 - Phase 6-12：投递版本冻结文档
 - Phase 6-12.1：创建 v1.23.0-release-freeze tag
 - Phase 6-12.2：创建 v1.23.1-contact-copy tag
+- Phase 7-1：BorderGlow 项目卡片试点
 
-## v1.23.1-contact-copy 结论
+## v1.24.0-borderglow-experiment 结论
 
-本轮完成 Contact 文案 hotfix 版本记录：
+本轮在实验分支中完成 BorderGlow 项目卡片试点：
 
-- v1.23.1-contact-copy tag 已创建并推送
-- tag 指向 commit：6717336
-- 已将 Contact 区块改为 HR / 面试官视角的求职表达
-- 标题改为：期待实习机会，也欢迎进一步沟通。
-- 正文明确：正在寻找 AI 应用开发 / Agent 开发 / Python 后端相关实习机会
-- 保留 Email / GitHub 真实联系入口
+- 创建 experiment/borderglow-card 分支
+- 新增轻量 BorderGlowCard 组件
+- 只在 CodePilot 项目卡片上试点
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装 ogl
+- 未新增动画库
 - 未新增 Demo
 - 未新增简历下载
-- 未新增未确认链接
-- 未接入 BorderGlow / LineWaves / ProfileCard
+- 未新增项目
+- 支持移动端降级
+- 支持 prefers-reduced-motion
+- npm run build：待记录
+
+## BorderGlow Experiment Adjustment
+
+用户人工测试后反馈：上一版效果不符合预期，更像内部径向光，不像参考图中的边缘追光。
+
+本轮调整：
+
+- 将 BorderGlowCard 从 cursor radial glow 改为 edge-proximity / cursor-angle 逻辑
+- 增加 edge-light 外侧光辉层
+- 目标效果：靠近卡片边缘时出现方向性边缘光
+- 仍只在 CodePilot 项目流程卡片试点
+- 未接入 LineWaves
+- 未接入 ProfileCard
 - 未安装依赖
+
+## BorderGlow Direction and Coverage Fix
+
+用户反馈上一版存在两个问题：
+
+- 光效方向与鼠标位置相反
+- 只有单个 CodePilot 流程卡有动效，页面主要卡片动效不统一
+
+本轮调整：
+
+- 将光效方向改为直接跟随 --glow-x / --glow-y
+- 保留 --edge-proximity 控制边缘接近时才增强光效
+- 扩展到主要玻璃卡片：
+  - Hero CodePilot 信息卡
+  - About 三个信息卡
+  - CodePilot 项目流程卡
+  - Contact 联系信息卡
+- 不应用到按钮、tag、chip、导航和正文
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装依赖
+
+## BorderGlow Visual Style Tuning
+
+用户提供了更明确的参考图和参数，本轮根据参考调整 BorderGlow 视觉：
+
+- 使用 #120F17 作为卡片动效背景基准
+- 使用 #c084fc / #eb1f94 / #f838ea 作为紫粉色追光颜色
+- 移除旧的 .edge-light 外部 blur 层
+- ::before 仅用于边框追光（160px radial-gradient）
+- ::after 仅用于极微弱边缘柔光（opacity 上限 0.05）
+- CSS overflow 从 visible 改为 hidden
+- 不使用蓝青色 #818cf8 / #22d3ee
+- 不使用大范围 blur halo
+- 不应用到按钮、tag、chip、导航和正文
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装依赖
+
+## BorderGlow Faithful Reference Port
+
+用户反馈自制简化版 BorderGlow 仍不接近目标效果，本轮改为忠实移植 React Bits BorderGlow 的核心机制：
+
+- 恢复 edge-proximity / cursor-angle 方向控制
+- 恢复 mesh-gradient border（7 层 radial-gradient + conic-gradient base）
+- 恢复 edge-light 边缘外侧光层（conic mask + box-shadow glow）
+- 恢复 ::before conic-gradient cone mask 方向性
+- 恢复 ::after 多层 mask-composite 内部填充
+- 压低 fillOpacity 和外部 glow，避免大面积光晕
+- 使用紫粉色参考配色 #c084fc / #eb1f94 / #f838ea
+- 大卡片：glowIntensity=0.82, fillOpacity=0.08
+- 小卡片：glowIntensity=0.58, fillOpacity=0.04
+- 保持主要卡片统一动效
+- 不接入 LineWaves
+- 不接入 ProfileCard
+- 不安装依赖
 
 ## 版本状态
 
-当前最新版本：
+当前稳定投递版本：
 
 ```txt
 v1.23.1-contact-copy
+```
+
+当前实验分支：
+
+```txt
+experiment/borderglow-card
 ```
 
 当前线上地址：
@@ -55,7 +134,6 @@ https://portfolio-rosy-ten-41.vercel.app/
 ## 当前未做
 
 * 没有自定义域名
-* 没有接入 BorderGlow
 * 没有接入 LineWaves
 * 没有接入 ProfileCard
 * 没有安装 ogl
@@ -65,12 +143,28 @@ https://portfolio-rosy-ten-41.vercel.app/
 * 没有表单提交
 * 没有新增更多项目
 
+## Motion System Polish
+
+用户反馈 BorderGlow 效果满意，希望继续完善页面其他区域的动效和背景。
+
+本轮调整：
+
+- 保留 Hero 独立 spotlight / glow 背景
+- 为 Hero 之后增加统一 low-contrast ambient background
+- 新增 RevealOnScroll 轻量组件（IntersectionObserver，无依赖）
+- 为 About / CodePilot / Contact 增加 scroll reveal（fade-up + blur-in + translateY）
+- About 三个卡片 stagger 80 / 140 / 200ms
+- CodePilot 左侧 delay 0，右侧 BorderGlowCard delay 120ms
+- Contact 左侧文案 delay 0，右侧联系卡 delay 120ms
+- 支持 prefers-reduced-motion
+- 保持 BorderGlow 作为主要卡片 hover 动效
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装动画依赖
+
 ## 下一步
 
-建议进入：
+用户人工确认效果后再决定：
 
-```txt
-v1.24.0-borderglow-experiment
-```
-
-目标：从当前 main 创建实验分支 experiment/borderglow-card，在实验分支中小范围试点 BorderGlow 项目卡片交互。
+1. 合并到 main 并创建 v1.24.0-borderglow-experiment tag
+2. 或放弃实验，保留 v1.23.1-contact-copy 作为稳定投递版本

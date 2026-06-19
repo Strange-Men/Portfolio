@@ -171,3 +171,235 @@
     filter: none;
   }
 }
+
+/* Section scroll-reveal */
+@layer utilities {
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(8px);
+    transition:
+      opacity 700ms ease,
+      transform 700ms ease,
+      filter 700ms ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform, filter;
+  }
+
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll {
+      opacity: 1;
+      transform: none;
+      filter: none;
+      transition: none;
+      will-change: auto;
+    }
+  }
+}
+
+/* Ambient background for post-Hero sections */
+@layer utilities {
+  .page-ambient-bg {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .page-ambient-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+    background:
+      radial-gradient(circle at 78% 38%, rgba(192, 132, 252, 0.08), transparent 32rem),
+      radial-gradient(circle at 18% 62%, rgba(235, 31, 148, 0.045), transparent 28rem),
+      linear-gradient(180deg, #09090b 0%, #0b0910 42%, #09090b 100%);
+  }
+
+  .page-ambient-bg::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.22;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 86%, transparent 100%);
+  }
+}
+
+/* BorderGlow card — faithful React Bits border glow mechanism */
+@layer utilities {
+  .border-glow-card {
+    --edge-proximity: 0;
+    --cursor-angle: 45deg;
+    --edge-sensitivity: 30;
+    --color-sensitivity: calc(var(--edge-sensitivity) + 20);
+    --border-radius: 28px;
+    --glow-padding: 40px;
+    --cone-spread: 25;
+    --fill-opacity: 0.08;
+
+    position: relative;
+    border-radius: var(--border-radius);
+    isolation: isolate;
+    transform: translate3d(0, 0, 0.01px);
+    display: grid;
+    overflow: visible;
+  }
+
+  /* shared base for ::before, ::after, .edge-light */
+  .border-glow-card::before,
+  .border-glow-card::after,
+  .border-glow-card > .edge-light {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    transition: opacity 220ms ease-out;
+    z-index: 0;
+  }
+
+  .border-glow-card:not(:hover)::before,
+  .border-glow-card:not(:hover)::after,
+  .border-glow-card:not(:hover) > .edge-light {
+    opacity: 0;
+    transition: opacity 420ms ease-in-out;
+  }
+
+  /* mesh-gradient border via conic mask */
+  .border-glow-card::before {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--card-bg, #120F17) 0 100%) padding-box,
+      linear-gradient(rgb(255 255 255 / 0%) 0% 100%) border-box,
+      var(--gradient-one) border-box,
+      var(--gradient-two) border-box,
+      var(--gradient-three) border-box,
+      var(--gradient-four) border-box,
+      var(--gradient-five) border-box,
+      var(--gradient-six) border-box,
+      var(--gradient-seven) border-box,
+      var(--gradient-base) border-box;
+
+    opacity: clamp(
+      0,
+      calc((var(--edge-proximity) - var(--color-sensitivity)) / (100 - var(--color-sensitivity))),
+      0.9
+    );
+
+    mask-image:
+      conic-gradient(
+        from var(--cursor-angle) at center,
+        black calc(var(--cone-spread) * 1%),
+        transparent calc((var(--cone-spread) + 15) * 1%),
+        transparent calc((100 - var(--cone-spread) - 15) * 1%),
+        black calc((100 - var(--cone-spread)) * 1%)
+      );
+  }
+
+  /* subtle interior fill with directional mask */
+  .border-glow-card::after {
+    border: 1px solid transparent;
+    background:
+      var(--gradient-one) padding-box,
+      var(--gradient-two) padding-box,
+      var(--gradient-three) padding-box,
+      var(--gradient-four) padding-box,
+      var(--gradient-five) padding-box,
+      var(--gradient-six) padding-box,
+      var(--gradient-seven) padding-box,
+      var(--gradient-base) padding-box;
+
+    opacity: clamp(
+      0,
+      calc(var(--fill-opacity) * (var(--edge-proximity) - var(--color-sensitivity)) / (100 - var(--color-sensitivity))),
+      0.08
+    );
+
+    mix-blend-mode: soft-light;
+
+    mask-image:
+      linear-gradient(to bottom, black, black),
+      radial-gradient(ellipse at 50% 50%, black 40%, transparent 65%),
+      radial-gradient(ellipse at 66% 66%, black 5%, transparent 40%),
+      radial-gradient(ellipse at 33% 33%, black 5%, transparent 40%),
+      radial-gradient(ellipse at 66% 33%, black 5%, transparent 40%),
+      radial-gradient(ellipse at 33% 66%, black 5%, transparent 40%),
+      conic-gradient(from var(--cursor-angle) at center, transparent 5%, black 15%, black 85%, transparent 95%);
+
+    mask-composite: subtract, add, add, add, add, add;
+  }
+
+  /* outer edge-light glow layer */
+  .border-glow-card > .edge-light {
+    inset: calc(var(--glow-padding) * -1);
+    opacity: clamp(
+      0,
+      calc((var(--edge-proximity) - var(--edge-sensitivity)) / (100 - var(--edge-sensitivity))),
+      0.85
+    );
+
+    mix-blend-mode: plus-lighter;
+
+    mask-image:
+      conic-gradient(
+        from var(--cursor-angle) at center,
+        black 2.5%,
+        transparent 10%,
+        transparent 90%,
+        black 97.5%
+      );
+  }
+
+  /* edge-light inner glow via box-shadow */
+  .border-glow-card > .edge-light::before {
+    content: "";
+    position: absolute;
+    inset: var(--glow-padding);
+    border-radius: inherit;
+
+    box-shadow:
+      inset 0 0 0 1px var(--glow-color, hsl(315deg 90% 78% / 92%)),
+      inset 0 0 2px 0 var(--glow-color-60, hsl(315deg 90% 78% / 60%)),
+      inset 0 0 6px 0 var(--glow-color-40, hsl(315deg 90% 78% / 40%)),
+      inset 0 0 14px 0 var(--glow-color-20, hsl(315deg 90% 78% / 20%)),
+      0 0 2px 0 var(--glow-color-60, hsl(315deg 90% 78% / 60%)),
+      0 0 8px 0 var(--glow-color-40, hsl(315deg 90% 78% / 40%)),
+      0 0 18px 2px var(--glow-color-20, hsl(315deg 90% 78% / 20%));
+  }
+
+  .border-glow-inner {
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+    min-width: 0;
+  }
+
+  @media (hover: none) {
+    .border-glow-card::before,
+    .border-glow-card::after,
+    .border-glow-card > .edge-light {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .border-glow-card::before,
+    .border-glow-card::after,
+    .border-glow-card > .edge-light {
+      display: none;
+      transition: none;
+    }
+  }
+}

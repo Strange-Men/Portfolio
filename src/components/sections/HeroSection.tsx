@@ -1,7 +1,7 @@
 import { codepilot } from '../../data/codepilot';
 import { links } from '../../data/links';
 import { profile } from '../../data/profile';
-import { Button, SectionLabel, Tag } from '../ui';
+import { BorderGlowCard, Button, SectionLabel, Tag } from '../ui';
 
 export function HeroSection() {
   return (
@@ -68,7 +68,18 @@ export function HeroSection() {
           </div>
 
           {/* right: CodePilot info card */}
-          <aside className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm" style={{ animationDelay: '0.62s' }}>
+          <BorderGlowCard
+            className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm"
+            edgeSensitivity={30}
+            glowColor="315 90 78"
+            backgroundColor="#120F17"
+            borderRadius={28}
+            glowRadius={40}
+            glowIntensity={0.82}
+            coneSpread={25}
+            colors={['#c084fc', '#eb1f94', '#f838ea']}
+            fillOpacity={0.08}
+          >
             <p className="text-label text-zinc-500">Core Project</p>
 
             <h2 className="mt-3 text-lg font-semibold tracking-tight text-white">
@@ -88,7 +99,7 @@ export function HeroSection() {
                 <Tag key={tech}>{tech}</Tag>
               ))}
             </div>
-          </aside>
+          </BorderGlowCard>
         </div>
 
         {/* bottom value tags */}
