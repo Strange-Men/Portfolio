@@ -94,4 +94,12 @@
     padding-top: var(--section-y);
     padding-bottom: var(--section-y);
   }
+
+  .hero-grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(circle at center, black, transparent 72%);
+  }
 }
