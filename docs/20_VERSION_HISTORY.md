@@ -65,7 +65,7 @@
 | v1.28.0-career-material-sync | — | Phase 8-1 / 8-1.1 | 调整 Portfolio 页面文案，让 Hero / About / CodePilot 表达更贴近求职使用，面向中国 HR / 面试官，与简历和 CodePilot 项目介绍统一。Phase 8-1.1 优化项目导航、Hero 右侧模块和 CodePilot 链接结构。 |
 | v1.28.1-projects-contact-link | see tag | Phase 8-2 / 8-2.1 / 8-2.2 / 8-2.4 | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐，作为 Portfolio 多项目展示版本封存。 |
 | v1.29.0-project-detail-polish | see tag | Phase 9 | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体。 |
-| v1.30.0-seo-share-polish | — | Phase 10-1 / 10-2 | SEO / 分享展示优化：研究 title、meta description、Open Graph、Twitter Card、favicon、README 和 GitHub About 展示状态，并完成基础 SEO 元数据、favicon 和 README 首屏优化。当前在分支验收中。 |
+| v1.30.0-seo-share-polish | see tag | Phase 10 | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示。 |
 
 ---
 
@@ -74,7 +74,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.29.0-project-detail-polish
+v1.30.0-seo-share-polish
 ```
 
 当前已完成页面模块：
@@ -117,6 +117,9 @@ Vercel 手机端人工确认通过
 最终线上验收
 桌面端与手机端人工确认
 Portfolio 第一阶段收尾
+SEO metadata 与分享标签
+SVG favicon 与 site.webmanifest
+README 首屏优化
 ```
 
 当前未完成：
@@ -136,9 +139,9 @@ GitHub Profile 同步
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.30.0-seo-share-polish | Future | 优化 title、meta description、favicon、Open Graph 分享卡片、GitHub About 等线上展示细节。 |
-| v1.31.0-mobile-polish | Future | 如线上手机端发现排版问题，再做移动端专项优化。 |
-| v2.0.0-portfolio-expansion | Future | 后续新增更多真实项目时，扩展 Portfolio 项目展示体系。 |
+| v1.31.0-github-about-polish | Future | 手动完善 GitHub 仓库 About，包括 Description、Website、Topics。 |
+| v1.32.0-proof-polish | Future | 增强项目验证入口，例如 README、测试、报告、Demo 的引导说明。 |
+| v1.33.0-mobile-polish | Future | 如线上手机端发现排版问题，再做移动端专项优化。 |
 
 ---
 

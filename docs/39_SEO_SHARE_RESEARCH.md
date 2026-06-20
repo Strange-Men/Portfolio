@@ -397,3 +397,13 @@ v1.30.0 暂不做：
 本轮未修改页面组件、视觉系统、项目卡片内容或动效。
 本轮未设置 og:image（无合适图片资源）。
 本轮未使用 summary_large_image（无大图资源）。
+
+---
+
+## 11. Version Seal
+
+`v1.30.0-seo-share-polish` 已完成并封存。
+
+本版本已将 Phase 10-1 的研究结果应用到 Portfolio 的 SEO、分享信息、favicon、manifest 与 README 首屏展示，并通过线上验收。
+
+本版本未新增复杂 OG 图片，`og:image` 仍作为后续可选优化项。

@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.29.0-project-detail-polish`
+`v1.30.0-seo-share-polish`
 
 当前线上地址：
 
@@ -80,17 +80,22 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已完成三项目真实内容优化：
+当前 Portfolio 已完成 SEO / Share 基础优化：
 
-- CodePilot：突出仓库理解、代码解析、多 Agent 审查和 Evidence-grounded 报告
-- EnterpriseAiDataAgent：突出 CSV/Excel 数据分析工作台、DuckDB、NL→SQL、SSE 和 Markdown 报告
-- Basjoo 二开项目：突出 RAG Evaluation Harness、Mock 可复现评估、pytest 和评估指标
+- 浏览器 title：李泓轩｜AI Application Portfolio
+- meta description
+- Open Graph 基础标签
+- Twitter Card 基础标签
+- theme-color
+- SVG favicon
+- site.webmanifest
+- README 首屏 Live Site 与 Featured Projects 优化
 
-当前版本已通过电脑端与手机端线上验收。
+当前版本已通过线上验收。
 
 下一步建议：
 
-后续 Portfolio 设计开发可以进入 SEO / Share Polish，或等待使用反馈后再继续。
+后续可以手动完善 GitHub 仓库 About，或进入 Project Proof Polish。
 
 ---
 
@@ -198,13 +203,10 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-当前 Phase 10-2 正在进行 SEO / Share Polish：
+v1.30.0-seo-share-polish 已封存。
 
-- 优化浏览器 title / meta description
-- 补充 Open Graph / Twitter Card 基础标签
-- 新增 favicon（public/favicon.svg）
-- 新增 site.webmanifest
-- 优化 README 首屏展示
-- 不改变页面视觉与项目内容
+后续可以：
 
-当前分支：`feat/v1.30.0-seo-share-polish`，等待用户人工验收。
+1. 手动完善 GitHub 仓库 About（Description / Website / Topics）
+2. 进入 v1.32.0-proof-polish，增强项目验证入口
+3. 如手机端发现问题，再做 v1.33.0-mobile-polish

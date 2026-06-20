@@ -21,11 +21,17 @@ React 18 / TypeScript / Vite / Tailwind CSS / Vercel
 ## Current Version
 
 ```txt
-v1.29.0-project-detail-polish
+v1.30.0-seo-share-polish
 ```
 
 当前已完成：
 
+- SEO metadata（title、meta description）
+- Open Graph / Twitter Card 基础标签
+- SVG favicon
+- site.webmanifest
+- README 首屏优化
+- GitHub About 手动填写建议
 - 基于真实 GitHub 仓库研究优化三个项目内容
 - 三项目平级展示
 - Hero Selected Work 摘要
@@ -80,6 +86,7 @@ v1.29.0-project-detail-polish
 | v1.28.0-career-material-sync | Career Copy Sync | 调整 Portfolio 页面文案与项目导航结构，让 Hero / About / CodePilot 表达更贴近求职使用 |
 | v1.28.1-projects-contact-link | Projects & Contact Polish | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐 |
 | v1.29.0-project-detail-polish | Project Detail Polish | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体 |
+| v1.30.0-seo-share-polish | SEO & Share Polish | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示 |
 
 ---
 
