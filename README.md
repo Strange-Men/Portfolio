@@ -14,19 +14,22 @@
 ## Current Version
 
 ```txt
-v1.28.1-projects-contact-link
+v1.29.0-project-detail-polish
 ```
 
-v1.28.1-projects-contact-link 已完成：
+v1.29.0-project-detail-polish 已完成：
 
-- 三项目平级展示
-- Hero Selected Work 摘要
-- Contact Gmail 联系按钮
-- EnterpriseAiDataAgent / Basjoo 链接补齐
-- Email 备用显示
+- 基于真实 GitHub 仓库研究优化三个项目内容
+- CodePilot：仓库理解、Tree-sitter / AST、多 Agent、Evidence-grounded 报告
+- EnterpriseAiDataAgent：CSV/Excel、DuckDB、NL→SQL、SSE、Markdown 报告
+- Basjoo 二开：RAG Evaluation Harness、Mock 可复现、pytest、评估指标
 
 当前已完成：
 
+- 基于真实 GitHub 仓库研究优化三个项目内容
+- CodePilot：仓库理解、Tree-sitter / AST、多 Agent、Evidence-grounded 报告
+- EnterpriseAiDataAgent：CSV/Excel、DuckDB、NL→SQL、SSE、Markdown 报告
+- Basjoo 二开：RAG Evaluation Harness、Mock 可复现、pytest、评估指标
 - 三项目平级展示
 - Hero Selected Work 摘要
 - Contact Gmail 联系按钮
@@ -123,6 +126,7 @@ v1.28.1-projects-contact-link 已完成：
 | v1.27.0-production-verify | Production Verify | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果 |
 | v1.28.0-career-material-sync | Career Copy Sync | 调整 Portfolio 页面文案与项目导航结构，让 Hero / About / CodePilot 表达更贴近求职使用，优化多项目扩展入口 |
 | v1.28.1-projects-contact-link | Projects & Contact Polish | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐 |
+| v1.29.0-project-detail-polish | Project Detail Polish | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体 |
 
 ---
 

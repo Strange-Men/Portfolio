@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 9-1
+当前阶段：Phase 9-4
 
 ## 已完成
 
@@ -49,7 +49,7 @@
 当前最新版本：
 
 ```txt
-v1.28.1-projects-contact-link
+v1.29.0-project-detail-polish
 ```
 
 当前线上地址：
@@ -206,3 +206,34 @@ Portfolio 后续设计开发可以继续讨论，但当前版本先封存。
 - 未修改视觉 / 动效 / 背景
 - 未修改 CodePilotSection.tsx 组件结构
 - build 通过
+
+## Phase 9-4：v1.29.0 Version Seal
+
+当前 main 已合并 `v1.29.0-project-detail-polish` 相关更新，并完成电脑端 / 手机端线上验收。
+
+本轮完成：
+
+- 确认三项目真实内容优化已进入 main
+- 确认 Vercel 线上双端验收通过
+- 更新版本文档
+- 创建并推送 `v1.29.0-project-detail-polish` tag
+
+## 当前最新版本
+
+```txt
+v1.29.0-project-detail-polish
+```
+
+## 当前线上地址
+
+```txt
+https://portfolio-rosy-ten-41.vercel.app/
+```
+
+## 后续建议
+
+Portfolio 后续设计开发建议优先从以下方向选择：
+
+1. v1.30.0-seo-share-polish：优化网页标题、描述、favicon、Open Graph、GitHub About
+2. v1.31.0-mobile-polish：如后续手机端发现问题，再做移动端专项优化
+3. v2.0.0-portfolio-expansion：后续新增更多真实项目时再扩展结构

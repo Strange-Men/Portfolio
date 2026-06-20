@@ -64,7 +64,7 @@
 | v1.27.0-production-verify | see tag | Phase 7-6 | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果，作为 Portfolio 第一阶段可投递版本收尾。 |
 | v1.28.0-career-material-sync | — | Phase 8-1 / 8-1.1 | 调整 Portfolio 页面文案，让 Hero / About / CodePilot 表达更贴近求职使用，面向中国 HR / 面试官，与简历和 CodePilot 项目介绍统一。Phase 8-1.1 优化项目导航、Hero 右侧模块和 CodePilot 链接结构。 |
 | v1.28.1-projects-contact-link | see tag | Phase 8-2 / 8-2.1 / 8-2.2 / 8-2.4 | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐，作为 Portfolio 多项目展示版本封存。 |
-| v1.29.0-project-detail-polish | Phase 9-1 / 9-2 | 项目详情优化：研究三个 GitHub 仓库的真实内容（Phase 9-1），基于研究文档优化三项目展示文案（Phase 9-2）。当前在 feat/v1.29.0-project-detail-polish 分支验收中。 |
+| v1.29.0-project-detail-polish | see tag | Phase 9 | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体。 |
 
 ---
 
@@ -73,7 +73,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.28.1-projects-contact-link
+v1.29.0-project-detail-polish
 ```
 
 当前已完成页面模块：
@@ -135,8 +135,8 @@ GitHub Profile 同步
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.29.0-project-detail-polish | Future | 进一步增强项目详情表达，例如职责、成果、验证方式和截图/演示说明。 |
-| v1.30.0-mobile-polish | Future | 如线上手机端发现排版问题，再做移动端专项优化。 |
+| v1.30.0-seo-share-polish | Future | 优化 title、meta description、favicon、Open Graph 分享卡片、GitHub About 等线上展示细节。 |
+| v1.31.0-mobile-polish | Future | 如线上手机端发现排版问题，再做移动端专项优化。 |
 | v2.0.0-portfolio-expansion | Future | 后续新增更多真实项目时，扩展 Portfolio 项目展示体系。 |
 
 ---

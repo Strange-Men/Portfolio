@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.28.1-projects-contact-link`
+`v1.29.0-project-detail-polish`
 
 当前线上地址：
 
@@ -80,17 +80,17 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已从单项目展示扩展为三项目展示：
+当前 Portfolio 已完成三项目真实内容优化：
 
-- CodePilot
-- EnterpriseAiDataAgent
-- Basjoo 二开项目
+- CodePilot：突出仓库理解、代码解析、多 Agent 审查和 Evidence-grounded 报告
+- EnterpriseAiDataAgent：突出 CSV/Excel 数据分析工作台、DuckDB、NL→SQL、SSE 和 Markdown 报告
+- Basjoo 二开项目：突出 RAG Evaluation Harness、Mock 可复现评估、pytest 和评估指标
 
-当前 Contact 主按钮使用 Gmail compose URL，邮箱文本保留为复制备用。
+当前版本已通过电脑端与手机端线上验收。
 
 下一步建议：
 
-后续 Portfolio 设计开发继续单独讨论，不再在本轮继续修改页面。
+后续 Portfolio 设计开发可以进入 SEO / Share Polish，或等待使用反馈后再继续。
 
 ---
 
@@ -200,17 +200,6 @@ Contact 只保留联系方式。
 
 当前下一阶段：
 
-- v1.29.0-project-detail-polish
-- Phase 9-1 已开始进行项目事实研究
-- 目标是在不夸大的前提下，让三个项目展示更真实、更具体
-- 当前研究文档：`docs/38_PROJECT_DETAIL_RESEARCH.md`
-
-当前 Phase 9-2 正在进行：
-
-- 已基于 `docs/38_PROJECT_DETAIL_RESEARCH.md` 修改 `src/data/projects.ts`
-- CodePilot 突出仓库理解、多 Agent、证据绑定、Mock/LLM 双模式
-- EnterpriseAiDataAgent 突出 CSV/Excel、DuckDB、NL→SQL、SSE、报告生成
-- Basjoo 二开突出 RAG Evaluation Harness、Mock 可复现评估、pytest 测试指标
-- 当前在 `feat/v1.29.0-project-detail-polish` 分支上，等待用户人工验收
-- 未修改视觉 / 动效 / 背景
-- 未新增假链接
+- v1.30.0-seo-share-polish
+- 优化网页 title、meta description、favicon、Open Graph 分享卡片、GitHub About 等线上展示细节
+- 也可以先暂停开发，等待投递和面试反馈后再继续
