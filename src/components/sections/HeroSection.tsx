@@ -1,4 +1,3 @@
-import { codepilot } from '../../data/codepilot';
 import { links } from '../../data/links';
 import { profile } from '../../data/profile';
 import { BorderGlowCard, Button, SectionLabel } from '../ui';
@@ -13,6 +12,7 @@ export function HeroSection() {
     >
       {/* background glow layers */}
       <div className="hero-anim hero-glow pointer-events-none absolute inset-0 -z-10 overflow-hidden" style={{ animationDelay: '0.05s' }}>
+        <div className="hero-premium-bg" />
         <div className="absolute left-1/2 top-[-18rem] h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-indigo-500/20 blur-3xl" />
         <div className="absolute right-[-10rem] top-1/3 h-[30rem] w-[30rem] rounded-full bg-cyan-400/10 blur-3xl" />
         <div className="absolute bottom-[-12rem] left-[-8rem] h-[32rem] w-[32rem] rounded-full bg-violet-500/10 blur-3xl" />
@@ -63,7 +63,7 @@ export function HeroSection() {
             </p>
 
             <div className="hero-anim hero-fade mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.52s' }}>
-              <Button href="#codepilot">查看项目</Button>
+              <Button href="#projects">查看项目</Button>
               <Button href={links.github} variant="secondary" external>
                 GitHub
               </Button>
@@ -73,7 +73,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* right: Career Focus summary panel */}
+          {/* right: Selected Work summary panel */}
           <BorderGlowCard
             className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm"
             edgeSensitivity={30}
@@ -92,37 +92,22 @@ export function HeroSection() {
               {profile.heroSummary.title}
             </h2>
 
-            <p className="text-body-default mt-4 text-zinc-300">
+            <p className="mt-3 text-sm leading-relaxed text-zinc-400">
               {profile.heroSummary.body}
             </p>
 
             <div className="mt-5 space-y-2">
-              {profile.heroSummary.highlights.map((item) => (
-                <div key={item.key} className="flex items-center gap-3 text-sm">
-                  <span className="shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">
-                    {item.key}
+              {profile.heroSummary.projects.map((item) => (
+                <div key={item.index} className="flex items-center gap-3 text-sm">
+                  <span className="shrink-0 tabular-nums text-xs font-medium text-zinc-600">
+                    {item.index}
                   </span>
-                  <span className="text-zinc-300">{item.value}</span>
+                  <span className="text-zinc-200">{item.name}</span>
+                  <span className="ml-auto text-xs text-zinc-500">{item.tag}</span>
                 </div>
               ))}
             </div>
           </BorderGlowCard>
-        </div>
-
-        {/* bottom value tags */}
-        <div className="hero-anim hero-fade mt-16 flex flex-wrap items-center gap-3 sm:mt-20" style={{ animationDelay: '0.72s' }}>
-          {profile.directions.map((d) => (
-            <span
-              key={d}
-              className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-medium text-zinc-400 sm:text-sm"
-            >
-              {d}
-            </span>
-          ))}
-          <span className="hidden h-4 w-px bg-white/10 sm:block" />
-          <span className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-medium text-zinc-400 sm:text-sm">
-            {codepilot.name}
-          </span>
         </div>
       </div>
     </section>

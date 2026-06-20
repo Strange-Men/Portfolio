@@ -102,6 +102,27 @@
     background-size: 64px 64px;
     mask-image: radial-gradient(circle at center, black, transparent 72%);
   }
+
+  .hero-premium-bg {
+    position: absolute;
+    inset: -20%;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(circle at 24% 18%, rgba(129, 140, 248, 0.14), transparent 28rem),
+      radial-gradient(circle at 78% 22%, rgba(236, 72, 153, 0.10), transparent 26rem),
+      radial-gradient(circle at 50% 80%, rgba(14, 165, 233, 0.08), transparent 30rem);
+    filter: blur(8px);
+    opacity: 0.8;
+    mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 100%);
+  }
+
+  @media (max-width: 640px) {
+    .hero-premium-bg {
+      opacity: 0.4;
+      inset: -10%;
+    }
+  }
 }
 
 /* hero motion keyframes */
