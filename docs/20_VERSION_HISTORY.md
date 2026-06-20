@@ -60,8 +60,7 @@
 | v1.25.0-docs-context-index | acfdf19 | Phase 7-4 | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则，防止后续 md 调用导致 token 爆炸。 |
 | v1.26.0-layout-copy-background-polish | 94ec2a1 | Phase 7-5 | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和 Hero 后页面背景层次。 |
 | v1.26.1-layout-copy-background-hotfix | — | Phase 7-5.1 | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题。 |
-| v1.26.2-background-card-mobile-polish | — | Phase 7-5.2 | 优化 Hero 与后续页面背景过渡、关闭卡片内部粉雾、增加移动端 touch glow，并降低移动端背景色块感。 |
-| v1.26.2-background-card-mobile-polish | — | Phase 7-5.2.1 | 继续修复 Hero / About 背景断层，将背景策略调整为全站统一 ambient base，并修正移动端需 Vercel 真实设备验收的说明。 |
+| v1.26.2-background-card-mobile-polish | c0989d9 | Phase 7-5.2 / 7-5.3 | 优化 Hero 与后续页面背景过渡、关闭 BorderGlow 卡片内部粉雾、增加移动端 touch glow、降低移动端背景色块感，并合并到 main 供 Vercel 手机端测试。 |
 
 ---
 
@@ -102,6 +101,14 @@ BorderGlow 卡片边境光辉
 Section 入场动效
 页面 ambient 背景
 设计与动效规范锁定
+AI 上下文索引与文档治理
+About 等宽卡片修复
+身份字段与 Hero meta 拆分
+Hero 后背景层级修复
+移动端 touch glow
+移动端背景降噪
+BorderGlow 内部粉雾关闭
+Vercel 手机端人工确认通过
 ```
 
 当前未完成：
@@ -109,7 +116,8 @@ Section 入场动效
 ```txt
 自定义域名
 未来项目扩展
-线上最终人工确认
+最终投递材料同步
+GitHub Profile 同步
 ```
 
 ---
@@ -120,11 +128,8 @@ Section 入场动效
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.25.0-docs-context-index | Phase 7-4 | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则，防止后续 md 调用导致 token 爆炸。 |
-| v1.26.0-layout-copy-background-polish | Phase 7-5 | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和 Hero 后页面背景层次。 |
-| v1.26.1-layout-copy-background-hotfix | Phase 7-5.1 | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题。 |
-| v1.26.2-background-card-mobile-polish | Phase 7-5.2 | 优化 Hero 与后续页面背景过渡、关闭卡片内部粉雾、增加移动端 touch glow，并降低移动端背景色块感。 |
-| v1.27.0-production-verify | Phase 7-6 | 人工确认 Vercel 线上页面已更新到 v1.26.2 版本，并完成线上可用性检查。 |
+| v1.27.0-production-verify | Phase 7-6 | 输出最终线上验收文档，记录桌面端、手机端、链接、动效、文案和投递可用性检查结果。 |
+| v1.28.0-career-material-sync | Future | 将 Portfolio 链接、CodePilot 表达和简历 / GitHub Profile / 投递话术对齐。 |
 | v2.0.0-multi-projects | Future | 未来新增更多真实项目时，扩展为多项目作品集。 |
 
 ---

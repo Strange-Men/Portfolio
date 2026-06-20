@@ -189,6 +189,46 @@ https://portfolio-rosy-ten-41.vercel.app/
 - 未新增简历下载
 - 未接入 LineWaves / ProfileCard
 
+## Phase 7-5.4：v1.26.2 Tag
+
+用户已确认当前 Vercel 线上页面在桌面端与手机端效果均不错。
+
+本轮完成：
+
+- 创建并推送 `v1.26.2-background-card-mobile-polish` tag
+- tag 指向 commit：`c0989d9`
+- 当前版本已包含：
+  - BorderGlow 卡片边境光辉
+  - RevealOnScroll Section 入场动效
+  - 全站 ambient background
+  - AI 上下文索引与文档治理
+  - About 等宽卡片修复
+  - identity / heroMeta 拆分
+  - BorderGlow 内部粉雾关闭
+  - 移动端 touch glow
+  - 移动端背景降噪
+- 用户已通过 Vercel 线上地址确认桌面端和手机端效果不错
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未接入 LineWaves
+- 未接入 ProfileCard
+- 未安装依赖
+
+## 版本状态
+
+当前最新版本：
+
+```txt
+v1.26.2-background-card-mobile-polish
+```
+
+当前线上地址：
+
+```txt
+https://portfolio-rosy-ten-41.vercel.app/
+```
+
 ## 下一步
 
 建议进入：
@@ -197,4 +237,9 @@ https://portfolio-rosy-ten-41.vercel.app/
 v1.27.0-production-verify
 ```
 
-目标：人工确认 Vercel 线上页面已更新到 v1.26.2 版本，并做最终线上可用性检查。
+目标：
+
+* 输出最终线上验收文档
+* 记录桌面端与手机端已通过
+* 检查链接、文案、动效、移动端、投递可用性
+* 为 Portfolio 第一阶段收尾

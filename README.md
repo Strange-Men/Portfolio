@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.26.1-layout-copy-background-hotfix
+v1.26.2-background-card-mobile-polish
 ```
 
 当前已完成：
@@ -50,11 +50,21 @@ v1.26.1-layout-copy-background-hotfix
 - Section 入场动效
 - 页面 ambient 背景
 - 设计与动效规范锁定
+- AI 上下文索引与文档治理
+- About 等宽卡片修复
+- 身份字段与 Hero meta 拆分
+- Hero 后背景层级修复
+- 移动端 touch glow
+- 移动端背景降噪
+- BorderGlow 内部粉雾关闭
+- Vercel 手机端人工确认通过
 
 当前未完成：
 
 - 自定义域名
-- 线上最终人工确认
+- 未来项目扩展
+- 最终投递材料同步
+- GitHub Profile 同步
 
 ---
 
@@ -92,6 +102,7 @@ v1.26.1-layout-copy-background-hotfix
 | v1.25.0-docs-context-index | Docs | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则 |
 | v1.26.0-layout-copy-background-polish | Polish | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和页面背景层次 |
 | v1.26.1-layout-copy-background-hotfix | Hotfix | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题 |
+| v1.26.2-background-card-mobile-polish | Mobile & Background Polish | 合并移动端 touch glow、移动端背景降噪、卡片内部粉雾关闭和背景过渡优化 |
 
 ---
 

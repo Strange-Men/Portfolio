@@ -98,7 +98,17 @@ CodePilot 仓库：
 - About / CodePilot / Contact 使用 RevealOnScroll
 - 主要玻璃卡片使用 BorderGlowCard（生产效果关闭内部 fill 层，只保留边框追光和轻微边缘外光）
 - 移动端 BorderGlow 支持 touch active 弱交互（手指点下显示边框光，松手后自动消失）
-- 移动端背景和 touch glow 需要 Vercel Preview / 线上真实设备测试
+
+当前 Vercel 线上页面已由用户确认桌面端和手机端效果均不错。
+
+当前生产效果包含：
+
+- BorderGlow 主要卡片 hover
+- 移动端 touch glow
+- RevealOnScroll Section 入场
+- 全站 ambient background
+- 移动端背景降噪
+- BorderGlow 内部 fill 层关闭，避免卡片内部粉雾
 
 ---
 
@@ -178,8 +188,7 @@ Contact 只保留联系方式。
 
 目标：
 
-- 人工确认 Vercel 线上页面已更新到 v1.26.2 打磨版本
-- 检查线上链接
-- 检查移动端
-- 检查 BorderGlow touch glow / RevealOnScroll 是否在线上正常
-- 检查 Hero 到 About 背景过渡是否柔和
+- 输出最终线上验收文档
+- 记录桌面端与手机端已通过
+- 检查链接、文案、动效、移动端、投递可用性
+- 为 Portfolio 第一阶段收尾
