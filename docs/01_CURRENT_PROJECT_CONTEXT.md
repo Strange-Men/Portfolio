@@ -198,10 +198,13 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-当前下一阶段：
+当前 Phase 10-2 正在进行 SEO / Share Polish：
 
-- v1.30.0-seo-share-polish
-- Phase 10-1 已开始进行 SEO / 分享展示研究
-- 目标是在不改变页面视觉的前提下，提高 Portfolio 在线上分享、浏览器标签、GitHub 仓库展示中的正式感
-- 当前研究文档：`docs/39_SEO_SHARE_RESEARCH.md`
-- 也可以先暂停开发，等待投递和面试反馈后再继续
+- 优化浏览器 title / meta description
+- 补充 Open Graph / Twitter Card 基础标签
+- 新增 favicon（public/favicon.svg）
+- 新增 site.webmanifest
+- 优化 README 首屏展示
+- 不改变页面视觉与项目内容
+
+当前分支：`feat/v1.30.0-seo-share-polish`，等待用户人工验收。

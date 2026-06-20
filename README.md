@@ -1,13 +1,20 @@
 # Portfolio
 
-面向求职展示的个人作品集网站。
+个人作品集网站，用于集中展示我的 AI 应用开发、Agent 和 Python 后端项目实践。
 
-当前项目用于展示：
+**🔗 Live Site:** https://portfolio-rosy-ten-41.vercel.app/
 
-- AI 应用开发 / Agent 开发 / Python 后端方向
-- 核心项目 CodePilot
-- 个人前端工程化与小步迭代能力
-- 真实 GitHub 与 Email 联系入口
+## Featured Projects
+
+| Project | Focus | Links |
+|---|---|---|
+| CodePilot | AI 代码审查与仓库理解 | [GitHub](https://github.com/Strange-Men/CodePilot) / [Demo](https://code-pilot-red.vercel.app/) |
+| EnterpriseAiDataAgent | CSV / Excel 数据分析工作台 | [GitHub](https://github.com/Strange-Men/EnterpriseAiDataAgent) |
+| Basjoo 二开项目 | RAG Evaluation Harness 与客服知识库流程增强 | [项目说明](https://github.com/Strange-Men/CustomerOpsAgent_2) / [代码仓库](https://github.com/Strange-Men/basjoo/tree/phase1-rag-eval-harness) |
+
+## Tech Stack
+
+React 18 / TypeScript / Vite / Tailwind CSS / Vercel
 
 ---
 
@@ -17,74 +24,20 @@
 v1.29.0-project-detail-polish
 ```
 
-v1.29.0-project-detail-polish 已完成：
-
-- 基于真实 GitHub 仓库研究优化三个项目内容
-- CodePilot：仓库理解、Tree-sitter / AST、多 Agent、Evidence-grounded 报告
-- EnterpriseAiDataAgent：CSV/Excel、DuckDB、NL→SQL、SSE、Markdown 报告
-- Basjoo 二开：RAG Evaluation Harness、Mock 可复现、pytest、评估指标
-
 当前已完成：
 
 - 基于真实 GitHub 仓库研究优化三个项目内容
-- CodePilot：仓库理解、Tree-sitter / AST、多 Agent、Evidence-grounded 报告
-- EnterpriseAiDataAgent：CSV/Excel、DuckDB、NL→SQL、SSE、Markdown 报告
-- Basjoo 二开：RAG Evaluation Harness、Mock 可复现、pytest、评估指标
 - 三项目平级展示
 - Hero Selected Work 摘要
 - Contact Gmail 联系按钮
-- EnterpriseAiDataAgent GitHub 链接
-- Basjoo 项目说明与代码仓库链接
-- Email 备用显示
-- Vite + React + TypeScript 工程基线
-- Tailwind CSS 配置
-- Data 层
-- UI 基础组件
-- HeroSection
-- AboutSection
-- CodePilotSection
-- ContactSection
-- 完整页面组合
-- 响应式专项优化
-- 最终 MVP 构建审计
-- MVP 封板
-- Vercel 部署
-- 线上 URL 记录
-- 内容表达优化
-- 导航与排版优化
-- 中文友好 Typography System
-- 参考风格转译与设计规格
-- Hero Spotlight Layout
-- 轻量 Hero 入场动画
-- CodePilot 紧凑项目证明
-- 简历与投递表达对齐文档
-- 信息架构与文案修正
-- 最终视觉、响应式、链接和构建终检
-- 动画交互规范沉淀
-- 投递版本冻结
-- Contact HR 视角文案 hotfix
-- BorderGlow 卡片边境光辉
-- Section 入场动效
-- 页面 ambient 背景
-- 设计与动效规范锁定
-- AI 上下文索引与文档治理
-- About 等宽卡片修复
-- 身份字段与 Hero meta 拆分
-- Hero 后背景层级修复
-- 移动端 touch glow
-- 移动端背景降噪
-- BorderGlow 内部粉雾关闭
-- Vercel 手机端人工确认通过
-- 最终线上验收文档
-- 桌面端与手机端人工确认
-- Portfolio 第一阶段收尾
+- EnterpriseAiDataAgent / Basjoo 链接补齐
+- 完整页面组合与响应式优化
+- Vercel 线上部署
 
 当前未完成：
 
 - 自定义域名
 - 未来项目扩展
-- 最终投递材料同步
-- GitHub Profile 同步
 
 ---
 
@@ -124,7 +77,7 @@ v1.29.0-project-detail-polish 已完成：
 | v1.26.1-layout-copy-background-hotfix | Hotfix | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题 |
 | v1.26.2-background-card-mobile-polish | Mobile & Background Polish | 合并移动端 touch glow、移动端背景降噪、卡片内部粉雾关闭和背景过渡优化 |
 | v1.27.0-production-verify | Production Verify | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果 |
-| v1.28.0-career-material-sync | Career Copy Sync | 调整 Portfolio 页面文案与项目导航结构，让 Hero / About / CodePilot 表达更贴近求职使用，优化多项目扩展入口 |
+| v1.28.0-career-material-sync | Career Copy Sync | 调整 Portfolio 页面文案与项目导航结构，让 Hero / About / CodePilot 表达更贴近求职使用 |
 | v1.28.1-projects-contact-link | Projects & Contact Polish | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐 |
 | v1.29.0-project-detail-polish | Project Detail Polish | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体 |
 
@@ -146,69 +99,9 @@ v1.29.0-project-detail-polish 已完成：
 - 登录
 - 数据库
 - 博客
-- 多项目展示
 - 复杂动效
-- cursor spotlight
 - 简历下载按钮
 - 未确认 Demo 链接
-
----
-
-## MVP Status
-
-当前 MVP 已封板并完成线上部署。
-
-线上访问地址：
-
-```txt
-https://portfolio-rosy-ten-41.vercel.app/
-```
-
-已包含：
-
-- Hero
-- About
-- CodePilot
-- Contact
-
----
-
-## Core Project: CodePilot
-
-CodePilot 是当前 Portfolio 的核心展示项目。
-
-项目定位：
-
-```txt
-AI 代码审查与仓库理解系统
-```
-
-基本流程：
-
-1. 输入 GitHub 仓库地址
-2. 自动克隆与代码解析
-3. 构建结构化上下文
-4. 生成 Markdown 审查报告
-
-CodePilot 仓库：
-
-```txt
-https://github.com/Strange-Men/CodePilot
-```
-
----
-
-## Tech Stack
-
-当前技术栈：
-
-- React
-- Vite
-- TypeScript
-- Tailwind CSS
-- npm
-
-当前是静态单页作品集，不包含后端和数据库。
 
 ---
 
@@ -245,6 +138,30 @@ Start with:
 - `docs/DEV_STATUS.md`
 
 Then read task-specific docs according to `docs/00_AI_CONTEXT_INDEX.md`.
+
+---
+
+## GitHub About Suggestion
+
+以下为 GitHub 仓库 About 面板手动填写建议（不通过 API 自动修改）：
+
+**Description:**
+
+```
+Personal portfolio for AI application, Agent, and Python backend projects.
+```
+
+**Website:**
+
+```
+https://portfolio-rosy-ten-41.vercel.app/
+```
+
+**Topics:**
+
+```
+portfolio, react, vite, typescript, tailwindcss, ai, agent, fastapi
+```
 
 ---
 

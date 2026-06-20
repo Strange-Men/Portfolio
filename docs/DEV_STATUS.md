@@ -238,6 +238,25 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 2. v1.31.0-mobile-polish：如后续手机端发现问题，再做移动端专项优化
 3. v2.0.0-portfolio-expansion：后续新增更多真实项目时再扩展结构
 
+## Phase 10-2：SEO / Share Polish
+
+本轮基于 `docs/39_SEO_SHARE_RESEARCH.md` 完成基础 SEO 与分享展示优化。
+
+完成内容：
+
+- 更新 `index.html` 的 title
+- 增加 meta description
+- 增加 Open Graph 基础标签
+- 增加 Twitter Card 基础标签
+- 增加 theme-color
+- 新增 SVG favicon（public/favicon.svg）
+- 新增 site.webmanifest（public/site.webmanifest）
+- 优化 README 首屏 Live Site 与 Featured Projects
+- 保留 GitHub About 手动填写建议
+- 未修改页面组件
+- 未修改视觉 / 动效 / 背景
+- 未修改项目卡片内容
+
 ## Phase 10-1：SEO / Share Research
 
 本轮开始 v1.30.0-seo-share-polish 的准备阶段。

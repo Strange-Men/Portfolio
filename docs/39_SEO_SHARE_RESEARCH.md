@@ -377,3 +377,23 @@ v1.30.0 暂不做：
 
 进入 Phase 10-2：v1.30.0-seo-share-polish。
 基于本研究文档，小范围修改 index.html 和 README，提高线上展示正式感。
+
+---
+
+## 10. Phase 10-2 Application
+
+本轮基于研究结论完成以下优化：
+
+- 更新浏览器 title 为 `李泓轩｜AI Application Portfolio`
+- 增加 meta description
+- 增加 Open Graph 基础标签（og:title, og:description, og:type, og:url, og:site_name）
+- 增加 Twitter Card 基础标签（twitter:card 使用 summary，twitter:title, twitter:description）
+- 增加 theme-color（#09090b）
+- 新增 SVG favicon（public/favicon.svg）
+- 新增 site.webmanifest（public/site.webmanifest）
+- 优化 README 首屏：醒目的 Live Site 链接、Featured Projects 简表、精简已完成列表
+- 保留 GitHub About 手动填写建议（在 README "GitHub About Suggestion" 小节）
+
+本轮未修改页面组件、视觉系统、项目卡片内容或动效。
+本轮未设置 og:image（无合适图片资源）。
+本轮未使用 summary_large_image（无大图资源）。
