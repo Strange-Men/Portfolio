@@ -1,0 +1,16 @@
+{
+  "name": "李泓轩 Portfolio",
+  "short_name": "Portfolio",
+  "description": "AI application, Agent, and Python backend project portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
