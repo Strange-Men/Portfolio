@@ -66,6 +66,7 @@
 | v1.28.1-projects-contact-link | see tag | Phase 8-2 / 8-2.1 / 8-2.2 / 8-2.4 | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐，作为 Portfolio 多项目展示版本封存。 |
 | v1.29.0-project-detail-polish | see tag | Phase 9 | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体。 |
 | v1.30.0-seo-share-polish | see tag | Phase 10 | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示。 |
+| v1.31.0-github-about-polish | Phase 11-1 | 完善 GitHub 仓库 About 展示信息，包括 Description、Website 和 Topics。 |
 
 ---
 
