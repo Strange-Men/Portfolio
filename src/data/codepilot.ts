@@ -2,22 +2,21 @@ import { links } from './links';
 
 export const codepilot = {
   name: 'CodePilot',
-  subtitle: 'GitHub Repository Understanding & AI Code Review',
+  subtitle: 'AI 代码审查与仓库理解系统',
   description:
-    '面向公开 GitHub 仓库的 AI 代码理解与审查项目：输入仓库链接后，系统会解析源码结构、构建结构化上下文，并生成可阅读的 Markdown 审查报告。',
+    '面向 GitHub 仓库的 AI 代码审查系统。用户输入仓库地址后，系统会自动克隆代码、解析项目结构，并生成包含架构概览、代码问题、可维护性分析和重构建议的 Markdown 报告，帮助快速理解中小型代码仓库。',
   painPoint:
-    '它解决的是"接手一个陌生仓库时，难以快速理解结构、风险和改进方向"的问题，适合用来展示 AI 应用开发、Python 后端和 LLM 工程化能力。',
+    '很多中小型仓库在接手时缺少清晰文档，人工阅读代码成本高。CodePilot 尝试把"快速理解仓库结构"和"生成初步审查报告"自动化，帮助开发者更快判断项目结构、潜在问题和后续重构方向。',
   proofPoints: [
-    '仓库解析',
-    '结构化上下文',
-    'AI 审查报告',
+    '自动解析仓库结构',
+    '结构化报告生成',
+    '可演示工程闭环',
   ],
   flow: [
-    '输入仓库 URL',
-    '克隆 / 读取源码',
-    'Tree-sitter / AST 解析',
-    '构建上下文',
-    '生成 Markdown 报告',
+    '输入仓库地址',
+    '自动克隆与代码解析',
+    '构建结构化上下文',
+    '生成 Markdown 审查报告',
   ],
   techStack: [
     'Python',

@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.27.0-production-verify
+v1.28.0-career-material-sync (待确认)
 ```
 
 当前已完成：
@@ -107,6 +107,7 @@ v1.27.0-production-verify
 | v1.26.1-layout-copy-background-hotfix | Hotfix | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题 |
 | v1.26.2-background-card-mobile-polish | Mobile & Background Polish | 合并移动端 touch glow、移动端背景降噪、卡片内部粉雾关闭和背景过渡优化 |
 | v1.27.0-production-verify | Production Verify | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果 |
+| v1.28.0-career-material-sync | Career Copy Sync | 调整 Portfolio 页面文案，让 Hero / About / CodePilot 表达更贴近求职使用 |
 
 ---
 
@@ -160,13 +161,13 @@ CodePilot 是当前 Portfolio 的核心展示项目。
 项目定位：
 
 ```txt
-GitHub Repository Understanding & AI Code Review
+AI 代码审查与仓库理解系统
 ```
 
 基本流程：
 
-1. 输入 GitHub 仓库链接
-2. 解析源码结构
+1. 输入 GitHub 仓库地址
+2. 自动克隆与代码解析
 3. 构建结构化上下文
 4. 生成 Markdown 审查报告
 

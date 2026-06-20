@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.27.0-production-verify`
+`v1.28.0-career-material-sync (待确认)`
 
 当前线上地址：
 
@@ -80,13 +80,8 @@ CodePilot 仓库：
 
 当前状态：
 
-Portfolio 第一阶段可投递版本已完成线上验收。
-
-用户已确认：
-
-- 桌面端效果不错
-- 手机端效果不错
-- Vercel 线上页面为最新版本
+进入 v1.28.0-career-material-sync，调整 Portfolio 页面文案与简历 / CodePilot 表达对齐。
+CodePilot README 后续在 CodePilot 项目目录单独处理。
 
 ---
 
@@ -194,11 +189,7 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-`v1.28.0-career-material-sync`
-
-目标：
-
-- 简历同步 Portfolio 链接
-- GitHub Profile 同步 Portfolio / CodePilot
-- 投递话术统一
-- CodePilot 项目表达同步
+请用户先在桌面端预览 Portfolio 文案是否和简历一致。
+如果文案 OK，再合并到 main 并等待 Vercel 部署。
+手机端最终仍以 Vercel 线上地址测试为准。
+CodePilot README 中文化在 CodePilot 项目目录中单独进行。
