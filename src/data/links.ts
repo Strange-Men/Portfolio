@@ -3,6 +3,7 @@ export const links = {
   codepilotGithub: 'https://github.com/Strange-Men/CodePilot',
   codepilotDemo: 'https://code-pilot-red.vercel.app/',
   enterpriseAiGithub: 'https://github.com/Strange-Men/EnterpriseAiDataAgent',
+  enterpriseAiDemo: 'https://enterprise-ai-data-agent.vercel.app/',
   basjooReadme: 'https://github.com/Strange-Men/CustomerOpsAgent_2',
   basjooCode: 'https://github.com/Strange-Men/basjoo/tree/phase1-rag-eval-harness',
   email: '1643229721@qq.com',

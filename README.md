@@ -9,7 +9,7 @@
 | Project | Focus | Links |
 |---|---|---|
 | CodePilot | AI 代码审查与仓库理解 | [GitHub](https://github.com/Strange-Men/CodePilot) / [Demo](https://code-pilot-red.vercel.app/) |
-| EnterpriseAiDataAgent | CSV / Excel 数据分析工作台 | [GitHub](https://github.com/Strange-Men/EnterpriseAiDataAgent) |
+| EnterpriseAiDataAgent | CSV / Excel 数据分析工作台 | [GitHub](https://github.com/Strange-Men/EnterpriseAiDataAgent) / [Demo](https://enterprise-ai-data-agent.vercel.app/) |
 | Basjoo 二开项目 | RAG Evaluation Harness 与客服知识库流程增强 | [项目说明](https://github.com/Strange-Men/CustomerOpsAgent_2) / [代码仓库](https://github.com/Strange-Men/basjoo/tree/phase1-rag-eval-harness) |
 
 ## Tech Stack
@@ -44,6 +44,10 @@ v1.30.0-seo-share-polish
 
 - 自定义域名
 - 未来项目扩展
+
+当前进行中：
+
+- v1.32.0-proof-polish：为三个项目卡片增加轻量级验证方式说明，为 EnterpriseAiDataAgent 补充在线演示链接（分支验收中）
 
 ---
 

@@ -315,3 +315,22 @@ Phase 12-2 应基于本研究文档，小范围修改 `src/data/projects.ts` 和
 1. 为 EnterpriseAiDataAgent 增加 Demo 链接
 2. 更新 `src/data/links.ts` 新增 enterpriseAiDemo 字段
 3. 更新 `src/data/projects.ts` 中 EnterpriseAiDataAgent 的 links 数组
+
+---
+
+## 11. Phase 12-2 Application
+
+本轮基于研究结论完成以下优化：
+
+- 为 CodePilot 增加轻量级验证方式说明
+- 为 EnterpriseAiDataAgent 增加在线演示链接与验证方式说明
+- 为 Basjoo 二开项目增加验证方式说明
+- `src/data/links.ts` 新增 `enterpriseAiDemo` 字段
+- `src/data/projects.ts` 新增 `proof` 类型字段
+- `src/components/sections/CodePilotSection.tsx` 在项目卡片中渲染验证方式
+- 页面中不新增假链接
+- Basjoo 仍不渲染在线 Demo
+- Mock / 本地原型边界保持清晰
+- 未修改 Hero / About / Contact
+- 未修改 BorderGlow / RevealOnScroll / 背景系统
+- build 通过

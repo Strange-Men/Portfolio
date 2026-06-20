@@ -67,7 +67,7 @@
 | v1.29.0-project-detail-polish | see tag | Phase 9 | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体。 |
 | v1.30.0-seo-share-polish | see tag | Phase 10 | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示。 |
 | v1.31.0-github-about-polish | Phase 11-1 | 完善 GitHub 仓库 About 展示信息，包括 Description、Website 和 Topics。 |
-| v1.32.0-proof-polish | Phase 12-1 | 项目验证入口优化准备阶段：研究三个项目的 Demo、README、测试、报告和代码证据，为后续 Portfolio 页面增加轻量级验证方式说明提供依据。 |
+| v1.32.0-proof-polish | Phase 12-1 / 12-2 | 项目验证入口优化：研究三个项目的验证证据，为项目卡片增加轻量级验证方式说明，并为 EnterpriseAiDataAgent 补充在线演示链接。 |
 
 ---
 
