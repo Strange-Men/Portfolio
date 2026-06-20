@@ -323,3 +323,22 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 下一步：
 
 可进入 v1.32.0-proof-polish，增强项目验证入口。
+
+## Phase 12-1：Project Proof Research
+
+本轮开始 v1.32.0-proof-polish 的准备阶段。
+
+本轮完成：
+
+- 研究 CodePilot 的 Demo、README、代码、测试与 CI 等可验证入口
+- 研究 EnterpriseAiDataAgent 的 Demo、README、代码结构、DuckDB / NL→SQL / SSE / 报告生成相关证据
+- 研究 Basjoo 二开项目的项目说明仓库与 basjoo 代码分支中的 RAG Evaluation Harness、pytest、eval cases 等证据
+- 发现 EnterpriseAiDataAgent 已部署在线 Demo（此前记录为无在线 Demo）
+- 新增 `docs/40_PROJECT_PROOF_RESEARCH.md`
+- 本轮未修改页面源码
+- 本轮未修改视觉 / 动效 / 背景
+- 本轮未打 tag
+
+下一步：
+
+进入 Phase 12-2，根据研究文档为 Portfolio 项目卡片增加轻量级"验证方式"说明。
