@@ -61,6 +61,7 @@
 | v1.26.0-layout-copy-background-polish | 94ec2a1 | Phase 7-5 | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和 Hero 后页面背景层次。 |
 | v1.26.1-layout-copy-background-hotfix | — | Phase 7-5.1 | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题。 |
 | v1.26.2-background-card-mobile-polish | — | Phase 7-5.2 | 优化 Hero 与后续页面背景过渡、关闭卡片内部粉雾、增加移动端 touch glow，并降低移动端背景色块感。 |
+| v1.26.2-background-card-mobile-polish | — | Phase 7-5.2.1 | 继续修复 Hero / About 背景断层，将背景策略调整为全站统一 ambient base，并修正移动端需 Vercel 真实设备验收的说明。 |
 
 ---
 

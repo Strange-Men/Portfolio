@@ -93,10 +93,12 @@ CodePilot 仓库：
 当前动效：
 
 - Hero 独立 spotlight / hero-anim
-- Hero 后页面统一 ambient background（移动端有单独降噪规则）
+- 全站统一 `site-ambient-bg` 作为底层背景（移动端有单独降噪规则）
+- Hero 只叠加 spotlight / grid / glow 装饰层，不再使用独立实体黑底
 - About / CodePilot / Contact 使用 RevealOnScroll
 - 主要玻璃卡片使用 BorderGlowCard（生产效果关闭内部 fill 层，只保留边框追光和轻微边缘外光）
 - 移动端 BorderGlow 支持 touch active 弱交互（手指点下显示边框光，松手后自动消失）
+- 移动端背景和 touch glow 需要 Vercel Preview / 线上真实设备测试
 
 ---
 

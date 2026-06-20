@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative isolate min-h-screen overflow-hidden bg-zinc-950 px-6 py-28 text-white"
+      className="relative isolate min-h-screen overflow-hidden px-6 py-28 text-white"
       style={{ minHeight: '100dvh' }}
       aria-labelledby="hero-title"
     >
@@ -16,14 +16,14 @@ export function HeroSection() {
         <div className="absolute left-1/2 top-[-18rem] h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-indigo-500/20 blur-3xl" />
         <div className="absolute right-[-10rem] top-1/3 h-[30rem] w-[30rem] rounded-full bg-cyan-400/10 blur-3xl" />
         <div className="absolute bottom-[-12rem] left-[-8rem] h-[32rem] w-[32rem] rounded-full bg-violet-500/10 blur-3xl" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,255,255,0.10),transparent_34%),linear-gradient(to_bottom,rgba(9,9,11,0.30),rgba(9,9,11,1))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,255,255,0.08),transparent_34%)]" />
         <div className="hero-grid-bg absolute inset-0 opacity-60" />
       </div>
 
       {/* bottom transition: soft fade from Hero into ambient background */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-48 bg-gradient-to-b from-transparent via-zinc-950/50 to-[#0d0a12]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-56 bg-gradient-to-b from-transparent via-[#09090b]/30 to-transparent"
       />
 
       {/* content shell */}

@@ -167,6 +167,28 @@ https://portfolio-rosy-ten-41.vercel.app/
 - 未新增简历下载
 - 未接入 LineWaves / ProfileCard
 
+## Phase 7-5.2.1：Unified Background Base Hotfix
+
+用户检查 Phase 7-5.2 后指出：
+
+- 手机端不能通过 localhost 完整验收，需要 Vercel Preview / 线上地址测试
+- Hero 和 About 之间仍有明显背景横线
+- 当前背景像 Hero 与后续页面两套背景硬切
+
+本轮调整：
+
+- 将背景策略调整为全站统一 `site-ambient-bg`
+- Hero 不再使用实体黑色背景覆盖全站背景
+- Hero 仅保留 spotlight / grid / glow 装饰层
+- Hero 底部 fade 改为透明过渡，不再用强实色接色
+- 清理旧 `page-ambient-bg` / 硬切背景样式
+- 移动端验收说明改为需要 Vercel Preview / 线上真实设备测试
+- 保持 BorderGlow / RevealOnScroll 不变
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未接入 LineWaves / ProfileCard
+
 ## 下一步
 
 建议进入：
