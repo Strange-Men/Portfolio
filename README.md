@@ -24,6 +24,9 @@ v1.28.1-projects-contact-link 正在分支中：
 - 三项目平级展示
 - EnterpriseAiDataAgent / Basjoo 二开链接补齐
 - Hero 去重复与背景质感优化
+- Hero Selected Work 摘要优化
+- 三项目统一平级结构（痛点、流程、技术栈）
+- Gmail 联系按钮
 
 当前已完成：
 

@@ -33,7 +33,9 @@ export function ContactSection() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href={links.emailHref}
+                  href={links.gmailHref}
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="inline-flex min-h-11 items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border border-white/15 bg-zinc-50 text-zinc-950 hover:bg-white focus-visible:outline-zinc-50"
                 >
                   发送 Email

@@ -131,6 +131,21 @@ v1.28.1-projects-contact-link (分支验收中)
 - 未新增假链接
 - 未新增简历下载
 
+## Phase 8-2.2：Mature Hero Summary and Equal Project Structure
+
+本轮完成：
+
+- 优化 Hero 右侧 Selected Work 模块
+- 三个项目统一为平级展示
+- EnterpriseAiDataAgent 补充痛点、流程、技术栈与链接结构
+- Basjoo 二开项目补充痛点、流程、技术栈与链接结构
+- Contact 的发送 Email 按钮改为 Gmail compose URL
+- 保留邮箱文本
+- 未修改 CodePilot README
+- 未进入其他项目目录
+- 未新增假链接
+- 未新增简历下载
+
 ## 当前线上地址
 
 ```txt

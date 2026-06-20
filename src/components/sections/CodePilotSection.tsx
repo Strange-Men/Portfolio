@@ -4,11 +4,9 @@ import { BorderGlowCard, Button, RevealOnScroll, SectionLabel, Tag } from '../ui
 function ProjectCard({
   project,
   delay,
-  showFlow,
 }: {
   project: (typeof projects)[number];
   delay: number;
-  showFlow?: boolean;
 }) {
   return (
     <RevealOnScroll delay={delay}>
@@ -66,7 +64,7 @@ function ProjectCard({
           colors={['#c084fc', '#eb1f94', '#f838ea']}
           fillOpacity={0.08}
         >
-          {showFlow && project.flow && (
+          {project.flow && project.flow.length > 0 && (
             <>
               <h4 className="text-lg font-semibold tracking-tight text-white">
                 项目流程
@@ -123,7 +121,6 @@ export function CodePilotSection() {
               key={project.id}
               project={project}
               delay={index * 120}
-              showFlow={index === 0}
             />
           ))}
         </div>

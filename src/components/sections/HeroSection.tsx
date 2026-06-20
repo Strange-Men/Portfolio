@@ -73,7 +73,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* right: Career Focus summary panel */}
+          {/* right: Selected Work summary panel */}
           <BorderGlowCard
             className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm"
             edgeSensitivity={30}
@@ -92,17 +92,18 @@ export function HeroSection() {
               {profile.heroSummary.title}
             </h2>
 
-            <p className="text-body-default mt-4 text-zinc-300">
+            <p className="mt-3 text-sm leading-relaxed text-zinc-400">
               {profile.heroSummary.body}
             </p>
 
             <div className="mt-5 space-y-2">
-              {profile.heroSummary.highlights.map((item) => (
-                <div key={item.key} className="flex items-center gap-3 text-sm">
-                  <span className="shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">
-                    {item.key}
+              {profile.heroSummary.projects.map((item) => (
+                <div key={item.index} className="flex items-center gap-3 text-sm">
+                  <span className="shrink-0 tabular-nums text-xs font-medium text-zinc-600">
+                    {item.index}
                   </span>
-                  <span className="text-zinc-300">{item.value}</span>
+                  <span className="text-zinc-200">{item.name}</span>
+                  <span className="ml-auto text-xs text-zinc-500">{item.tag}</span>
                 </div>
               ))}
             </div>
