@@ -1,7 +1,7 @@
 import { codepilot } from '../../data/codepilot';
 import { links } from '../../data/links';
 import { profile } from '../../data/profile';
-import { BorderGlowCard, Button, SectionLabel, Tag } from '../ui';
+import { BorderGlowCard, Button, SectionLabel } from '../ui';
 
 export function HeroSection() {
   return (
@@ -63,7 +63,7 @@ export function HeroSection() {
             </p>
 
             <div className="hero-anim hero-fade mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.52s' }}>
-              <Button href="#codepilot">查看 CodePilot</Button>
+              <Button href="#codepilot">查看项目</Button>
               <Button href={links.github} variant="secondary" external>
                 GitHub
               </Button>
@@ -73,7 +73,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* right: CodePilot info card */}
+          {/* right: Career Focus summary panel */}
           <BorderGlowCard
             className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm"
             edgeSensitivity={30}
@@ -86,23 +86,24 @@ export function HeroSection() {
             colors={['#c084fc', '#eb1f94', '#f838ea']}
             fillOpacity={0.08}
           >
-            <p className="text-label text-zinc-500">Core Project</p>
+            <p className="text-label text-zinc-500">{profile.heroSummary.label}</p>
 
             <h2 className="mt-3 text-lg font-semibold tracking-tight text-white">
-              {codepilot.name}
+              {profile.heroSummary.title}
             </h2>
 
-            <p className="mt-1 text-sm font-medium text-zinc-400">
-              {codepilot.subtitle}
-            </p>
-
             <p className="text-body-default mt-4 text-zinc-300">
-              {codepilot.description}
+              {profile.heroSummary.body}
             </p>
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              {codepilot.techStack.map((tech) => (
-                <Tag key={tech}>{tech}</Tag>
+            <div className="mt-5 space-y-2">
+              {profile.heroSummary.highlights.map((item) => (
+                <div key={item.key} className="flex items-center gap-3 text-sm">
+                  <span className="shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">
+                    {item.key}
+                  </span>
+                  <span className="text-zinc-300">{item.value}</span>
+                </div>
               ))}
             </div>
           </BorderGlowCard>

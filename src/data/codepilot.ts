@@ -28,5 +28,5 @@ export const codepilot = {
     'SQLite',
   ],
   githubUrl: links.codepilotGithub,
-  demoUrl: null,
+  demoUrl: links.codepilotDemo,
 } as const;

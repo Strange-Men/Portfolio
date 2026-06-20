@@ -80,8 +80,9 @@ CodePilot 仓库：
 
 当前状态：
 
-进入 v1.28.0-career-material-sync，调整 Portfolio 页面文案与简历 / CodePilot 表达对齐。
+v1.28.0-career-material-sync 阶段分支验收中。Phase 8-1.1 优化了项目导航、Hero 右侧模块和 CodePilot 链接结构。
 CodePilot README 后续在 CodePilot 项目目录单独处理。
+下一步是用户人工确认文案与结构后，再合并 main。
 
 ---
 

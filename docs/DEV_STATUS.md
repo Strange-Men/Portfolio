@@ -62,7 +62,7 @@ https://portfolio-rosy-ten-41.vercel.app/
 
 进入 Portfolio 文案与简历 / CodePilot 表达对齐阶段。
 
-本轮完成：
+Phase 8-1 完成：
 
 - 调整 `src/data/profile.ts` 中的 Hero 描述、About 文案、focusTags
 - 调整 `src/data/codepilot.ts` 中的 subtitle、description、painPoint、proofPoints、flow
@@ -73,6 +73,23 @@ https://portfolio-rosy-ten-41.vercel.app/
 - 未新增项目 / Demo / 简历下载
 - 未修改 CodePilot 仓库
 - 未修改 CodePilot README
+
+## Phase 8-1.1：Portfolio Career Copy Structure Polish
+
+本轮继续优化 v1.28.0-career-material-sync：
+
+- 修正 Hero 主按钮过于 CodePilot 单项目化的问题
+- 导航入口调整为更适合多项目扩展的 Projects
+- Hero 右侧模块改为长期可用的求职方向 / 项目索引 / 能力概览
+- 保留 Core Project / Tech Stack 等少量英文视觉标签
+- CodePilot 项目区增加 GitHub 和在线演示链接
+- 补充未来项目卡片统一规则
+- 未修改 CodePilot README
+- 未进入 CodePilot 文件夹
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未修改视觉 / 动效 / 背景
 
 ## 当前最新版本
 
@@ -88,7 +105,13 @@ https://portfolio-rosy-ten-41.vercel.app/
 
 ## 下一步
 
-请用户先在桌面端预览 Portfolio 文案是否和简历一致。
-如果文案 OK，再合并到 main 并等待 Vercel 部署。
+请用户先在桌面端预览：
+1. Hero 按钮和导航是否更适合多项目扩展
+2. Hero 右侧是否不再浪费空间
+3. CodePilot 区域两个链接是否清楚
+4. 英文视觉标签是否和页面风格统一
+5. 页面布局是否正常
+
+如果桌面端文案和结构 OK，再合并到 main 并等待 Vercel 部署。
 手机端最终仍以 Vercel 线上地址测试为准。
-CodePilot README 中文化在 CodePilot 项目目录中单独进行。
+CodePilot README 中文化后续在 CodePilot 项目目录中单独进行。
