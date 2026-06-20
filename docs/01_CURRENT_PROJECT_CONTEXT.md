@@ -80,9 +80,8 @@ CodePilot 仓库：
 
 当前状态：
 
-v1.28.0-career-material-sync 阶段分支验收中。Phase 8-1.1 优化了项目导航、Hero 右侧模块和 CodePilot 链接结构。
-CodePilot README 后续在 CodePilot 项目目录单独处理。
-下一步是用户人工确认文案与结构后，再合并 main。
+v1.28.1-projects-contact-link 阶段分支验收中。修复了 Contact Email 按钮的 mailto 链接，新增 EnterpriseAiDataAgent 和 Basjoo 二开项目卡片，Projects 区域支持多项目展示。
+下一步是用户人工确认页面与链接后，再合并 main。
 
 ---
 

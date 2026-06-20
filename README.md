@@ -15,7 +15,13 @@
 
 ```txt
 v1.28.0-career-material-sync (待确认)
+v1.28.1-projects-contact-link (分支验收中)
 ```
+
+v1.28.1-projects-contact-link 正在分支中：
+
+- Email 链接修复
+- 多项目展示扩展
 
 当前已完成：
 

@@ -91,10 +91,28 @@ Phase 8-1 完成：
 - 未新增简历下载
 - 未修改视觉 / 动效 / 背景
 
+## Phase 8-2：Projects Expansion and Contact Link Fix
+
+本轮完成：
+
+- 修复 Contact 的"发送 Email"按钮 mailto 链接
+- 新增 `src/data/projects.ts` 统一项目数据结构
+- CodePilotSection 改为支持多项目展示
+- CodePilot 保持为重点项目（Featured Project）
+- 新增 EnterpriseAiDataAgent 项目卡片
+- 新增 Basjoo 二开项目卡片
+- 项目链接为空时不渲染按钮，避免假链接
+- 未修改 CodePilot README
+- 未进入 CodePilot 文件夹
+- 未新增假 Demo
+- 未新增简历下载
+- 未修改视觉 / 动效 / 背景
+
 ## 当前最新版本
 
 ```txt
 v1.28.0-career-material-sync (待确认)
+v1.28.1-projects-contact-link (分支验收中)
 ```
 
 ## 当前线上地址
@@ -106,12 +124,12 @@ https://portfolio-rosy-ten-41.vercel.app/
 ## 下一步
 
 请用户先在桌面端预览：
-1. Hero 按钮和导航是否更适合多项目扩展
-2. Hero 右侧是否不再浪费空间
-3. CodePilot 区域两个链接是否清楚
-4. 英文视觉标签是否和页面风格统一
+1. Email 按钮是否正常
+2. 三个项目卡片是否展示合理
+3. 新项目是否没有假链接
+4. CodePilot 的 GitHub / 在线演示是否正常
 5. 页面布局是否正常
 
-如果桌面端文案和结构 OK，再合并到 main 并等待 Vercel 部署。
+如果桌面端 OK，再合并到 main 并等待 Vercel 部署。
 手机端最终仍以 Vercel 线上地址测试为准。
-CodePilot README 中文化后续在 CodePilot 项目目录中单独进行。
+EnterpriseAiDataAgent 和 Basjoo 二开链接后续由用户补齐。

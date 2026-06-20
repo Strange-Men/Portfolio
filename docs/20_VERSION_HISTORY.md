@@ -63,6 +63,7 @@
 | v1.26.2-background-card-mobile-polish | c0989d9 | Phase 7-5.2 / 7-5.3 | 优化 Hero 与后续页面背景过渡、关闭 BorderGlow 卡片内部粉雾、增加移动端 touch glow、降低移动端背景色块感，并合并到 main 供 Vercel 手机端测试。 |
 | v1.27.0-production-verify | see tag | Phase 7-6 | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果，作为 Portfolio 第一阶段可投递版本收尾。 |
 | v1.28.0-career-material-sync | — | Phase 8-1 / 8-1.1 | 调整 Portfolio 页面文案，让 Hero / About / CodePilot 表达更贴近求职使用，面向中国 HR / 面试官，与简历和 CodePilot 项目介绍统一。Phase 8-1.1 优化项目导航、Hero 右侧模块和 CodePilot 链接结构。 |
+| v1.28.1-projects-contact-link | — | Phase 8-2 | 修复 Contact Email 按钮 mailto 链接，新增 EnterpriseAiDataAgent 和 Basjoo 二开项目卡片，Projects 区域支持多项目展示。 |
 
 ---
 
@@ -72,6 +73,7 @@
 
 ```txt
 v1.28.0-career-material-sync (待确认)
+v1.28.1-projects-contact-link (分支验收中)
 ```
 
 当前已完成页面模块：

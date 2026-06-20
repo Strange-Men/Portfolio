@@ -32,7 +32,12 @@ export function ContactSection() {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <Button href={links.emailHref}>发送 Email</Button>
+                <a
+                  href={links.emailHref}
+                  className="inline-flex min-h-11 items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border border-white/15 bg-zinc-50 text-zinc-950 hover:bg-white focus-visible:outline-zinc-50"
+                >
+                  发送 Email
+                </a>
                 <Button href={links.github} variant="secondary" external>
                   GitHub
                 </Button>

@@ -63,7 +63,7 @@ export function HeroSection() {
             </p>
 
             <div className="hero-anim hero-fade mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.52s' }}>
-              <Button href="#codepilot">查看项目</Button>
+              <Button href="#projects">查看项目</Button>
               <Button href={links.github} variant="secondary" external>
                 GitHub
               </Button>
