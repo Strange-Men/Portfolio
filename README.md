@@ -21,7 +21,9 @@ v1.28.1-projects-contact-link (分支验收中)
 v1.28.1-projects-contact-link 正在分支中：
 
 - Email 链接修复
-- 多项目展示扩展
+- 三项目平级展示
+- EnterpriseAiDataAgent / Basjoo 二开链接补齐
+- Hero 去重复与背景质感优化
 
 当前已完成：
 

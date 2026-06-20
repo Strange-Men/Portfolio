@@ -80,7 +80,7 @@ CodePilot 仓库：
 
 当前状态：
 
-v1.28.1-projects-contact-link 阶段分支验收中。修复了 Contact Email 按钮的 mailto 链接，新增 EnterpriseAiDataAgent 和 Basjoo 二开项目卡片，Projects 区域支持多项目展示。
+v1.28.1-projects-contact-link 阶段分支验收中。修复了 Contact Email 按钮的 mailto 链接，Projects 区域调整为三个项目平级展示，补齐 EnterpriseAiDataAgent 和 Basjoo 二开项目链接，Hero 背景小幅质感优化。
 下一步是用户人工确认页面与链接后，再合并 main。
 
 ---

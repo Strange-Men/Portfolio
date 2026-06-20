@@ -56,7 +56,9 @@ export const projects: PortfolioProject[] = [
       '面向企业数据查询与分析场景的 AI Agent 项目，重点探索自然语言提问、数据检索、结果整理和分析报告生成流程，帮助用户更低成本地理解业务数据。',
     highlights: ['自然语言数据问答', '数据检索与结果整理', '分析报告生成流程'],
     techStack: ['Python', 'FastAPI', 'LLM API'],
-    links: [],
+    links: [
+      { label: '查看 GitHub', href: links.enterpriseAiGithub, type: 'github' },
+    ],
   },
   {
     id: 'basjoo',
@@ -66,6 +68,9 @@ export const projects: PortfolioProject[] = [
       '基于 Basjoo 开源项目进行二次开发，重点理解并扩展客服系统中的知识库问答、RAG 检索、多租户和前后端协作流程，用于沉淀真实业务场景下的 AI 客服 Agent 工程实践。',
     highlights: ['开源项目二次开发', '知识库问答与 RAG 检索', '客服场景前后端联调'],
     techStack: ['FastAPI', 'Next.js', 'Qdrant', 'RAG', 'Docker'],
-    links: [],
+    links: [
+      { label: '项目说明', href: links.basjooReadme, type: 'readme' },
+      { label: '代码仓库', href: links.basjooCode, type: 'github' },
+    ],
   },
 ];

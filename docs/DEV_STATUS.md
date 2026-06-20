@@ -115,6 +115,22 @@ v1.28.0-career-material-sync (待确认)
 v1.28.1-projects-contact-link (分支验收中)
 ```
 
+## Phase 8-2.1：Equal Project Cards and Link Completion
+
+本轮完成：
+
+- 删除 Hero 底部重复标签块
+- 优化 Hero 右侧项目概览模块
+- 将 Projects 区域调整为三个项目平级展示
+- 补齐 EnterpriseAiDataAgent GitHub 链接
+- 补齐 Basjoo 二开项目说明链接和代码仓库链接
+- 保持 Contact Email mailto 修复
+- 小幅优化 Hero 背景质感
+- 未修改 CodePilot README
+- 未进入其他项目目录
+- 未新增假链接
+- 未新增简历下载
+
 ## 当前线上地址
 
 ```txt
@@ -124,12 +140,12 @@ https://portfolio-rosy-ten-41.vercel.app/
 ## 下一步
 
 请用户先在桌面端预览：
-1. Email 按钮是否正常
-2. 三个项目卡片是否展示合理
-3. 新项目是否没有假链接
-4. CodePilot 的 GitHub / 在线演示是否正常
-5. 页面布局是否正常
+1. Hero 是否更简洁
+2. Hero 右侧是否不再重复
+3. 三个项目是否平级且设计统一
+4. 三个项目链接是否正确
+5. Email 按钮是否正常
+6. 页面布局和动效是否正常
 
-如果桌面端 OK，再合并到 main 并等待 Vercel 部署。
+如果桌面端 OK，再合并到 main，等待 Vercel 部署。
 手机端最终仍以 Vercel 线上地址测试为准。
-EnterpriseAiDataAgent 和 Basjoo 二开链接后续由用户补齐。
