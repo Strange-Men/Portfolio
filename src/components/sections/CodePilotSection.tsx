@@ -39,8 +39,13 @@ export function CodePilotSection() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button href={codepilot.githubUrl} external>
-                  查看 GitHub / README
+                  查看 GitHub
                 </Button>
+                {codepilot.demoUrl && (
+                  <Button href={codepilot.demoUrl} variant="secondary" external>
+                    在线演示
+                  </Button>
+                )}
               </div>
             </div>
           </RevealOnScroll>

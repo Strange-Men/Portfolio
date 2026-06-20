@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 7-6
+当前阶段：Phase 8-1
 
 ## 已完成
 
@@ -49,223 +49,52 @@
 当前最新版本：
 
 ```txt
-v1.24.0-borderglow-motion-system
-```
-
-当前线上地址：
-
-```txt
-https://portfolio-rosy-ten-41.vercel.app/
-```
-
-## 当前未做
-
-* 没有自定义域名
-* 没有新增更多项目
-* 没有 Demo 链接
-* 没有简历下载
-* 没有后端
-* 没有数据库
-* 没有表单提交
-* 没有接入 LineWaves
-* 没有接入 ProfileCard
-
-## Phase 7-4：Docs Context Index
-
-本轮完成文档上下文索引与防爆 token 规范：
-
-- 新增 docs/00_AI_CONTEXT_INDEX.md
-- 新增 docs/01_CURRENT_PROJECT_CONTEXT.md
-- 新增 docs/35_DOCS_MAINTENANCE_RULES.md
-- 明确后续 AI 接管时默认只读 hot context
-- 明确视觉、动效、版本、投递等任务按需读取专项文档
-- 明确历史阶段文档默认不读
-- 明确新增文档不应复制大段日志和重复内容
-- 未修改 src/
-- 未安装依赖
-- 未接入新功能
-
-## 版本状态
-
-当前最新版本：
-
-```txt
-v1.26.1-layout-copy-background-hotfix
-```
-
-当前线上地址：
-
-```txt
-https://portfolio-rosy-ten-41.vercel.app/
-```
-
-## Phase 7-5：Layout / Copy / Background Polish
-
-用户在最终线上检查后提出 4 个细节优化：
-
-- About 并排信息卡需要等宽
-- 页面正式内容中的"实习"需要泛化为"工作 / 求职"
-- Hero 小字补充"求职方向"
-- Hero 之后背景需要比纯黑更有层次
-
-本轮调整：
-
-- 优化 About 信息卡布局，桌面端三卡等宽
-- 将页面正式内容中的"实习"改为"工作 / 求职"
-- 将 Hero 小字调整为 "2027 届人工智能本科生 · 求职方向"
-- 增强 Hero 后 low-contrast ambient background
-- 保持 BorderGlow / RevealOnScroll 不变
-- 未新增项目
-- 未新增 Demo
-- 未新增简历下载
-- 未接入 LineWaves / ProfileCard
-
-## Phase 7-5.1：Layout / Meta / Ambient Background Hotfix
-
-用户检查 Phase 7-5 后发现：
-
-- 小字有发糊感
-- About 三个信息卡仍未真正等宽
-- 身份卡不应显示 "· 求职方向"
-- Hero 后背景仍不明显
-
-本轮调整：
-
-- 修复 RevealOnScroll 初始 blur 从 8px 降至 4px，is-visible 后使用 filter: none + will-change: auto
-- 修复 About 三个信息卡桌面端等宽等高（RevealOnScroll wrapper 加 h-full min-w-0）
-- 拆分 `identity` 与 `heroMeta`：identity = "2027 届人工智能本科生"，heroMeta = "2027 届人工智能本科生 · 求职方向"
-- Hero 使用 `profile.heroMeta`
-- About 身份卡使用 `profile.identity`
-- 修复 ambient background 层级：从负 z-index 伪元素改为正 z-index 显式 div 层
-- 移除 About / CodePilot / Contact section 的 bg-zinc-950，让 ambient 背景可见
-- 保持 BorderGlow 核心机制不变
-- 保持 RevealOnScroll 组件逻辑不变
-- 未新增项目
-- 未新增 Demo
-- 未新增简历下载
-- 未接入 LineWaves / ProfileCard
-
-## Phase 7-5.2：Background / Card Glow / Mobile Polish
-
-用户继续人工检查后发现：
-
-- Hero 与后续页面背景过渡偏硬
-- BorderGlow 卡片内部仍有粉色雾感
-- 手机端卡片没有 touch 动态效果
-- 手机端 ambient background 过于集中，像一坨颜色
-
-本轮调整：
-
-- 为 Hero 底部增加柔和背景过渡
-- 关闭 BorderGlow 的内部 fill 层，保留边框追光和轻微边缘外光
-- 为 BorderGlowCard 增加移动端 touch active 交互
-- 为移动端 ambient background 增加单独降噪规则
-- 保持桌面端 BorderGlow 核心机制不变
-- 保持 RevealOnScroll 不变
-- 未新增项目
-- 未新增 Demo
-- 未新增简历下载
-- 未接入 LineWaves / ProfileCard
-
-## Phase 7-5.2.1：Unified Background Base Hotfix
-
-用户检查 Phase 7-5.2 后指出：
-
-- 手机端不能通过 localhost 完整验收，需要 Vercel Preview / 线上地址测试
-- Hero 和 About 之间仍有明显背景横线
-- 当前背景像 Hero 与后续页面两套背景硬切
-
-本轮调整：
-
-- 将背景策略调整为全站统一 `site-ambient-bg`
-- Hero 不再使用实体黑色背景覆盖全站背景
-- Hero 仅保留 spotlight / grid / glow 装饰层
-- Hero 底部 fade 改为透明过渡，不再用强实色接色
-- 清理旧 `page-ambient-bg` / 硬切背景样式
-- 移动端验收说明改为需要 Vercel Preview / 线上真实设备测试
-- 保持 BorderGlow / RevealOnScroll 不变
-- 未新增项目
-- 未新增 Demo
-- 未新增简历下载
-- 未接入 LineWaves / ProfileCard
-
-## Phase 7-5.4：v1.26.2 Tag
-
-用户已确认当前 Vercel 线上页面在桌面端与手机端效果均不错。
-
-本轮完成：
-
-- 创建并推送 `v1.26.2-background-card-mobile-polish` tag
-- tag 指向 commit：`c0989d9`
-- 当前版本已包含：
-  - BorderGlow 卡片边境光辉
-  - RevealOnScroll Section 入场动效
-  - 全站 ambient background
-  - AI 上下文索引与文档治理
-  - About 等宽卡片修复
-  - identity / heroMeta 拆分
-  - BorderGlow 内部粉雾关闭
-  - 移动端 touch glow
-  - 移动端背景降噪
-- 用户已通过 Vercel 线上地址确认桌面端和手机端效果不错
-- 未新增项目
-- 未新增 Demo
-- 未新增简历下载
-- 未接入 LineWaves
-- 未接入 ProfileCard
-- 未安装依赖
-
-## 版本状态
-
-当前最新版本：
-
-```txt
-v1.26.2-background-card-mobile-polish
-```
-
-当前线上地址：
-
-```txt
-https://portfolio-rosy-ten-41.vercel.app/
-```
-
-## 下一步
-
-建议进入：
-
-```txt
 v1.27.0-production-verify
 ```
 
-目标：
+当前线上地址：
 
-* 输出最终线上验收文档
-* 记录桌面端与手机端已通过
-* 检查链接、文案、动效、移动端、投递可用性
-* 为 Portfolio 第一阶段收尾
+```txt
+https://portfolio-rosy-ten-41.vercel.app/
+```
 
----
+## Phase 8-1：v1.28.0-career-material-sync
 
-## Phase 7-6：v1.27.0-production-verify
+进入 Portfolio 文案与简历 / CodePilot 表达对齐阶段。
 
-用户已确认 Vercel 线上页面在桌面端与手机端效果均不错。
+Phase 8-1 完成：
 
-本轮完成：
+- 调整 `src/data/profile.ts` 中的 Hero 描述、About 文案、focusTags
+- 调整 `src/data/codepilot.ts` 中的 subtitle、description、painPoint、proofPoints、flow
+- 新增 `docs/37_CAREER_MATERIAL_SYNC.md`
+- build 通过
+- 未修改组件结构
+- 未修改视觉 / 动效 / 背景
+- 未新增项目 / Demo / 简历下载
+- 未修改 CodePilot 仓库
+- 未修改 CodePilot README
 
-- 新增 `docs/36_PRODUCTION_VERIFY.md`
-- 记录线上地址
-- 记录桌面端验收结果
-- 记录手机端验收结果
-- 记录链接检查项
-- 记录内容检查项
-- 记录技术检查项
-- 创建并推送 `v1.27.0-production-verify` tag
-- Portfolio 第一阶段可投递版本收尾
+## Phase 8-1.1：Portfolio Career Copy Structure Polish
+
+本轮继续优化 v1.28.0-career-material-sync：
+
+- 修正 Hero 主按钮过于 CodePilot 单项目化的问题
+- 导航入口调整为更适合多项目扩展的 Projects
+- Hero 右侧模块改为长期可用的求职方向 / 项目索引 / 能力概览
+- 保留 Core Project / Tech Stack 等少量英文视觉标签
+- CodePilot 项目区增加 GitHub 和在线演示链接
+- 补充未来项目卡片统一规则
+- 未修改 CodePilot README
+- 未进入 CodePilot 文件夹
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未修改视觉 / 动效 / 背景
 
 ## 当前最新版本
 
 ```txt
-v1.27.0-production-verify
+v1.28.0-career-material-sync (待确认)
 ```
 
 ## 当前线上地址
@@ -274,20 +103,15 @@ v1.27.0-production-verify
 https://portfolio-rosy-ten-41.vercel.app/
 ```
 
-## 第一阶段结论
+## 下一步
 
-Portfolio 当前版本已经满足第一阶段求职展示要求。
+请用户先在桌面端预览：
+1. Hero 按钮和导航是否更适合多项目扩展
+2. Hero 右侧是否不再浪费空间
+3. CodePilot 区域两个链接是否清楚
+4. 英文视觉标签是否和页面风格统一
+5. 页面布局是否正常
 
-后续不建议继续无目标打磨前端视觉细节。
-建议进入：
-
-```txt
-v1.28.0-career-material-sync
-```
-
-目标：
-
-* 简历同步 Portfolio 链接
-* GitHub Profile 同步 Portfolio / CodePilot 表达
-* 投递话术统一
-* CodePilot 项目表达同步
+如果桌面端文案和结构 OK，再合并到 main 并等待 Vercel 部署。
+手机端最终仍以 Vercel 线上地址测试为准。
+CodePilot README 中文化后续在 CodePilot 项目目录中单独进行。
