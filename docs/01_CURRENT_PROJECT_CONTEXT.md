@@ -198,7 +198,19 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-请用户先在桌面端预览 Portfolio 文案是否和简历一致。
-如果文案 OK，再合并到 main 并等待 Vercel 部署。
-手机端最终仍以 Vercel 线上地址测试为准。
-CodePilot README 中文化在 CodePilot 项目目录中单独进行。
+当前下一阶段：
+
+- v1.29.0-project-detail-polish
+- Phase 9-1 已开始进行项目事实研究
+- 目标是在不夸大的前提下，让三个项目展示更真实、更具体
+- 当前研究文档：`docs/38_PROJECT_DETAIL_RESEARCH.md`
+
+当前 Phase 9-2 正在进行：
+
+- 已基于 `docs/38_PROJECT_DETAIL_RESEARCH.md` 修改 `src/data/projects.ts`
+- CodePilot 突出仓库理解、多 Agent、证据绑定、Mock/LLM 双模式
+- EnterpriseAiDataAgent 突出 CSV/Excel、DuckDB、NL→SQL、SSE、报告生成
+- Basjoo 二开突出 RAG Evaluation Harness、Mock 可复现评估、pytest 测试指标
+- 当前在 `feat/v1.29.0-project-detail-polish` 分支上，等待用户人工验收
+- 未修改视觉 / 动效 / 背景
+- 未新增假链接
