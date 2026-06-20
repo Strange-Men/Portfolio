@@ -190,3 +190,19 @@ Portfolio 后续设计开发可以继续讨论，但当前版本先封存。
 下一步：
 
 进入 Phase 9-2，根据研究文档优化 Portfolio 中三个项目的展示内容。
+
+## Phase 9-2：Project Detail Polish
+
+本轮基于 `docs/38_PROJECT_DETAIL_RESEARCH.md` 优化 Portfolio 三个项目的展示内容。
+
+完成内容：
+
+- 更新 CodePilot 项目展示，使其更突出仓库理解、代码解析、多 Agent 审查和 Evidence-grounded 报告
+- 更新 EnterpriseAiDataAgent 项目展示，使其更贴近 CSV / Excel 数据分析工作台、DuckDB、NL→SQL、SSE 和报告生成
+- 更新 Basjoo 二开项目展示，使其更准确表达为 RAG Evaluation Harness / RAG 评估增强，而不是完整客服 SaaS
+- 保留三项目平级展示
+- 保留真实链接
+- 未新增假 Demo
+- 未修改视觉 / 动效 / 背景
+- 未修改 CodePilotSection.tsx 组件结构
+- build 通过

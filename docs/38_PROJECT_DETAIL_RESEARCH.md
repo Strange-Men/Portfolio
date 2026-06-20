@@ -463,3 +463,51 @@ Phase 9-2 应基于本研究文档修改 `src/data/projects.ts`，让 Portfolio 
 1. **CodePilot** — 补充"多 Agent 并行审查"和"证据追踪"的具体说明，强调"结构化上下文"而非"向量检索"
 2. **EnterpriseAiDataAgent** — 将"企业数据问答与分析 Agent"改为更具体的"AI 数据分析工作台"，补充 DuckDB、SQL 工作台、SSE 流式响应等具体技术点
 3. **Basjoo 二开** — 将重点从"客服系统二次开发"调整为"RAG 评估框架"，补充 Mock 可复现评估和测试指标的具体说明
+
+---
+
+## 9. Phase 9-2 Portfolio Copy Application
+
+Phase 9-2 基于本研究文档修改了 `src/data/projects.ts`，将研究结果应用到 Portfolio 页面文案。
+
+### 9.1 CodePilot 应用情况
+
+| 研究建议 | 页面应用 |
+|----------|----------|
+| 强调仓库级代码理解 | subtitle 保持"AI 代码审查与仓库理解系统"，description 补充仓库拉取、结构解析、结构化上下文构建 |
+| 强调多 Agent 审查 | highlights 新增"多 Agent 审查与结构化报告生成"，flow 新增"多 Agent 生成审查结果与证据" |
+| 强调 Evidence-grounded 证据绑定 | highlights 新增"Evidence-grounded 证据绑定" |
+| 强调 Tree-sitter AST 解析 | highlights 新增"Tree-sitter / AST 解析仓库结构" |
+| 强调 Mock / 真实 LLM 双模式 | highlights 新增"Mock / 真实 LLM 双模式演示" |
+| 不写成持续 PR Review Bot | description 使用"项目"而非"平台/系统/产品" |
+| 补充 Pydantic | techStack 新增 Pydantic |
+| React 改 Next.js | techStack 从 React 改为 Next.js（匹配实际仓库） |
+
+### 9.2 EnterpriseAiDataAgent 应用情况
+
+| 研究建议 | 页面应用 |
+|----------|----------|
+| 改为数据分析工作台 | subtitle 从"企业数据问答与分析 Agent"改为"CSV / Excel 数据分析工作台" |
+| 补充 DuckDB、SQL 工作台 | highlights 新增"CSV / Excel 上传与 DuckDB 查询"和"自然语言转 SQL 与 SQL 工作台" |
+| 补充 SSE 流式解释 | highlights 新增"SSE 流式解释与 Markdown 报告" |
+| 补充异常检测 | highlights 新增"异常检测与数据质量分析" |
+| 补充具体技术栈 | techStack 改为 Next.js、React、FastAPI、DuckDB、Pandas、Monaco Editor、Anthropic Claude API、SSE |
+| 不写成完整 BI 平台 | description 使用"工作台""项目""探索"措辞 |
+| 不写假 Demo | 无 Demo 链接，只保留 GitHub |
+
+### 9.3 Basjoo 二开应用情况
+
+| 研究建议 | 页面应用 |
+|----------|----------|
+| 改为 RAG Evaluation Harness | subtitle 从"基于开源客服系统的 AI 客服 Agent 二次开发"改为"RAG 评估框架与客服知识库流程增强" |
+| 强调 Mock 可复现评估 | highlights 新增"Mock 可复现 RAG 评估流程" |
+| 强调测试指标 | highlights 新增"Precision / Recall / MRR 等指标约束"和"pytest 测试与阶段评估报告" |
+| 补充评估 flow | flow 从"扩展 RAG 检索与知识库流程"改为"构建 Mock Embedding / Retriever / RAG Pipeline → 设计 RAG eval cases → 运行 pytest 与评估指标 → 输出阶段评估报告" |
+| 不写成完整客服 SaaS | description 强调"当前重点是评估框架"，不是完整系统 |
+| techStack 补充 | 新增 PostgreSQL、pytest，保留 Qdrant、Docker、RAG |
+
+### 9.4 未应用的研究建议
+
+- 研究文档提到 CodePilot 有"中英文切换"功能 — 未作为 highlights 展示，因为这不是核心卖点
+- 研究文档提到 EnterpriseAiDataAgent 有"Guardrails 系统"和"Token Budget" — 未单独列出，已在"异常检测与数据质量分析"中隐含覆盖
+- 研究文档提到 Basjoo 有"SmartHome Demo Data" — 未作为亮点展示，因为是模拟数据不是核心能力

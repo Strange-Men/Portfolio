@@ -205,5 +205,12 @@ Contact 只保留联系方式。
 - 目标是在不夸大的前提下，让三个项目展示更真实、更具体
 - 当前研究文档：`docs/38_PROJECT_DETAIL_RESEARCH.md`
 
-请用户先审阅 `docs/38_PROJECT_DETAIL_RESEARCH.md`。
-如果研究内容准确，再进入 Phase 9-2：Project Detail Polish，基于研究文档修改 `src/data/projects.ts`。
+当前 Phase 9-2 正在进行：
+
+- 已基于 `docs/38_PROJECT_DETAIL_RESEARCH.md` 修改 `src/data/projects.ts`
+- CodePilot 突出仓库理解、多 Agent、证据绑定、Mock/LLM 双模式
+- EnterpriseAiDataAgent 突出 CSV/Excel、DuckDB、NL→SQL、SSE、报告生成
+- Basjoo 二开突出 RAG Evaluation Harness、Mock 可复现评估、pytest 测试指标
+- 当前在 `feat/v1.29.0-project-detail-polish` 分支上，等待用户人工验收
+- 未修改视觉 / 动效 / 背景
+- 未新增假链接
