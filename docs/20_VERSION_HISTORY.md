@@ -63,7 +63,7 @@
 | v1.26.2-background-card-mobile-polish | c0989d9 | Phase 7-5.2 / 7-5.3 | 优化 Hero 与后续页面背景过渡、关闭 BorderGlow 卡片内部粉雾、增加移动端 touch glow、降低移动端背景色块感，并合并到 main 供 Vercel 手机端测试。 |
 | v1.27.0-production-verify | see tag | Phase 7-6 | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果，作为 Portfolio 第一阶段可投递版本收尾。 |
 | v1.28.0-career-material-sync | — | Phase 8-1 / 8-1.1 | 调整 Portfolio 页面文案，让 Hero / About / CodePilot 表达更贴近求职使用，面向中国 HR / 面试官，与简历和 CodePilot 项目介绍统一。Phase 8-1.1 优化项目导航、Hero 右侧模块和 CodePilot 链接结构。 |
-| v1.28.1-projects-contact-link | — | Phase 8-2 / 8-2.1 / 8-2.2 | 修复 Contact Email 按钮 mailto 链接，新增 EnterpriseAiDataAgent 和 Basjoo 二开项目卡片，Projects 区域调整为三个项目平级展示，补齐所有项目链接，优化 Hero 背景质感。Phase 8-2.2 将 Hero 右侧改为 Selected Work 索引，三项目统一平级结构并补充完整信息，Contact 主按钮改为 Gmail compose 链接。 |
+| v1.28.1-projects-contact-link | see tag | Phase 8-2 / 8-2.1 / 8-2.2 / 8-2.4 | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐，作为 Portfolio 多项目展示版本封存。 |
 
 ---
 
@@ -72,8 +72,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.28.0-career-material-sync (待确认)
-v1.28.1-projects-contact-link (分支验收中)
+v1.28.1-projects-contact-link
 ```
 
 当前已完成页面模块：
@@ -135,8 +134,9 @@ GitHub Profile 同步
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.28.0-career-material-sync | Phase 8-1 | 将 Portfolio 链接、CodePilot 表达和简历 / GitHub Profile / 投递话术对齐。 |
-| v2.0.0-multi-projects | Future | 未来新增更多真实项目时，扩展为多项目作品集。 |
+| v1.29.0-project-detail-polish | Future | 进一步增强项目详情表达，例如职责、成果、验证方式和截图/演示说明。 |
+| v1.30.0-mobile-polish | Future | 如线上手机端发现排版问题，再做移动端专项优化。 |
+| v2.0.0-portfolio-expansion | Future | 后续新增更多真实项目时，扩展 Portfolio 项目展示体系。 |
 
 ---
 

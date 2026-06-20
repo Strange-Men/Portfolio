@@ -14,22 +14,25 @@
 ## Current Version
 
 ```txt
-v1.28.0-career-material-sync (待确认)
-v1.28.1-projects-contact-link (分支验收中)
+v1.28.1-projects-contact-link
 ```
 
-v1.28.1-projects-contact-link 正在分支中：
+v1.28.1-projects-contact-link 已完成：
 
-- Email 链接修复
 - 三项目平级展示
-- EnterpriseAiDataAgent / Basjoo 二开链接补齐
-- Hero 去重复与背景质感优化
-- Hero Selected Work 摘要优化
-- 三项目统一平级结构（痛点、流程、技术栈）
-- Gmail 联系按钮
+- Hero Selected Work 摘要
+- Contact Gmail 联系按钮
+- EnterpriseAiDataAgent / Basjoo 链接补齐
+- Email 备用显示
 
 当前已完成：
 
+- 三项目平级展示
+- Hero Selected Work 摘要
+- Contact Gmail 联系按钮
+- EnterpriseAiDataAgent GitHub 链接
+- Basjoo 项目说明与代码仓库链接
+- Email 备用显示
 - Vite + React + TypeScript 工程基线
 - Tailwind CSS 配置
 - Data 层
@@ -119,6 +122,7 @@ v1.28.1-projects-contact-link 正在分支中：
 | v1.26.2-background-card-mobile-polish | Mobile & Background Polish | 合并移动端 touch glow、移动端背景降噪、卡片内部粉雾关闭和背景过渡优化 |
 | v1.27.0-production-verify | Production Verify | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果 |
 | v1.28.0-career-material-sync | Career Copy Sync | 调整 Portfolio 页面文案与项目导航结构，让 Hero / About / CodePilot 表达更贴近求职使用，优化多项目扩展入口 |
+| v1.28.1-projects-contact-link | Projects & Contact Polish | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐 |
 
 ---
 

@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 8-1
+当前阶段：Phase 8-2.4
 
 ## 已完成
 
@@ -49,7 +49,7 @@
 当前最新版本：
 
 ```txt
-v1.27.0-production-verify
+v1.28.1-projects-contact-link
 ```
 
 当前线上地址：
@@ -111,8 +111,7 @@ Phase 8-1 完成：
 ## 当前最新版本
 
 ```txt
-v1.28.0-career-material-sync (待确认)
-v1.28.1-projects-contact-link (分支验收中)
+v1.28.1-projects-contact-link
 ```
 
 ## Phase 8-2.1：Equal Project Cards and Link Completion
@@ -152,15 +151,23 @@ v1.28.1-projects-contact-link (分支验收中)
 https://portfolio-rosy-ten-41.vercel.app/
 ```
 
-## 下一步
+## Phase 8-2.4：v1.28.1 Version Seal
 
-请用户先在桌面端预览：
-1. Hero 是否更简洁
-2. Hero 右侧是否不再重复
-3. 三个项目是否平级且设计统一
-4. 三个项目链接是否正确
-5. Email 按钮是否正常
-6. 页面布局和动效是否正常
+当前 main 已合并 `v1.28.1-projects-contact-link` 相关更新。
 
-如果桌面端 OK，再合并到 main，等待 Vercel 部署。
-手机端最终仍以 Vercel 线上地址测试为准。
+本轮完成：
+
+- 确认三项目平级展示已进入 main
+- 确认 Contact Gmail 联系按钮已进入 main
+- 确认 EnterpriseAiDataAgent / Basjoo 链接已进入 main
+- 更新版本文档
+- 创建并推送 `v1.28.1-projects-contact-link` tag
+
+## 后续建议
+
+Portfolio 后续设计开发可以继续讨论，但当前版本先封存。
+后续如继续开发，建议优先从以下方向选择：
+
+1. Project Detail Polish：优化项目职责、成果、验证方式
+2. Mobile Polish：如手机端发现排版问题再专项处理
+3. SEO / Share Polish：补充 title、description、favicon、Open Graph

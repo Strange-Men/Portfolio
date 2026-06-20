@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.28.0-career-material-sync (待确认)`
+`v1.28.1-projects-contact-link`
 
 当前线上地址：
 
@@ -80,8 +80,17 @@ CodePilot 仓库：
 
 当前状态：
 
-v1.28.1-projects-contact-link 阶段分支验收中。修复了 Contact Email 按钮的 mailto 链接，Projects 区域调整为三个项目平级展示，补齐 EnterpriseAiDataAgent 和 Basjoo 二开项目链接，Hero 背景小幅质感优化。Phase 8-2.2 将 Hero 右侧改为 Selected Work 索引，三项目统一平级结构并补充完整信息（痛点、流程、技术栈），Contact 主按钮改为 Gmail compose 链接。
-下一步是用户人工确认页面与链接后，再合并 main。
+当前 Portfolio 已从单项目展示扩展为三项目展示：
+
+- CodePilot
+- EnterpriseAiDataAgent
+- Basjoo 二开项目
+
+当前 Contact 主按钮使用 Gmail compose URL，邮箱文本保留为复制备用。
+
+下一步建议：
+
+后续 Portfolio 设计开发继续单独讨论，不再在本轮继续修改页面。
 
 ---
 
