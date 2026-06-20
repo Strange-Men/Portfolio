@@ -95,7 +95,11 @@ CodePilot 仓库：
 
 下一步建议：
 
-后续可以手动完善 GitHub 仓库 About，或进入 Project Proof Polish。
+当前下一阶段：
+
+- v1.31.0-github-about-polish
+- Phase 11-1 处理 GitHub 仓库 About 信息
+- 目标是让 GitHub 仓库打开时更清楚地展示 Portfolio 定位、线上地址和技术标签
 
 ---
 

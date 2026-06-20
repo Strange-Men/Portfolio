@@ -407,3 +407,15 @@ v1.30.0 暂不做：
 本版本已将 Phase 10-1 的研究结果应用到 Portfolio 的 SEO、分享信息、favicon、manifest 与 README 首屏展示，并通过线上验收。
 
 本版本未新增复杂 OG 图片，`og:image` 仍作为后续可选优化项。
+
+---
+
+## 12. GitHub About Polish
+
+GitHub repository About has been updated:
+
+- Description: Personal portfolio for AI application, Agent, and Python backend projects.
+- Website: https://portfolio-rosy-ten-41.vercel.app/
+- Topics: portfolio, react, vite, typescript, tailwindcss, ai, agent, fastapi
+
+This completes the external repository presentation polish after v1.30.0.

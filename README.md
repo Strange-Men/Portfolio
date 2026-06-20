@@ -148,27 +148,13 @@ Then read task-specific docs according to `docs/00_AI_CONTEXT_INDEX.md`.
 
 ---
 
-## GitHub About Suggestion
+## GitHub About
 
-以下为 GitHub 仓库 About 面板手动填写建议（不通过 API 自动修改）：
+当前仓库 About 已完成：
 
-**Description:**
-
-```
-Personal portfolio for AI application, Agent, and Python backend projects.
-```
-
-**Website:**
-
-```
-https://portfolio-rosy-ten-41.vercel.app/
-```
-
-**Topics:**
-
-```
-portfolio, react, vite, typescript, tailwindcss, ai, agent, fastapi
-```
+- Description: Personal portfolio for AI application, Agent, and Python backend projects.
+- Website: https://portfolio-rosy-ten-41.vercel.app/
+- Topics: portfolio, react, vite, typescript, tailwindcss, ai, agent, fastapi
 
 ---
 
