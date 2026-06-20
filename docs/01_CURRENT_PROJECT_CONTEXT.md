@@ -201,5 +201,7 @@ Contact 只保留联系方式。
 当前下一阶段：
 
 - v1.30.0-seo-share-polish
-- 优化网页 title、meta description、favicon、Open Graph 分享卡片、GitHub About 等线上展示细节
+- Phase 10-1 已开始进行 SEO / 分享展示研究
+- 目标是在不改变页面视觉的前提下，提高 Portfolio 在线上分享、浏览器标签、GitHub 仓库展示中的正式感
+- 当前研究文档：`docs/39_SEO_SHARE_RESEARCH.md`
 - 也可以先暂停开发，等待投递和面试反馈后再继续
