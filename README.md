@@ -14,7 +14,7 @@
 ## Current Version
 
 ```txt
-v1.26.2-background-card-mobile-polish
+v1.27.0-production-verify
 ```
 
 当前已完成：
@@ -58,6 +58,9 @@ v1.26.2-background-card-mobile-polish
 - 移动端背景降噪
 - BorderGlow 内部粉雾关闭
 - Vercel 手机端人工确认通过
+- 最终线上验收文档
+- 桌面端与手机端人工确认
+- Portfolio 第一阶段收尾
 
 当前未完成：
 
@@ -103,6 +106,7 @@ v1.26.2-background-card-mobile-polish
 | v1.26.0-layout-copy-background-polish | Polish | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和页面背景层次 |
 | v1.26.1-layout-copy-background-hotfix | Hotfix | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题 |
 | v1.26.2-background-card-mobile-polish | Mobile & Background Polish | 合并移动端 touch glow、移动端背景降噪、卡片内部粉雾关闭和背景过渡优化 |
+| v1.27.0-production-verify | Production Verify | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果 |
 
 ---
 

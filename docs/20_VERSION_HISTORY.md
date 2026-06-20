@@ -61,6 +61,7 @@
 | v1.26.0-layout-copy-background-polish | 94ec2a1 | Phase 7-5 | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和 Hero 后页面背景层次。 |
 | v1.26.1-layout-copy-background-hotfix | — | Phase 7-5.1 | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题。 |
 | v1.26.2-background-card-mobile-polish | c0989d9 | Phase 7-5.2 / 7-5.3 | 优化 Hero 与后续页面背景过渡、关闭 BorderGlow 卡片内部粉雾、增加移动端 touch glow、降低移动端背景色块感，并合并到 main 供 Vercel 手机端测试。 |
+| v1.27.0-production-verify | see tag | Phase 7-6 | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果，作为 Portfolio 第一阶段可投递版本收尾。 |
 
 ---
 
@@ -69,7 +70,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.26.2-background-card-mobile-polish
+v1.27.0-production-verify
 ```
 
 当前已完成页面模块：
@@ -109,6 +110,9 @@ Hero 后背景层级修复
 移动端背景降噪
 BorderGlow 内部粉雾关闭
 Vercel 手机端人工确认通过
+最终线上验收
+桌面端与手机端人工确认
+Portfolio 第一阶段收尾
 ```
 
 当前未完成：
@@ -128,8 +132,7 @@ GitHub Profile 同步
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.27.0-production-verify | Phase 7-6 | 输出最终线上验收文档，记录桌面端、手机端、链接、动效、文案和投递可用性检查结果。 |
-| v1.28.0-career-material-sync | Future | 将 Portfolio 链接、CodePilot 表达和简历 / GitHub Profile / 投递话术对齐。 |
+| v1.28.0-career-material-sync | Phase 8-1 | 将 Portfolio 链接、CodePilot 表达和简历 / GitHub Profile / 投递话术对齐。 |
 | v2.0.0-multi-projects | Future | 未来新增更多真实项目时，扩展为多项目作品集。 |
 
 ---

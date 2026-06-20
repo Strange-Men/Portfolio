@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.26.2-background-card-mobile-polish`
+`v1.27.0-production-verify`
 
 当前线上地址：
 
@@ -77,6 +77,16 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 CodePilot 仓库：
 
 `https://github.com/Strange-Men/CodePilot`
+
+当前状态：
+
+Portfolio 第一阶段可投递版本已完成线上验收。
+
+用户已确认：
+
+- 桌面端效果不错
+- 手机端效果不错
+- Vercel 线上页面为最新版本
 
 ---
 
@@ -184,11 +194,11 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-`v1.27.0-production-verify`
+`v1.28.0-career-material-sync`
 
 目标：
 
-- 输出最终线上验收文档
-- 记录桌面端与手机端已通过
-- 检查链接、文案、动效、移动端、投递可用性
-- 为 Portfolio 第一阶段收尾
+- 简历同步 Portfolio 链接
+- GitHub Profile 同步 Portfolio / CodePilot
+- 投递话术统一
+- CodePilot 项目表达同步
