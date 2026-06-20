@@ -198,7 +198,12 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-请用户先在桌面端预览 Portfolio 文案是否和简历一致。
-如果文案 OK，再合并到 main 并等待 Vercel 部署。
-手机端最终仍以 Vercel 线上地址测试为准。
-CodePilot README 中文化在 CodePilot 项目目录中单独进行。
+当前下一阶段：
+
+- v1.29.0-project-detail-polish
+- Phase 9-1 已开始进行项目事实研究
+- 目标是在不夸大的前提下，让三个项目展示更真实、更具体
+- 当前研究文档：`docs/38_PROJECT_DETAIL_RESEARCH.md`
+
+请用户先审阅 `docs/38_PROJECT_DETAIL_RESEARCH.md`。
+如果研究内容准确，再进入 Phase 9-2：Project Detail Polish，基于研究文档修改 `src/data/projects.ts`。

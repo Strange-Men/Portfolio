@@ -64,6 +64,7 @@
 | v1.27.0-production-verify | see tag | Phase 7-6 | 最终线上验收，记录桌面端、手机端、链接、文案、动效和投递可用性检查结果，作为 Portfolio 第一阶段可投递版本收尾。 |
 | v1.28.0-career-material-sync | — | Phase 8-1 / 8-1.1 | 调整 Portfolio 页面文案，让 Hero / About / CodePilot 表达更贴近求职使用，面向中国 HR / 面试官，与简历和 CodePilot 项目介绍统一。Phase 8-1.1 优化项目导航、Hero 右侧模块和 CodePilot 链接结构。 |
 | v1.28.1-projects-contact-link | see tag | Phase 8-2 / 8-2.1 / 8-2.2 / 8-2.4 | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐，作为 Portfolio 多项目展示版本封存。 |
+| v1.29.0-project-detail-polish | Phase 9-1 | 项目详情优化准备阶段：研究三个 GitHub 仓库的真实内容，为后续 Portfolio 项目文案优化提供依据。 |
 
 ---
 
