@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.26.1-layout-copy-background-hotfix`
+`v1.26.2-background-card-mobile-polish`
 
 当前线上地址：
 
@@ -93,9 +93,10 @@ CodePilot 仓库：
 当前动效：
 
 - Hero 独立 spotlight / hero-anim
-- Hero 后页面统一 ambient background
+- Hero 后页面统一 ambient background（移动端有单独降噪规则）
 - About / CodePilot / Contact 使用 RevealOnScroll
-- 主要玻璃卡片使用 BorderGlowCard
+- 主要玻璃卡片使用 BorderGlowCard（生产效果关闭内部 fill 层，只保留边框追光和轻微边缘外光）
+- 移动端 BorderGlow 支持 touch active 弱交互（手指点下显示边框光，松手后自动消失）
 
 ---
 
@@ -175,7 +176,8 @@ Contact 只保留联系方式。
 
 目标：
 
-- 人工确认 Vercel 线上页面已更新到 v1.26 打磨版本
+- 人工确认 Vercel 线上页面已更新到 v1.26.2 打磨版本
 - 检查线上链接
 - 检查移动端
-- 检查 BorderGlow / RevealOnScroll 是否在线上正常
+- 检查 BorderGlow touch glow / RevealOnScroll 是否在线上正常
+- 检查 Hero 到 About 背景过渡是否柔和

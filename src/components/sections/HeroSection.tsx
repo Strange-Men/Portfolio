@@ -20,6 +20,12 @@ export function HeroSection() {
         <div className="hero-grid-bg absolute inset-0 opacity-60" />
       </div>
 
+      {/* bottom transition: soft fade from Hero into ambient background */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-48 bg-gradient-to-b from-transparent via-zinc-950/50 to-[#0d0a12]"
+      />
+
       {/* content shell */}
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col">
         {/* portfolio label */}

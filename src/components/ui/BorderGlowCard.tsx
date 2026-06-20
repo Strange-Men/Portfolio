@@ -90,6 +90,7 @@ export function BorderGlowCard({
   fillOpacity = 0.08,
 }: BorderGlowCardProps) {
   const cardRef = useRef<HTMLDivElement | null>(null);
+  const touchResetTimer = useRef<number | null>(null);
 
   // ── Geometry callbacks ─────────────────────────────────────
 
@@ -138,9 +139,18 @@ export function BorderGlowCard({
     [colors],
   );
 
+  // ── Touch timer helpers ─────────────────────────────────────
+
+  const clearTouchTimer = useCallback(() => {
+    if (touchResetTimer.current !== null) {
+      window.clearTimeout(touchResetTimer.current);
+      touchResetTimer.current = null;
+    }
+  }, []);
+
   // ── Pointer handlers ───────────────────────────────────────
 
-  const handlePointerMove = useCallback(
+  const updateGlowFromPointer = useCallback(
     (event: PointerEvent<HTMLDivElement>) => {
       const card = cardRef.current;
       if (!card) return;
@@ -158,6 +168,57 @@ export function BorderGlowCard({
     [getEdgeProximity, getCursorAngle],
   );
 
+  const endTouchGlow = useCallback(() => {
+    const card = cardRef.current;
+    if (!card) return;
+
+    clearTouchTimer();
+    touchResetTimer.current = window.setTimeout(() => {
+      card.classList.remove('is-touch-active');
+      card.style.setProperty('--edge-proximity', '0');
+      touchResetTimer.current = null;
+    }, 520);
+  }, [clearTouchTimer]);
+
+  const handlePointerDown = useCallback(
+    (event: PointerEvent<HTMLDivElement>) => {
+      const card = cardRef.current;
+      if (!card) return;
+
+      if (event.pointerType !== 'mouse') {
+        clearTouchTimer();
+        card.classList.add('is-touch-active');
+        updateGlowFromPointer(event);
+      }
+    },
+    [clearTouchTimer, updateGlowFromPointer],
+  );
+
+  const handlePointerMove = useCallback(
+    (event: PointerEvent<HTMLDivElement>) => {
+      updateGlowFromPointer(event);
+    },
+    [updateGlowFromPointer],
+  );
+
+  const handlePointerUp = useCallback(
+    (event: PointerEvent<HTMLDivElement>) => {
+      if (event.pointerType !== 'mouse') {
+        endTouchGlow();
+      }
+    },
+    [endTouchGlow],
+  );
+
+  const handlePointerCancel = useCallback(
+    (event: PointerEvent<HTMLDivElement>) => {
+      if (event.pointerType !== 'mouse') {
+        endTouchGlow();
+      }
+    },
+    [endTouchGlow],
+  );
+
   const handlePointerLeave = useCallback(() => {
     const card = cardRef.current;
     if (!card) return;
@@ -169,7 +230,10 @@ export function BorderGlowCard({
   return (
     <div
       ref={cardRef}
+      onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={handlePointerCancel}
       onPointerLeave={handlePointerLeave}
       className={`border-glow-card ${className}`.trim()}
       style={
