@@ -11,7 +11,7 @@ function App() {
     <>
       <StickyNav />
       <main
-        className="relative min-h-screen overflow-x-hidden bg-zinc-950"
+        className="relative min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-50"
         aria-label="Portfolio homepage"
       >
         <div className="site-ambient-bg" aria-hidden="true" />

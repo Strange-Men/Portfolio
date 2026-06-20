@@ -60,6 +60,8 @@
 | v1.25.0-docs-context-index | acfdf19 | Phase 7-4 | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则，防止后续 md 调用导致 token 爆炸。 |
 | v1.26.0-layout-copy-background-polish | 94ec2a1 | Phase 7-5 | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和 Hero 后页面背景层次。 |
 | v1.26.1-layout-copy-background-hotfix | — | Phase 7-5.1 | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题。 |
+| v1.26.2-background-card-mobile-polish | — | Phase 7-5.2 | 优化 Hero 与后续页面背景过渡、关闭卡片内部粉雾、增加移动端 touch glow，并降低移动端背景色块感。 |
+| v1.26.2-background-card-mobile-polish | — | Phase 7-5.2.1 | 继续修复 Hero / About 背景断层，将背景策略调整为全站统一 ambient base，并修正移动端需 Vercel 真实设备验收的说明。 |
 
 ---
 
@@ -68,7 +70,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.26.1-layout-copy-background-hotfix
+v1.26.2-background-card-mobile-polish
 ```
 
 当前已完成页面模块：
@@ -121,7 +123,8 @@ Section 入场动效
 | v1.25.0-docs-context-index | Phase 7-4 | 新增 AI 上下文索引、当前项目最小上下文和文档维护规则，防止后续 md 调用导致 token 爆炸。 |
 | v1.26.0-layout-copy-background-polish | Phase 7-5 | 优化 About 等宽卡片、求职文案泛化、Hero 小标签和 Hero 后页面背景层次。 |
 | v1.26.1-layout-copy-background-hotfix | Phase 7-5.1 | 修复 About 信息卡等宽、Hero/身份文案拆分、小字发糊和 Hero 后背景层级问题。 |
-| v1.27.0-production-verify | Phase 7-6 | 人工确认 Vercel 线上页面已更新到 v1.26.1 hotfix 版本，并完成线上可用性检查。 |
+| v1.26.2-background-card-mobile-polish | Phase 7-5.2 | 优化 Hero 与后续页面背景过渡、关闭卡片内部粉雾、增加移动端 touch glow，并降低移动端背景色块感。 |
+| v1.27.0-production-verify | Phase 7-6 | 人工确认 Vercel 线上页面已更新到 v1.26.2 版本，并完成线上可用性检查。 |
 | v2.0.0-multi-projects | Future | 未来新增更多真实项目时，扩展为多项目作品集。 |
 
 ---

@@ -145,6 +145,50 @@ https://portfolio-rosy-ten-41.vercel.app/
 - 未新增简历下载
 - 未接入 LineWaves / ProfileCard
 
+## Phase 7-5.2：Background / Card Glow / Mobile Polish
+
+用户继续人工检查后发现：
+
+- Hero 与后续页面背景过渡偏硬
+- BorderGlow 卡片内部仍有粉色雾感
+- 手机端卡片没有 touch 动态效果
+- 手机端 ambient background 过于集中，像一坨颜色
+
+本轮调整：
+
+- 为 Hero 底部增加柔和背景过渡
+- 关闭 BorderGlow 的内部 fill 层，保留边框追光和轻微边缘外光
+- 为 BorderGlowCard 增加移动端 touch active 交互
+- 为移动端 ambient background 增加单独降噪规则
+- 保持桌面端 BorderGlow 核心机制不变
+- 保持 RevealOnScroll 不变
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未接入 LineWaves / ProfileCard
+
+## Phase 7-5.2.1：Unified Background Base Hotfix
+
+用户检查 Phase 7-5.2 后指出：
+
+- 手机端不能通过 localhost 完整验收，需要 Vercel Preview / 线上地址测试
+- Hero 和 About 之间仍有明显背景横线
+- 当前背景像 Hero 与后续页面两套背景硬切
+
+本轮调整：
+
+- 将背景策略调整为全站统一 `site-ambient-bg`
+- Hero 不再使用实体黑色背景覆盖全站背景
+- Hero 仅保留 spotlight / grid / glow 装饰层
+- Hero 底部 fade 改为透明过渡，不再用强实色接色
+- 清理旧 `page-ambient-bg` / 硬切背景样式
+- 移动端验收说明改为需要 Vercel Preview / 线上真实设备测试
+- 保持 BorderGlow / RevealOnScroll 不变
+- 未新增项目
+- 未新增 Demo
+- 未新增简历下载
+- 未接入 LineWaves / ProfileCard
+
 ## 下一步
 
 建议进入：
@@ -153,4 +197,4 @@ https://portfolio-rosy-ten-41.vercel.app/
 v1.27.0-production-verify
 ```
 
-目标：人工确认 Vercel 线上页面已更新到 v1.26.1 hotfix 版本，并做最终线上可用性检查。
+目标：人工确认 Vercel 线上页面已更新到 v1.26.2 版本，并做最终线上可用性检查。
