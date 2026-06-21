@@ -334,3 +334,17 @@ Phase 12-2 应基于本研究文档，小范围修改 `src/data/projects.ts` 和
 - 未修改 Hero / About / Contact
 - 未修改 BorderGlow / RevealOnScroll / 背景系统
 - build 通过
+
+---
+
+## 12. Version Seal
+
+`v1.32.0-proof-polish` 已完成并封存。
+
+本版本已将 Phase 12-1 的研究结果应用到 Portfolio 项目卡片中：
+
+- CodePilot 增加 Demo / GitHub / 测试 / CI 的验证方式说明
+- EnterpriseAiDataAgent 增加在线演示链接，并增加 Demo / GitHub / 代码 / 测试的验证方式说明
+- Basjoo 二开项目增加项目说明仓库、basjoo 分支、pytest、eval cases 的验证方式说明
+
+本版本未新增假链接，未为 Basjoo 增加在线 Demo，未夸大 Mock 或本地原型边界。

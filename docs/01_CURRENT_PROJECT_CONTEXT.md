@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.30.0-seo-share-polish`
+`v1.32.0-proof-polish`
 
 当前线上地址：
 
@@ -80,32 +80,19 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已完成 SEO / Share 基础优化：
+当前 Portfolio 已完成 Project Proof Polish：
 
-- 浏览器 title：李泓轩｜AI Application Portfolio
-- meta description
-- Open Graph 基础标签
-- Twitter Card 基础标签
-- theme-color
-- SVG favicon
-- site.webmanifest
-- README 首屏 Live Site 与 Featured Projects 优化
+- 三个项目卡片均增加轻量级"验证方式"
+- EnterpriseAiDataAgent 增加在线演示入口
+- CodePilot 保留 GitHub 与在线 Demo 入口
+- Basjoo 二开保持"项目说明 + 代码仓库"入口，不新增假 Demo
+- 页面更适合 HR / 面试官快速判断每个项目该点哪里、看哪里、验证什么
 
 当前版本已通过线上验收。
 
 下一步建议：
 
-当前下一阶段：
-
-- v1.32.0-proof-polish
-- Phase 12-1 已完成项目验证入口研究
-- Phase 12-2 已完成项目验证方式说明和 EnterpriseAiDataAgent 在线演示链接
-- `src/data/links.ts` 新增 `enterpriseAiDemo`
-- `src/data/projects.ts` 新增 `proof` 字段
-- `src/components/sections/CodePilotSection.tsx` 在项目卡片中渲染验证方式
-- 当前在 `feat/v1.32.0-proof-polish` 分支验收中
-- 当前研究文档：`docs/40_PROJECT_PROOF_RESEARCH.md`
-- 关键发现：EnterpriseAiDataAgent 已部署在线 Demo
+后续可进入 v1.33.0-application-readiness-polish，做投递前最终检查。
 
 ---
 
@@ -213,10 +200,10 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-v1.30.0-seo-share-polish 已封存。
+v1.32.0-proof-polish 已封存。
 
 后续可以：
 
-1. 手动完善 GitHub 仓库 About（Description / Website / Topics）
-2. 进入 v1.32.0-proof-polish，增强项目验证入口
-3. 如手机端发现问题，再做 v1.33.0-mobile-polish
+1. v1.33.0-application-readiness-polish：投递前最终检查
+2. v1.34.0-og-image-polish：补充 Open Graph 分享图
+3. v1.35.0-final-mobile-polish：移动端最终专项检查

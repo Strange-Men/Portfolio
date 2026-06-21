@@ -21,7 +21,7 @@ React 18 / TypeScript / Vite / Tailwind CSS / Vercel
 ## Current Version
 
 ```txt
-v1.30.0-seo-share-polish
+v1.32.0-proof-polish
 ```
 
 当前已完成：
@@ -39,15 +39,16 @@ v1.30.0-seo-share-polish
 - EnterpriseAiDataAgent / Basjoo 链接补齐
 - 完整页面组合与响应式优化
 - Vercel 线上部署
+- EnterpriseAiDataAgent 在线演示链接
+- 项目卡片验证方式
+- CodePilot Demo / GitHub / 测试 / CI 验证说明
+- EnterpriseAiDataAgent Demo / GitHub / 代码 / 测试验证说明
+- Basjoo 项目说明仓库 / basjoo 分支 / pytest / eval cases 验证说明
 
 当前未完成：
 
 - 自定义域名
 - 未来项目扩展
-
-当前进行中：
-
-- v1.32.0-proof-polish：为三个项目卡片增加轻量级验证方式说明，为 EnterpriseAiDataAgent 补充在线演示链接（分支验收中）
 
 ---
 
@@ -91,6 +92,7 @@ v1.30.0-seo-share-polish
 | v1.28.1-projects-contact-link | Projects & Contact Polish | 三项目平级展示、Hero Selected Work 摘要、Gmail 联系按钮、EnterpriseAiDataAgent / Basjoo 链接补齐 |
 | v1.29.0-project-detail-polish | Project Detail Polish | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体 |
 | v1.30.0-seo-share-polish | SEO & Share Polish | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示 |
+| v1.32.0-proof-polish | Project Proof Polish | 为三个项目卡片增加轻量级"验证方式"说明，并为 EnterpriseAiDataAgent 增加在线演示入口 |
 
 ---
 

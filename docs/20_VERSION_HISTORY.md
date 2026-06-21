@@ -67,7 +67,7 @@
 | v1.29.0-project-detail-polish | see tag | Phase 9 | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体。 |
 | v1.30.0-seo-share-polish | see tag | Phase 10 | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示。 |
 | v1.31.0-github-about-polish | Phase 11-1 | 完善 GitHub 仓库 About 展示信息，包括 Description、Website 和 Topics。 |
-| v1.32.0-proof-polish | Phase 12-1 / 12-2 | 项目验证入口优化：研究三个项目的验证证据，为项目卡片增加轻量级验证方式说明，并为 EnterpriseAiDataAgent 补充在线演示链接。 |
+| v1.32.0-proof-polish | see tag | Phase 12 | 为三个项目卡片增加轻量级"验证方式"说明，并补充 EnterpriseAiDataAgent 在线演示入口。 |
 
 ---
 
@@ -76,7 +76,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.30.0-seo-share-polish
+v1.32.0-proof-polish
 ```
 
 当前已完成页面模块：
@@ -141,9 +141,9 @@ GitHub Profile 同步
 
 | Version | 阶段 | 计划 |
 |---|---|---|
-| v1.31.0-github-about-polish | Future | 手动完善 GitHub 仓库 About，包括 Description、Website、Topics。 |
-| v1.32.0-proof-polish | Future | 增强项目验证入口，例如 README、测试、报告、Demo 的引导说明。 |
-| v1.33.0-mobile-polish | Future | 如线上手机端发现排版问题，再做移动端专项优化。 |
+| v1.33.0-application-readiness-polish | Future | 投递前最终检查：优化页面对 HR / 面试官的阅读路径、项目可信度表达和链接验证体验。 |
+| v1.34.0-og-image-polish | Future | 设计并接入 Open Graph 分享图，用于社交平台和链接预览。 |
+| v1.35.0-final-mobile-polish | Future | 如线上手机端发现问题，再做移动端专项优化。 |
 
 ---
 
