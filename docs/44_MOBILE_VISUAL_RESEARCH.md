@@ -464,3 +464,32 @@ P2 问题数量：4（均为非阻断问题）
 如果用户在真实手机端发现 P0 / P1 问题：
 
 进入 Phase 16-2：Mobile Visual Fix，根据真实问题修复后重新封存。
+
+---
+
+## 16. Version Seal
+
+`v1.36.0-mobile-visual-polish` 已完成并封存。
+
+本版本完成 Portfolio 手机端视觉专项检查：
+
+- Hero Mobile QA passed
+- Navigation Mobile QA passed
+- About Mobile QA passed
+- Projects Mobile QA passed
+- Proof Block Mobile QA passed
+- Contact Mobile QA passed
+- Motion / Touch QA passed
+- Horizontal Overflow QA passed
+
+Mobile Visual QA result:
+
+- P0 issues: 0
+- P1 issues: 0
+- P2 issues: 4
+
+P2 issues are non-blocking and do not prevent using the Portfolio link for HR / interviewer communication.
+
+Note:
+
+This version is based on source-level responsive analysis and CSS breakpoint review. Real-device mobile testing was not performed in this phase and should not be claimed as completed.

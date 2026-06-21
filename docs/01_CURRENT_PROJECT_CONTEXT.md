@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.35.0-final-qa-polish`
+`v1.36.0-mobile-visual-polish`
 
 当前线上地址：
 
@@ -80,18 +80,20 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已完成 Final QA Polish：
+当前 Portfolio 已完成 Mobile Visual Polish：
 
-- 本地 build 通过
-- 线上主页可访问
-- 线上 OG Image 可访问
-- SEO / metadata 配置正常
-- 三个项目链接和验证入口正常
-- 禁用词 / 假链接检查通过
-- 项目文案边界检查通过
+- 移动端 Hero 检查通过
+- 移动端导航检查通过
+- 移动端 About 检查通过
+- 移动端 Projects 检查通过
+- proof-block 移动端阅读体验检查通过
+- Contact 和 Gmail 按钮移动端检查通过
+- 横向溢出风险检查通过
 - 无 P0 / P1 阻断问题
 
-当前 Portfolio 可作为投递和沟通时的作品集链接使用。
+说明：本轮主要基于源码静态分析、CSS 响应式规则和断点推导；真实手机端未检查，不伪造真机结论。
+
+当前 Portfolio 可继续作为稳定作品集使用，后续如需继续开发，应优先选择有明确收益的小版本。
 
 ---
 
@@ -199,9 +201,7 @@ Contact 只保留联系方式。
 
 当前下一步：
 
-- v1.36.0-mobile-visual-polish
-- Phase 16-1 已完成手机端视觉专项研究
-- 目标是让 Portfolio 在手机端不只是能用，也能保持高级感和清晰阅读体验
-- 当前研究文档：`docs/44_MOBILE_VISUAL_RESEARCH.md`
-- 研究结论：P0=0, P1=0, P2=4，建议直接进入 Mobile Visual Seal
-- 下一步根据用户确认决定进入 Phase 16-2：Mobile Visual Seal 或 Mobile Visual Fix
+- v1.36.0-mobile-visual-polish 已封存
+- Portfolio 当前已经完成手机端视觉专项检查
+- 建议后续不要再对首页做无目标大改
+- 如果继续开发，建议进入 v1.37.0-case-study-research，研究是否增加 CodePilot 深度案例区

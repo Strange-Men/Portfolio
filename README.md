@@ -21,7 +21,7 @@ React 18 / TypeScript / Vite / Tailwind CSS / Vercel
 ## Current Version
 
 ```txt
-v1.35.0-final-qa-polish
+v1.36.0-mobile-visual-polish
 ```
 
 当前已完成：
@@ -47,6 +47,7 @@ v1.35.0-final-qa-polish
 - Basjoo 项目说明仓库 / basjoo 分支 / pytest / eval cases 验证说明
 - Visual Identity Polish：增强 Hero、About、Projects、Contact 视觉个人风格
 - Final QA Polish：投递前最终 QA 检查，确认无阻断问题
+- Mobile Visual Polish：手机端视觉专项检查，确认移动端无阻断问题
 
 当前未完成：
 
@@ -99,6 +100,7 @@ v1.35.0-final-qa-polish
 | v1.33.0-visual-identity-polish | Visual Identity Polish | 增强 Portfolio 的视觉个人风格，优化 Hero、About、Projects 层级、Contact 收束感，并完成最终 About 文案修正 |
 | v1.34.0-og-image-polish | OG Image Polish | 新增 Portfolio 分享图并接入 Open Graph / Twitter Image metadata |
 | v1.35.0-final-qa-polish | Final QA Polish | 投递前最终 QA 检查，确认页面、链接、移动端、SEO、OG 图、项目文案边界和禁用词均无阻断问题 |
+| v1.36.0-mobile-visual-polish | Mobile Visual Polish | 手机端视觉专项检查，确认移动端 Hero、导航、About、Projects、proof-block、Contact 和横向溢出风险无阻断问题 |
 
 ---
 
