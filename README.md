@@ -21,13 +21,14 @@ React 18 / TypeScript / Vite / Tailwind CSS / Vercel
 ## Current Version
 
 ```txt
-v1.33.0-visual-identity-polish
+v1.34.0-og-image-polish
 ```
 
 当前已完成：
 
 - SEO metadata（title、meta description）
 - Open Graph / Twitter Card 基础标签
+- OG Image 分享图（`og:image` / `twitter:image` / `summary_large_image`）
 - SVG favicon
 - site.webmanifest
 - README 首屏优化
@@ -95,6 +96,7 @@ v1.33.0-visual-identity-polish
 | v1.30.0-seo-share-polish | SEO & Share Polish | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示 |
 | v1.32.0-proof-polish | Project Proof Polish | 为三个项目卡片增加轻量级"验证方式"说明，并为 EnterpriseAiDataAgent 增加在线演示入口 |
 | v1.33.0-visual-identity-polish | Visual Identity Polish | 增强 Portfolio 的视觉个人风格，优化 Hero、About、Projects 层级、Contact 收束感，并完成最终 About 文案修正 |
+| v1.34.0-og-image-polish | OG Image Polish | 新增 Portfolio 分享图并接入 Open Graph / Twitter Image metadata |
 
 ---
 

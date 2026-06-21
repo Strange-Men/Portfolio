@@ -526,3 +526,23 @@ v1.33.0-visual-identity-polish
 - 未使用 Image2
 - 未新增依赖
 - 未修改页面主体视觉
+
+## Phase 14-4：v1.34.0 Version Seal
+
+本轮完成 v1.34.0-og-image-polish 的线上验收与版本封存。
+
+完成内容：
+
+- 确认线上 PNG 可访问
+- 确认首页 HTML 已包含 `og:image`
+- 确认首页 HTML 已包含 `twitter:image`
+- 确认 `twitter:card` 为 `summary_large_image`
+- 补充 OG Image 使用说明
+- 更新版本文档
+- 创建并推送 `v1.34.0-og-image-polish` tag
+
+## 当前最新版本
+
+```txt
+v1.34.0-og-image-polish
+```

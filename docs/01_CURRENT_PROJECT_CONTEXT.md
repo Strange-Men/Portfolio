@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.33.0-visual-identity-polish`
+`v1.34.0-og-image-polish`
 
 当前线上地址：
 
@@ -80,26 +80,16 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已完成 Visual Identity Polish：
+当前 Portfolio 已完成 OG Image Polish：
 
-- Hero 顶部保持极简 `PORTFOLIO`
-- About 文案调整为更自然、谦逊的自我介绍
-- About 恢复卡片动画质感
-- Projects 增强编号和验证方式视觉层级
-- Contact 保持简洁收尾
-- EnterpriseAiDataAgent 技术栈标签统一为 `LLM API`
+- 新增 `public/og/portfolio-og.svg` 作为可编辑源文件
+- 新增 `public/og/portfolio-og.png` 作为正式分享图
+- 首页已接入 `og:image`
+- 首页已接入 `twitter:image`
+- `twitter:card` 已设置为 `summary_large_image`
+- 正式分享时应发送主页链接，OG 图用于支持链接预览的平台展示
 
 当前版本已准备封存。
-
-当前下一阶段：
-
-- v1.34.0-og-image-polish
-- Phase 14-1 已完成 Open Graph / Twitter 分享图研究
-- Phase 14-2 正在制作并接入 Portfolio OG 分享图
-- 目标是提升 Portfolio 链接发给 HR / 面试官时的外部第一印象
-- 推荐方案：可控 SVG 分享图（public/og/portfolio-og.svg）
-- 正式社交平台分享图使用 PNG（public/og/portfolio-og.png）
-- 研究文档：`docs/42_OG_IMAGE_RESEARCH.md`
 
 ---
 
@@ -207,4 +197,4 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-v1.33.0-visual-identity-polish 已封存。下一步建议先暂停大改，做一次线上最终检查；如果继续开发，可以进入 v1.34.0-og-image-polish，为 Portfolio 补充社交分享图。
+v1.34.0-og-image-polish 已封存。Portfolio 已完成页面主体、视觉个人风格、项目验证入口和链接分享图优化。下一步建议先暂停大改，做一次完整投递前检查，或进入 v1.35.0-final-qa-polish。
