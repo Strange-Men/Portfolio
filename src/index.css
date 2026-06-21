@@ -422,28 +422,6 @@
 
 /* ── Visual Identity Polish: personal mark / editorial elements ────── */
 
-/* Hero monogram — subtle personal mark */
-.hero-monogram {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.5);
-  font-family: var(--font-sans);
-  transition: border-color 300ms ease, color 300ms ease;
-}
-
-.hero-monogram:hover {
-  border-color: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.7);
-}
-
 /* Hero project index — editorial number styling */
 .hero-project-index {
   font-size: 13px;
@@ -466,21 +444,25 @@
   letter-spacing: 0.2em;
 }
 
-/* Project number anchor — big editorial number */
+/* Project number anchor — big editorial number, enhanced visibility */
 .project-number-anchor {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 200;
   line-height: 1;
   letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.06);
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.28), rgba(168, 85, 247, 0.22), rgba(236, 72, 153, 0.16));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-variant-numeric: tabular-nums;
   font-family: var(--font-sans);
   user-select: none;
-  transition: color 400ms ease;
+  transition: opacity 400ms ease;
+  opacity: 0.7;
 }
 
-.project-number-anchor:hover {
-  color: rgba(255, 255, 255, 0.1);
+.project-card:hover .project-number-anchor {
+  opacity: 1;
 }
 
 /* Proof block — trust anchor styling */
@@ -507,25 +489,9 @@
   font-family: var(--font-sans);
 }
 
-/* About info strip — editorial horizontal layout */
-.about-info-strip {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-@media (max-width: 639px) {
-  .about-info-strip {
-    border-top: none;
-    border-bottom: none;
-  }
-
-  .about-info-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  }
-
-  .about-info-item:last-child {
-    border-bottom: none;
-  }
+/* About editorial card — lightweight card feel */
+.about-editorial-card {
+  transition: border-color 300ms ease, background 300ms ease;
 }
 
 /* Contact Gmail button — primary CTA */
@@ -566,9 +532,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-monogram,
   .hero-project-index,
   .project-number-anchor,
+  .about-editorial-card,
   .proof-block,
   .contact-gmail-btn {
     transition: none;

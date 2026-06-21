@@ -70,6 +70,7 @@
 | v1.32.0-proof-polish | see tag | Phase 12 | 为三个项目卡片增加轻量级"验证方式"说明，并补充 EnterpriseAiDataAgent 在线演示入口。 |
 | v1.33.0-visual-identity-polish | Phase 13-1 | 视觉个人风格增强准备阶段：研究当前页面的视觉优点、不足和下一步高级感增强方案。 |
 | v1.33.0-visual-identity-polish | Phase 13-2 | 基于研究结论完成 Hero monogram / 签名线、Selected Work 编辑式索引、About 个人气质表达、Projects 编号锚点与验证方式信任锚点、Contact 签名 footer 等视觉增强。（当前在分支验收中） |
+| v1.33.0-visual-identity-polish | Phase 13-3 | 修正 13-2 验收问题：删除 LH monogram、重做 About 编辑卡片布局、增强 Projects 编号颜色可见度。（当前在分支验收中） |
 
 ---
 

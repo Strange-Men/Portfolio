@@ -335,6 +335,17 @@ Phase 13-2 应基于本研究文档，小范围提升 Hero 首屏记忆点、Pro
 
 ---
 
+## 12. Phase 13-3 Visual Fix
+
+本轮基于用户人工验收反馈，对 Phase 13-2 的视觉问题进行修正：
+
+- 删除不合适的 LH monogram，避免廉价 logo 感
+- 重做 About 区域，避免 horizontal info strip 带来的表格感
+- 增强 Projects 大号编号的可见度
+- 保留 Selected Work 目录感、proof-block 验证方式和 Contact 简洁收尾
+
+---
+
 ## 11. Phase 13-2 Application
 
 本轮基于研究结论完成以下视觉个人风格增强：

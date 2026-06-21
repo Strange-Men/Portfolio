@@ -80,14 +80,13 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 正在进行 Visual Identity Polish（Phase 13-2）：
+当前 Portfolio 正在进行 Visual Identity Fix（Phase 13-3）：
 
-- Hero 首屏增加 monogram 标记与签名线，增强个人识别度
-- Hero Selected Work 改为编辑式项目索引
-- About 自我介绍增强个人气质表达
-- Projects 卡片增加编号锚点与验证方式信任锚点
-- Contact 增加签名 footer，收尾更干净
-- 目标是让 Portfolio 更像高级个人作品集，强化 Hero、Projects、About 和 Contact 的个人风格与视觉记忆点
+- 删除 Hero 中不合适的 LH monogram
+- 重做 About 区域为编辑式卡片布局，减少表格感
+- 增强 Projects 大号编号的颜色和可见度
+- 保留 Selected Work 目录感、proof-block、Contact 签名 footer
+- 目标是修正 13-2 验收中发现的视觉问题
 
 当前在分支 `feat/v1.33.0-visual-identity-polish` 验收中。
 
@@ -197,11 +196,11 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-v1.33.0-visual-identity-polish Phase 13-2 正在分支验收中。
+v1.33.0-visual-identity-polish Phase 13-3 正在分支验收中。
 
 当前下一阶段：
 
-- 等待用户桌面端验收视觉效果
+- 等待用户重新桌面端验收视觉效果（重点确认 LH 删除、About 卡片感、Projects 编号可见度）
 - 验收通过后合并到 main，等待 Vercel 部署
 - 线上和手机端最终验收
 

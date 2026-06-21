@@ -1,6 +1,23 @@
-import { codepilot } from '../../data/codepilot';
 import { profile } from '../../data/profile';
-import { BorderGlowCard, RevealOnScroll, SectionLabel, Tag } from '../ui';
+import { RevealOnScroll, SectionLabel } from '../ui';
+
+const editorialCards = [
+  {
+    num: '01',
+    title: 'Engineering',
+    body: '把复杂流程拆成可运行、可测试、可解释的系统。',
+  },
+  {
+    num: '02',
+    title: 'Product Sense',
+    body: '关注用户能不能快速理解项目价值和验证路径。',
+  },
+  {
+    num: '03',
+    title: 'Visual Judgment',
+    body: '用克制的排版、动效和信息层级，让项目更可信。',
+  },
+] as const;
 
 export function AboutSection() {
   return (
@@ -29,39 +46,27 @@ export function AboutSection() {
                 {profile.about}
               </p>
               <p className="text-body-default max-w-3xl text-zinc-500 italic">
-                这个作品集本身也是我的一个项目 — 我在意每个细节是否能被理解。
+                这个作品集本身也是我的一个项目 —— 我在意每个细节是否能被理解。
               </p>
             </div>
           </RevealOnScroll>
 
-          {/* info strip — horizontal, editorial style */}
+          {/* editorial cards — lightweight, no glow */}
           <RevealOnScroll delay={80}>
-            <div className="about-info-strip flex flex-col gap-0 sm:flex-row sm:gap-0">
-              <div className="about-info-item flex-1 py-4 sm:py-0 sm:px-5 sm:border-r sm:border-white/[0.06]">
-                <p className="text-label text-zinc-600 mb-1.5">身份</p>
-                <p className="text-sm font-medium text-zinc-200 leading-relaxed">
-                  {profile.identity}
-                </p>
-              </div>
-              <div className="about-info-item flex-1 py-4 sm:py-0 sm:px-5 sm:border-r sm:border-white/[0.06]">
-                <p className="text-label text-zinc-600 mb-1.5">方向</p>
-                <p className="text-sm font-medium text-zinc-200 leading-relaxed">
-                  {profile.directions.join(' · ')}
-                </p>
-              </div>
-              <div className="about-info-item flex-1 py-4 sm:py-0 sm:px-5">
-                <p className="text-label text-zinc-600 mb-1.5">当前重点</p>
-                <p className="text-sm font-medium text-zinc-200 leading-relaxed">
-                  {codepilot.name}
-                </p>
-              </div>
-            </div>
-          </RevealOnScroll>
-
-          <RevealOnScroll delay={0}>
-            <div className="flex flex-wrap gap-2">
-              {profile.focusTags.map((tag) => (
-                <Tag key={tag}>{tag}</Tag>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {editorialCards.map((card) => (
+                <div
+                  key={card.num}
+                  className="about-editorial-card rounded-2xl border border-white/[0.07] bg-white/[0.025] p-5 transition-colors hover:border-white/[0.12] hover:bg-white/[0.04]"
+                >
+                  <p className="text-label text-zinc-600 mb-2">{card.num}</p>
+                  <p className="text-sm font-semibold text-zinc-100 tracking-tight mb-1.5">
+                    {card.title}
+                  </p>
+                  <p className="text-sm leading-relaxed text-zinc-400">
+                    {card.body}
+                  </p>
+                </div>
               ))}
             </div>
           </RevealOnScroll>

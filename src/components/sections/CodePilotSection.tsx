@@ -14,7 +14,7 @@ function ProjectCard({
 
   return (
     <RevealOnScroll delay={delay}>
-      <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 items-start">
+      <div className="project-card grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 items-start">
         {/* left: info */}
         <div>
           {/* project number anchor */}
