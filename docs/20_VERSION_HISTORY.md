@@ -71,6 +71,7 @@
 | v1.33.0-visual-identity-polish | see tag | Phase 13 | 增强 Portfolio 的视觉个人风格，优化 Hero、About、Projects 层级、Contact 收束感，并完成最终 About 文案修正。 |
 | v1.34.0-og-image-polish | see tag | Phase 14 | 新增 Portfolio Open Graph 分享图，接入 `og:image` / `twitter:image`，提升链接发给 HR / 面试官时的外部第一印象。 |
 | v1.35.0-final-qa-polish | see tag | Phase 15 | 投递前最终 QA 检查，确认页面、链接、移动端、SEO、OG 图、项目文案边界和禁用词均无阻断问题。 |
+| v1.36.0-mobile-visual-polish | Phase 16-1 | 手机端视觉专项准备阶段：检查 Hero、导航、About、Projects、proof-block、Contact 和横向溢出风险。结论：P0=0, P1=0, P2=4，建议直接进入 Mobile Visual Seal。 |
 
 ---
 

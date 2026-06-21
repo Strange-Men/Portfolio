@@ -588,3 +588,31 @@ v1.35.0-final-qa-polish
 ## 当前状态
 
 Portfolio 已完成投递前最终 QA 检查，可以作为发给 HR / 面试官的个人作品集链接使用。
+
+## Phase 16-1：Mobile Visual Research
+
+本轮开始 v1.36.0-mobile-visual-polish 的准备阶段。
+
+本轮完成：
+
+- 检查移动端 Hero（标题字号、首屏密度、背景降级）
+- 检查移动端导航（布局、遮挡风险、触摸目标）
+- 检查移动端 About（堆叠、卡片、文案可读性）
+- 检查移动端 Projects（卡片长度、层级、间距）
+- 检查 proof-block 在移动端的阅读体验
+- 检查 Contact 和 Gmail 按钮（堆叠、触摸目标、收尾）
+- 检查横向溢出风险（overflow-x-hidden 防护）
+- 检查动效与触摸端降级（BorderGlow touch、reduced-motion）
+- 新增 `docs/44_MOBILE_VISUAL_RESEARCH.md`
+
+研究结论：
+
+- P0 问题数量：0
+- P1 问题数量：0
+- P2 问题数量：4（均为非阻断问题）
+- 当前移动端体验已达到"发给 HR 后也有高级感"的程度
+- 建议不做 Mobile Fix，直接进入 Mobile Visual Seal
+
+下一步：
+
+根据移动端 QA 结果决定进入 Mobile Visual Fix 或 Mobile Visual Seal。
