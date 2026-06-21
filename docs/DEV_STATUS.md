@@ -394,3 +394,21 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 1. v1.33.0-application-readiness-polish：投递前最终检查
 2. v1.34.0-og-image-polish：补充 Open Graph 分享图
 3. v1.35.0-final-mobile-polish：移动端最终专项检查
+
+## Phase 13-1：Visual Identity Research
+
+本轮开始 v1.33.0-visual-identity-polish 的准备阶段。
+
+本轮完成：
+
+- 研究当前 Portfolio 的视觉优点与不足
+- 明确下一阶段主方向：Dark Editorial AI Portfolio
+- 分析 Hero / About / Projects / Contact / Global Motion / Mobile Risk
+- 新增 `docs/41_VISUAL_IDENTITY_RESEARCH.md`
+- 本轮未修改页面源码
+- 本轮未修改视觉 / 动效 / 背景
+- 本轮未打 tag
+
+下一步：
+
+进入 Phase 13-2，根据研究文档小范围增强 Hero 首屏记忆点、Projects 卡片层级、About 个人风格和全局微交互。

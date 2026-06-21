@@ -202,8 +202,15 @@ Contact 只保留联系方式。
 
 v1.32.0-proof-polish 已封存。
 
+当前下一阶段：
+
+- v1.33.0-visual-identity-polish
+- Phase 13-1 已完成视觉个人风格研究
+- 目标是让 Portfolio 成为更有记忆点、更高级、更能体现用户审美的个人作品集
+- 研究文档：`docs/41_VISUAL_IDENTITY_RESEARCH.md`
+
 后续可以：
 
-1. v1.33.0-application-readiness-polish：投递前最终检查
+1. v1.33.0-visual-identity-polish：视觉个人风格增强
 2. v1.34.0-og-image-polish：补充 Open Graph 分享图
 3. v1.35.0-final-mobile-polish：移动端最终专项检查
