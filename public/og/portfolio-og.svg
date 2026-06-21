@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">李泓轩 Portfolio</title>
+  <desc id="desc">AI Application, Agent Development, and Python Backend portfolio preview image.</desc>
+  <defs>
+    <radialGradient id="violetGlow" cx="26%" cy="30%" r="52%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.16" />
+      <stop offset="55%" stop-color="#8b5cf6" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="roseGlow" cx="78%" cy="62%" r="44%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.12" />
+      <stop offset="62%" stop-color="#ec4899" stop-opacity="0.035" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ruleGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0" />
+      <stop offset="36%" stop-color="#a78bfa" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="fineGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.028" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#09090b" />
+  <rect width="1200" height="630" fill="url(#fineGrid)" />
+  <rect width="1200" height="630" fill="url(#violetGlow)" />
+  <rect width="1200" height="630" fill="url(#roseGlow)" />
+
+  <g font-family="Inter, PingFang SC, Microsoft YaHei, system-ui, sans-serif">
+    <line x1="88" y1="102" x2="88" y2="512" stroke="#a78bfa" stroke-opacity="0.24" stroke-width="1" />
+    <line x1="88" y1="102" x2="330" y2="102" stroke="url(#ruleGlow)" stroke-width="1" />
+    <line x1="88" y1="512" x2="1112" y2="512" stroke="#ffffff" stroke-opacity="0.055" stroke-width="1" />
+
+    <text x="112" y="158" fill="#a1a1aa" font-size="13" font-weight="600" letter-spacing="4">CONTROLLED OG IMAGE</text>
+    <text x="112" y="246" fill="#fafafa" font-size="58" font-weight="720">李泓轩 Portfolio</text>
+    <text x="116" y="296" fill="#d4d4d8" font-size="21" font-weight="420">AI Application · Agent Development · Python Backend</text>
+
+    <line x1="116" y1="342" x2="420" y2="342" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+    <text x="116" y="390" fill="#a1a1aa" font-size="17" font-weight="500" letter-spacing="3">Build · Verify · Present</text>
+    <text x="116" y="566" fill="#52525b" font-size="13" font-weight="450">portfolio-rosy-ten-41.vercel.app</text>
+
+    <g transform="translate(676 162)">
+      <line x1="0" y1="0" x2="0" y2="262" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+      <circle cx="0" cy="0" r="4" fill="#a78bfa" fill-opacity="0.72" />
+      <circle cx="0" cy="126" r="4" fill="#ec4899" fill-opacity="0.58" />
+      <circle cx="0" cy="262" r="4" fill="#a78bfa" fill-opacity="0.48" />
+
+      <g transform="translate(38 0)">
+        <text x="0" y="18" fill="#ffffff" fill-opacity="0.13" font-size="54" font-weight="760">01</text>
+        <text x="86" y="6" fill="#f4f4f5" font-size="22" font-weight="650">CodePilot</text>
+        <text x="86" y="35" fill="#71717a" font-size="13" font-weight="480" letter-spacing="1.2">Repository understanding</text>
+      </g>
+
+      <g transform="translate(38 126)">
+        <text x="0" y="18" fill="#ffffff" fill-opacity="0.13" font-size="54" font-weight="760">02</text>
+        <text x="86" y="6" fill="#f4f4f5" font-size="22" font-weight="650">EnterpriseAiDataAgent</text>
+        <text x="86" y="35" fill="#71717a" font-size="13" font-weight="480" letter-spacing="1.2">Data analysis workflow</text>
+      </g>
+
+      <g transform="translate(38 262)">
+        <text x="0" y="18" fill="#ffffff" fill-opacity="0.13" font-size="54" font-weight="760">03</text>
+        <text x="86" y="6" fill="#f4f4f5" font-size="22" font-weight="650">Basjoo 二开</text>
+        <text x="86" y="35" fill="#71717a" font-size="13" font-weight="480" letter-spacing="1.2">RAG evaluation harness</text>
+      </g>
+    </g>
+
+    <g opacity="0.48">
+      <path d="M 942 118 L 990 118 L 1018 146 L 1088 146" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" />
+      <path d="M 916 462 L 980 462 L 1004 438 L 1090 438" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+      <circle cx="942" cy="118" r="3" fill="#a78bfa" fill-opacity="0.54" />
+      <circle cx="1088" cy="146" r="3" fill="#f472b6" fill-opacity="0.42" />
+      <circle cx="916" cy="462" r="3" fill="#a78bfa" fill-opacity="0.36" />
+      <circle cx="1090" cy="438" r="3" fill="#f472b6" fill-opacity="0.34" />
+    </g>
+  </g>
+</svg>

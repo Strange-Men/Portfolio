@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 13-7
+当前阶段：Phase 14-1
 
 ## 已完成
 
@@ -491,3 +491,38 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 ```txt
 v1.33.0-visual-identity-polish
 ```
+
+## Phase 14-1：OG Image Research
+
+本轮开始 v1.34.0-og-image-polish 的准备阶段。
+
+本轮完成：
+
+- 检查当前 Open Graph / Twitter Card 图片状态（og:image 缺失，twitter:image 缺失）
+- 检查 public/ 资源（仅 favicon.svg 和 site.webmanifest，无 OG 图片资源）
+- 研究 SVG / Image2 / 暂不接入 三种方案
+- 推荐优先采用可控 SVG 分享图（Scheme A）
+- 新增 `docs/42_OG_IMAGE_RESEARCH.md`
+- 本轮未修改页面源码
+- 本轮未生成图片
+- 本轮未接入 og:image
+
+下一步：
+
+进入 Phase 14-2，制作并接入 `public/og/portfolio-og.svg`。
+
+## Phase 14-2：OG Image Polish
+
+本轮基于 `docs/42_OG_IMAGE_RESEARCH.md` 制作并接入 Portfolio 分享图。
+
+完成内容：
+
+- 新增 `public/og/portfolio-og.svg`
+- 新增 `public/og/portfolio-og.png`
+- 使用 Codex / GPT 多模态能力完成图片效果验收
+- 接入 `og:image`
+- 接入 `twitter:image`
+- `twitter:card` 改为 `summary_large_image`
+- 未使用 Image2
+- 未新增依赖
+- 未修改页面主体视觉
