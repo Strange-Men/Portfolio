@@ -33,6 +33,8 @@
   background: #09090b;
 }
 
+/* ── Visual Identity Polish: personal mark / editorial elements ────── */
+
 * {
   box-sizing: border-box;
 }
@@ -415,5 +417,164 @@
   .site-ambient-bg::after {
     opacity: 0.08;
     background-size: 48px 48px;
+  }
+}
+
+/* ── Visual Identity Polish: personal mark / editorial elements ────── */
+
+/* Hero monogram — subtle personal mark */
+.hero-monogram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-sans);
+  transition: border-color 300ms ease, color 300ms ease;
+}
+
+.hero-monogram:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero project index — editorial number styling */
+.hero-project-index {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.2);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-sans);
+  transition: color 300ms ease;
+}
+
+.hero-project-index:hover {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Hero signature line */
+.hero-signature {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* Project number anchor — big editorial number */
+.project-number-anchor {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.06);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-sans);
+  user-select: none;
+  transition: color 400ms ease;
+}
+
+.project-number-anchor:hover {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Proof block — trust anchor styling */
+.proof-block {
+  padding: 14px 16px;
+  border-left: 2px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0 12px 12px 0;
+  transition: border-color 300ms ease, background 300ms ease;
+}
+
+.proof-block:hover {
+  border-left-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.proof-block-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 6px;
+  font-family: var(--font-sans);
+}
+
+/* About info strip — editorial horizontal layout */
+.about-info-strip {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 639px) {
+  .about-info-strip {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .about-info-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .about-info-item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Contact Gmail button — primary CTA */
+.contact-gmail-btn {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 10px 24px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background 200ms ease, box-shadow 200ms ease, transform 100ms ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #fafafa;
+  color: #09090b;
+  font-family: var(--font-sans);
+}
+
+.contact-gmail-btn:hover {
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-gmail-btn:active {
+  transform: scale(0.98);
+}
+
+.contact-gmail-btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Contact signature footer */
+.contact-signature {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-monogram,
+  .hero-project-index,
+  .project-number-anchor,
+  .proof-block,
+  .contact-gmail-btn {
+    transition: none;
+  }
+
+  .contact-gmail-btn:active {
+    transform: none;
   }
 }

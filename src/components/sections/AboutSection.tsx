@@ -24,72 +24,39 @@ export function AboutSection() {
 
         <div className="space-y-8">
           <RevealOnScroll delay={0}>
-            <p className="text-body-lg max-w-3xl text-zinc-300">
-              {profile.about}
-            </p>
+            <div className="space-y-5">
+              <p className="text-body-lg max-w-3xl text-zinc-300">
+                {profile.about}
+              </p>
+              <p className="text-body-default max-w-3xl text-zinc-500 italic">
+                这个作品集本身也是我的一个项目 — 我在意每个细节是否能被理解。
+              </p>
+            </div>
           </RevealOnScroll>
 
-          <div className="grid gap-4 sm:grid-cols-3">
-            <RevealOnScroll delay={80} className="h-full min-w-0 w-full">
-              <BorderGlowCard
-                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
-                edgeSensitivity={34}
-                glowColor="315 90 78"
-                backgroundColor="#120F17"
-                borderRadius={24}
-                glowRadius={28}
-                glowIntensity={0.58}
-                coneSpread={24}
-                colors={['#c084fc', '#eb1f94', '#f838ea']}
-                fillOpacity={0.04}
-              >
-                <p className="text-label text-zinc-500">身份</p>
-                <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
+          {/* info strip — horizontal, editorial style */}
+          <RevealOnScroll delay={80}>
+            <div className="about-info-strip flex flex-col gap-0 sm:flex-row sm:gap-0">
+              <div className="about-info-item flex-1 py-4 sm:py-0 sm:px-5 sm:border-r sm:border-white/[0.06]">
+                <p className="text-label text-zinc-600 mb-1.5">身份</p>
+                <p className="text-sm font-medium text-zinc-200 leading-relaxed">
                   {profile.identity}
                 </p>
-              </BorderGlowCard>
-            </RevealOnScroll>
-
-            <RevealOnScroll delay={140} className="h-full min-w-0 w-full">
-              <BorderGlowCard
-                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
-                edgeSensitivity={34}
-                glowColor="315 90 78"
-                backgroundColor="#120F17"
-                borderRadius={24}
-                glowRadius={28}
-                glowIntensity={0.58}
-                coneSpread={24}
-                colors={['#c084fc', '#eb1f94', '#f838ea']}
-                fillOpacity={0.04}
-              >
-                <p className="text-label text-zinc-500">方向</p>
-                <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
-                  {profile.directions.join(' / ')}
+              </div>
+              <div className="about-info-item flex-1 py-4 sm:py-0 sm:px-5 sm:border-r sm:border-white/[0.06]">
+                <p className="text-label text-zinc-600 mb-1.5">方向</p>
+                <p className="text-sm font-medium text-zinc-200 leading-relaxed">
+                  {profile.directions.join(' · ')}
                 </p>
-              </BorderGlowCard>
-            </RevealOnScroll>
-
-            <RevealOnScroll delay={200} className="h-full min-w-0 w-full">
-              <BorderGlowCard
-                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
-                edgeSensitivity={34}
-                glowColor="315 90 78"
-                backgroundColor="#120F17"
-                borderRadius={24}
-                glowRadius={28}
-                glowIntensity={0.58}
-                coneSpread={24}
-                colors={['#c084fc', '#eb1f94', '#f838ea']}
-                fillOpacity={0.04}
-              >
-                <p className="text-label text-zinc-500">当前重点</p>
-                <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
+              </div>
+              <div className="about-info-item flex-1 py-4 sm:py-0 sm:px-5">
+                <p className="text-label text-zinc-600 mb-1.5">当前重点</p>
+                <p className="text-sm font-medium text-zinc-200 leading-relaxed">
                   {codepilot.name}
                 </p>
-              </BorderGlowCard>
-            </RevealOnScroll>
-          </div>
+              </div>
+            </div>
+          </RevealOnScroll>
 
           <RevealOnScroll delay={0}>
             <div className="flex flex-wrap gap-2">

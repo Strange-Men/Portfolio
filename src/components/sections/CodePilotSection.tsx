@@ -3,23 +3,34 @@ import { BorderGlowCard, Button, RevealOnScroll, SectionLabel, Tag } from '../ui
 
 function ProjectCard({
   project,
+  index,
   delay,
 }: {
   project: (typeof projects)[number];
+  index: number;
   delay: number;
 }) {
+  const number = String(index + 1).padStart(2, '0');
+
   return (
     <RevealOnScroll delay={delay}>
       <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 items-start">
         {/* left: info */}
         <div>
-          <h3 className="text-lg font-semibold tracking-tight text-white">
-            {project.name}
-          </h3>
+          {/* project number anchor */}
+          <div className="flex items-baseline gap-4 mb-5">
+            <span className="project-number-anchor" aria-hidden="true">
+              {number}
+            </span>
+            <div className="min-w-0">
+              <h3 className="text-lg font-semibold tracking-tight text-white">
+                {project.name}
+              </h3>
+              <p className="mt-0.5 text-sm text-zinc-500">{project.subtitle}</p>
+            </div>
+          </div>
 
-          <p className="mt-1 text-sm text-zinc-400">{project.subtitle}</p>
-
-          <p className="text-body-lg mt-5 max-w-xl text-zinc-300">
+          <p className="text-body-lg max-w-xl text-zinc-300">
             {project.description}
           </p>
 
@@ -36,10 +47,8 @@ function ProjectCard({
           </div>
 
           {project.proof && (
-            <div className="mt-5">
-              <p className="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1.5">
-                验证方式
-              </p>
+            <div className="proof-block mt-5">
+              <p className="proof-block-label">验证方式</p>
               <p className="text-sm leading-relaxed text-zinc-400">
                 {project.proof}
               </p>
@@ -81,10 +90,10 @@ function ProjectCard({
                 项目流程
               </h4>
               <div className="mt-5 space-y-2 text-sm">
-                {project.flow.map((step, index) => (
+                {project.flow.map((step, stepIndex) => (
                   <div key={step} className="flex items-center gap-3">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xs text-zinc-400">
-                      {index + 1}
+                      {stepIndex + 1}
                     </span>
                     <span className="text-zinc-300">{step}</span>
                   </div>
@@ -131,6 +140,7 @@ export function CodePilotSection() {
             <ProjectCard
               key={project.id}
               project={project}
+              index={index}
               delay={index * 120}
             />
           ))}

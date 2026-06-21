@@ -332,3 +332,27 @@ Phase 13-2 不要大改全站，只做以下内容：
 Phase 13-2 应基于本研究文档，小范围提升 Hero 首屏记忆点、Projects 卡片层级、About 个人风格和全局微交互，目标是让 Portfolio 更像高级个人作品集，而不是普通项目展示页。
 
 核心目标：让 HR / 面试官打开页面后，能感受到"这个人有自己的审美判断力"，而不是"这是一个 AI 生成的标准暗色作品集"。
+
+---
+
+## 11. Phase 13-2 Application
+
+本轮基于研究结论完成以下视觉个人风格增强：
+
+- Hero 首屏增加极简 monogram 标记（LH）与签名线（Built by 李泓轩）
+- Hero PORTFOLIO 标签改为与 monogram 并列，降低视觉权重
+- Hero Selected Work 改为编辑式项目索引，增加项目间分隔线与更清晰的编号排版
+- Hero 背景 glow 简化为单一聚焦光晕，减少散射层数
+- About 自我介绍文案调整为更个人气质的表达，强调"审美驱动的项目实践者"
+- About 三信息卡改为水平 info strip 布局，减少表单感
+- About 增加一句个人风格短句："这个作品集本身也是我的一个项目"
+- Projects 卡片增加大号项目编号锚点，增强视觉节奏
+- Projects 验证方式改为左边框 + 弱背景的信任锚点样式
+- Contact 简化收尾文案，删除免责声明式表达
+- Contact Gmail 按钮样式增强为主 CTA
+- Contact 增加极简签名 footer（Designed and built by 李泓轩）
+- 全局增加 monogram、proof block、info strip 等新样式
+- 全局动效保持克制，所有新增样式支持 prefers-reduced-motion 降级
+- 未新增依赖
+- 未使用 WebGL / 3D / 粒子特效
+- 未新增项目或假链接

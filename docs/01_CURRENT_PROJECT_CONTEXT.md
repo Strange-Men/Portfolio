@@ -80,19 +80,16 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已完成 Project Proof Polish：
+当前 Portfolio 正在进行 Visual Identity Polish（Phase 13-2）：
 
-- 三个项目卡片均增加轻量级"验证方式"
-- EnterpriseAiDataAgent 增加在线演示入口
-- CodePilot 保留 GitHub 与在线 Demo 入口
-- Basjoo 二开保持"项目说明 + 代码仓库"入口，不新增假 Demo
-- 页面更适合 HR / 面试官快速判断每个项目该点哪里、看哪里、验证什么
+- Hero 首屏增加 monogram 标记与签名线，增强个人识别度
+- Hero Selected Work 改为编辑式项目索引
+- About 自我介绍增强个人气质表达
+- Projects 卡片增加编号锚点与验证方式信任锚点
+- Contact 增加签名 footer，收尾更干净
+- 目标是让 Portfolio 更像高级个人作品集，强化 Hero、Projects、About 和 Contact 的个人风格与视觉记忆点
 
-当前版本已通过线上验收。
-
-下一步建议：
-
-后续可进入 v1.33.0-application-readiness-polish，做投递前最终检查。
+当前在分支 `feat/v1.33.0-visual-identity-polish` 验收中。
 
 ---
 
@@ -200,17 +197,15 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-v1.32.0-proof-polish 已封存。
+v1.33.0-visual-identity-polish Phase 13-2 正在分支验收中。
 
 当前下一阶段：
 
-- v1.33.0-visual-identity-polish
-- Phase 13-1 已完成视觉个人风格研究
-- 目标是让 Portfolio 成为更有记忆点、更高级、更能体现用户审美的个人作品集
-- 研究文档：`docs/41_VISUAL_IDENTITY_RESEARCH.md`
+- 等待用户桌面端验收视觉效果
+- 验收通过后合并到 main，等待 Vercel 部署
+- 线上和手机端最终验收
 
 后续可以：
 
-1. v1.33.0-visual-identity-polish：视觉个人风格增强
-2. v1.34.0-og-image-polish：补充 Open Graph 分享图
-3. v1.35.0-final-mobile-polish：移动端最终专项检查
+1. v1.34.0-og-image-polish：补充 Open Graph 分享图
+2. v1.35.0-final-mobile-polish：移动端最终专项检查

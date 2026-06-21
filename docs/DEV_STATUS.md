@@ -412,3 +412,25 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 下一步：
 
 进入 Phase 13-2，根据研究文档小范围增强 Hero 首屏记忆点、Projects 卡片层级、About 个人风格和全局微交互。
+
+## Phase 13-2：Visual Identity Polish
+
+本轮基于 `docs/41_VISUAL_IDENTITY_RESEARCH.md` 小范围增强 Portfolio 视觉个人风格。
+
+完成内容：
+
+- Hero 首屏增加极简 monogram 标记与签名线
+- Hero Selected Work 改为编辑式项目索引
+- Hero 背景 glow 简化为单一聚焦光晕
+- About 自我介绍文案增强个人气质表达
+- About 信息卡改为水平 info strip 布局
+- Projects 卡片增加大号项目编号锚点
+- Projects 验证方式改为左边框信任锚点样式
+- Contact 简化收尾文案，增加签名 footer
+- Contact Gmail 按钮增强为主 CTA 视觉
+- 全局增加 monogram、proof block、info strip 样式
+- 所有新增样式支持 prefers-reduced-motion 降级
+- 未新增依赖
+- 未使用 WebGL / 3D / 粒子特效
+- 未新增项目或假链接
+- build 通过

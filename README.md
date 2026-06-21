@@ -49,6 +49,7 @@ v1.32.0-proof-polish
 
 - 自定义域名
 - 未来项目扩展
+- v1.33.0-visual-identity-polish（当前在分支验收中）
 
 ---
 
