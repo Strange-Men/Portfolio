@@ -91,6 +91,14 @@ CodePilot 仓库：
 
 当前版本已准备封存。
 
+当前下一阶段：
+
+- v1.34.0-og-image-polish
+- Phase 14-1 已完成 Open Graph / Twitter 分享图研究
+- 目标是提升 Portfolio 链接发给 HR / 面试官时的外部第一印象
+- 推荐方案：可控 SVG 分享图（public/og/portfolio-og.svg）
+- 研究文档：`docs/42_OG_IMAGE_RESEARCH.md`
+
 ---
 
 ## 5. Current Design System

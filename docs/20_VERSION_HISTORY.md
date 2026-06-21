@@ -69,6 +69,7 @@
 | v1.31.0-github-about-polish | Phase 11-1 | 完善 GitHub 仓库 About 展示信息，包括 Description、Website 和 Topics。 |
 | v1.32.0-proof-polish | see tag | Phase 12 | 为三个项目卡片增加轻量级"验证方式"说明，并补充 EnterpriseAiDataAgent 在线演示入口。 |
 | v1.33.0-visual-identity-polish | see tag | Phase 13 | 增强 Portfolio 的视觉个人风格，优化 Hero、About、Projects 层级、Contact 收束感，并完成最终 About 文案修正。 |
+| v1.34.0-og-image-polish | Phase 14-1 | 分享图优化准备阶段：研究 Portfolio 的 Open Graph / Twitter 分享图方案，推荐优先采用可控 SVG 分享图。 |
 
 ---
 
@@ -143,7 +144,7 @@ GitHub Profile 同步
 | Version | 阶段 | 计划 |
 |---|---|---|
 | v1.33.0-application-readiness-polish | Future | 投递前最终检查：优化页面对 HR / 面试官的阅读路径、项目可信度表达和链接验证体验。 |
-| v1.34.0-og-image-polish | Future | 设计并接入 Open Graph 分享图，用于社交平台和链接预览。 |
+| v1.34.0-og-image-polish | Phase 14-1 进行中 | 设计并接入 Open Graph 分享图，用于社交平台和链接预览。Phase 14-1 研究阶段已完成。 |
 | v1.35.0-final-mobile-polish | Future | 如线上手机端发现问题，再做移动端专项优化。 |
 
 ---
