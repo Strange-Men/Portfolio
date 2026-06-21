@@ -195,6 +195,9 @@ Contact 只保留联系方式。
 
 ## 10. Next Recommended Step
 
-下一步建议：
+当前下一阶段：
 
-v1.34.0-og-image-polish 已封存。Portfolio 已完成页面主体、视觉个人风格、项目验证入口和链接分享图优化。下一步建议先暂停大改，做一次完整投递前检查，或进入 v1.35.0-final-qa-polish。
+- v1.35.0-final-qa-polish
+- Phase 15-1 已开始投递前最终 QA 检查
+- 目标是确认 Portfolio 是否已经适合直接发给 HR / 面试官
+- 当前 QA 文档：`docs/43_FINAL_QA_RESEARCH.md`
