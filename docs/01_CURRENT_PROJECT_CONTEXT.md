@@ -199,7 +199,9 @@ Contact 只保留联系方式。
 
 当前下一步：
 
-- v1.35.0-final-qa-polish 已封存
-- Portfolio 已完成投递前最终 QA
-- 建议暂停大改，后续只做真实问题修复
-- 可以开始把 Portfolio 链接放入简历、招呼语和投递消息中
+- v1.36.0-mobile-visual-polish
+- Phase 16-1 已完成手机端视觉专项研究
+- 目标是让 Portfolio 在手机端不只是能用，也能保持高级感和清晰阅读体验
+- 当前研究文档：`docs/44_MOBILE_VISUAL_RESEARCH.md`
+- 研究结论：P0=0, P1=0, P2=4，建议直接进入 Mobile Visual Seal
+- 下一步根据用户确认决定进入 Phase 16-2：Mobile Visual Seal 或 Mobile Visual Fix
