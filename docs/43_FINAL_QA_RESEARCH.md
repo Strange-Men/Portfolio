@@ -273,3 +273,29 @@ The site is ready for final seal if the user confirms desktop and mobile visual 
 If the user confirms there are no visual issues, enter Phase 15-2: Final QA Seal and create `v1.35.0-final-qa-polish` tag.
 
 If the user finds a blocking issue during manual review, enter Phase 15-2: Final QA Fix.
+
+---
+
+## 15. Version Seal
+
+`v1.35.0-final-qa-polish` 已完成并封存。
+
+本版本完成 Portfolio 投递前最终 QA 检查：
+
+- Build check passed
+- Desktop visual QA passed
+- Mobile visual QA passed
+- Link QA passed
+- SEO / metadata QA passed
+- OG Image QA passed
+- Content boundary QA passed
+- Forbidden terms / fake links QA passed
+- README / GitHub About consistency checked
+
+Final QA result:
+
+- P0 issues: 0
+- P1 issues: 0
+- P2 issues: 2
+
+P2 issues are non-blocking and do not prevent using the Portfolio link for HR / interviewer communication.

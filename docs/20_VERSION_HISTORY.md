@@ -70,7 +70,7 @@
 | v1.32.0-proof-polish | see tag | Phase 12 | 为三个项目卡片增加轻量级"验证方式"说明，并补充 EnterpriseAiDataAgent 在线演示入口。 |
 | v1.33.0-visual-identity-polish | see tag | Phase 13 | 增强 Portfolio 的视觉个人风格，优化 Hero、About、Projects 层级、Contact 收束感，并完成最终 About 文案修正。 |
 | v1.34.0-og-image-polish | see tag | Phase 14 | 新增 Portfolio Open Graph 分享图，接入 `og:image` / `twitter:image`，提升链接发给 HR / 面试官时的外部第一印象。 |
-| v1.35.0-final-qa-polish | Phase 15-1 | 投递前最终 QA 准备阶段：检查页面、链接、移动端、SEO、OG 图、项目文案边界和禁用词。 |
+| v1.35.0-final-qa-polish | see tag | Phase 15 | 投递前最终 QA 检查，确认页面、链接、移动端、SEO、OG 图、项目文案边界和禁用词均无阻断问题。 |
 
 ---
 
@@ -79,7 +79,7 @@
 当前最新已完成版本：
 
 ```txt
-v1.34.0-og-image-polish
+v1.35.0-final-qa-polish
 ```
 
 当前已完成页面模块：

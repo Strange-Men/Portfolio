@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.34.0-og-image-polish`
+`v1.35.0-final-qa-polish`
 
 当前线上地址：
 
@@ -80,16 +80,18 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已完成 OG Image Polish：
+当前 Portfolio 已完成 Final QA Polish：
 
-- 新增 `public/og/portfolio-og.svg` 作为可编辑源文件
-- 新增 `public/og/portfolio-og.png` 作为正式分享图
-- 首页已接入 `og:image`
-- 首页已接入 `twitter:image`
-- `twitter:card` 已设置为 `summary_large_image`
-- 正式分享时应发送主页链接，OG 图用于支持链接预览的平台展示
+- 本地 build 通过
+- 线上主页可访问
+- 线上 OG Image 可访问
+- SEO / metadata 配置正常
+- 三个项目链接和验证入口正常
+- 禁用词 / 假链接检查通过
+- 项目文案边界检查通过
+- 无 P0 / P1 阻断问题
 
-当前版本已准备封存。
+当前 Portfolio 可作为投递和沟通时的作品集链接使用。
 
 ---
 
@@ -195,9 +197,9 @@ Contact 只保留联系方式。
 
 ## 10. Next Recommended Step
 
-当前下一阶段：
+当前下一步：
 
-- v1.35.0-final-qa-polish
-- Phase 15-1 已开始投递前最终 QA 检查
-- 目标是确认 Portfolio 是否已经适合直接发给 HR / 面试官
-- 当前 QA 文档：`docs/43_FINAL_QA_RESEARCH.md`
+- v1.35.0-final-qa-polish 已封存
+- Portfolio 已完成投递前最终 QA
+- 建议暂停大改，后续只做真实问题修复
+- 可以开始把 Portfolio 链接放入简历、招呼语和投递消息中

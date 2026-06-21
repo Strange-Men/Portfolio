@@ -565,3 +565,26 @@ v1.34.0-og-image-polish
 下一步：
 
 根据 QA 结果决定进入 Final QA Fix 或 Final QA Seal。
+
+## Phase 15-2：v1.35.0 Final QA Seal
+
+当前 main 已合并 `v1.35.0-final-qa-polish` QA 研究结果，并完成最终版本封存。
+
+本轮完成：
+
+- 合并 `docs/43_FINAL_QA_RESEARCH.md`
+- 确认 P0 问题数量为 0
+- 确认 P1 问题数量为 0
+- 记录 P2 非阻断问题
+- 更新版本文档
+- 创建并推送 `v1.35.0-final-qa-polish` tag
+
+## 当前最新版本
+
+```txt
+v1.35.0-final-qa-polish
+```
+
+## 当前状态
+
+Portfolio 已完成投递前最终 QA 检查，可以作为发给 HR / 面试官的个人作品集链接使用。
