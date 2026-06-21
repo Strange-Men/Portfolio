@@ -21,7 +21,7 @@ React 18 / TypeScript / Vite / Tailwind CSS / Vercel
 ## Current Version
 
 ```txt
-v1.32.0-proof-polish
+v1.33.0-visual-identity-polish
 ```
 
 当前已完成：
@@ -44,12 +44,12 @@ v1.32.0-proof-polish
 - CodePilot Demo / GitHub / 测试 / CI 验证说明
 - EnterpriseAiDataAgent Demo / GitHub / 代码 / 测试验证说明
 - Basjoo 项目说明仓库 / basjoo 分支 / pytest / eval cases 验证说明
+- Visual Identity Polish：增强 Hero、About、Projects、Contact 视觉个人风格
 
 当前未完成：
 
 - 自定义域名
 - 未来项目扩展
-- v1.33.0-visual-identity-polish（当前在分支验收中）
 
 ---
 
@@ -94,6 +94,7 @@ v1.32.0-proof-polish
 | v1.29.0-project-detail-polish | Project Detail Polish | 基于仓库事实优化三项目展示内容，使 CodePilot、EnterpriseAiDataAgent、Basjoo 二开的定位、痛点、流程、技术栈和边界更真实具体 |
 | v1.30.0-seo-share-polish | SEO & Share Polish | 优化浏览器 title、meta description、Open Graph、Twitter Card、theme-color、favicon、manifest 与 README 首屏展示 |
 | v1.32.0-proof-polish | Project Proof Polish | 为三个项目卡片增加轻量级"验证方式"说明，并为 EnterpriseAiDataAgent 增加在线演示入口 |
+| v1.33.0-visual-identity-polish | Visual Identity Polish | 增强 Portfolio 的视觉个人风格，优化 Hero、About、Projects 层级、Contact 收束感，并完成最终 About 文案修正 |
 
 ---
 

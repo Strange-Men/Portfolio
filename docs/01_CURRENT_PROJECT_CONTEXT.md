@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.32.0-proof-polish`
+`v1.33.0-visual-identity-polish`
 
 当前线上地址：
 
@@ -80,15 +80,16 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 正在进行 Final Visual Fix（Phase 13-4）：
+当前 Portfolio 已完成 Visual Identity Polish：
 
-- Hero 顶部只保留 `PORTFOLIO`，删除 `2027`、横线和签名装饰
-- About 文案改为谦逊自然的学生自我介绍
-- About 三个信息块恢复卡片动画质感（使用 BorderGlowCard）
-- 保持 Projects、proof-block、Contact 等其他区域不变
-- 目标是修正 13-3 验收中用户反馈的视觉问题
+- Hero 顶部保持极简 `PORTFOLIO`
+- About 文案调整为更自然、谦逊的自我介绍
+- About 恢复卡片动画质感
+- Projects 增强编号和验证方式视觉层级
+- Contact 保持简洁收尾
+- EnterpriseAiDataAgent 技术栈标签统一为 `LLM API`
 
-当前在分支 `feat/v1.33.0-visual-identity-polish` 验收中。
+当前版本已准备封存。
 
 ---
 
@@ -196,15 +197,4 @@ Contact 只保留联系方式。
 
 下一步建议：
 
-v1.33.0-visual-identity-polish Phase 13-4 正在分支验收中。
-
-当前下一阶段：
-
-- 等待用户重新桌面端验收视觉效果（重点确认 Hero 只剩 PORTFOLIO、About 文案自然、About 卡片动画质感）
-- 验收通过后合并到 main，等待 Vercel 部署
-- 线上和手机端最终验收
-
-后续可以：
-
-1. v1.34.0-og-image-polish：补充 Open Graph 分享图
-2. v1.35.0-final-mobile-polish：移动端最终专项检查
+v1.33.0-visual-identity-polish 已封存。下一步建议先暂停大改，做一次线上最终检查；如果继续开发，可以进入 v1.34.0-og-image-polish，为 Portfolio 补充社交分享图。
