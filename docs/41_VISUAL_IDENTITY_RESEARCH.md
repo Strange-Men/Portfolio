@@ -367,3 +367,15 @@ Phase 13-2 应基于本研究文档，小范围提升 Hero 首屏记忆点、Pro
 - 未新增依赖
 - 未使用 WebGL / 3D / 粒子特效
 - 未新增项目或假链接
+
+---
+
+## 13. Phase 13-4 Final Visual Fix
+
+本轮基于用户第二次人工验收反馈，对 Phase 13-3 继续修正：
+
+- Hero 顶部简化为仅保留 `PORTFOLIO`
+- 删除 `2027`、横线和所有 monogram / signature 装饰
+- About 文案改为更谦逊、直接、自然的学生自我介绍
+- About 三个信息块恢复更接近早期版本的卡片动画质感（使用 BorderGlowCard）
+- 保持 Projects、proof-block、Contact 等其他区域不变

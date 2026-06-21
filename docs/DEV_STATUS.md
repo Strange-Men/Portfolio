@@ -451,3 +451,20 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 - 未新增图片
 - 未新增 WebGL / 3D / 粒子特效
 - build 通过
+
+## Phase 13-4：Final Visual Fix
+
+本轮根据用户第二次人工验收反馈继续修正 v1.33.0 视觉问题。
+
+完成内容：
+
+- Hero 顶部只保留 `PORTFOLIO`
+- 删除多余的 `2027` 和横线装饰
+- 删除 Hero 底部 `Built by 李泓轩` 签名
+- About 文案改为更谦逊自然的自我介绍
+- About 信息块恢复卡片动画质感（使用 BorderGlowCard）
+- 保持 Projects 和 Contact 不变
+- 未新增依赖
+- 未新增图片
+- 未新增 WebGL / 3D / 粒子特效
+- build 通过

@@ -7,7 +7,7 @@ export const profile = {
   heroDescription:
     '2027 届人工智能本科生，关注 AI 应用开发、Agent 编排与 Python 后端工程实践。',
   about:
-    '我正在用 AI 应用项目训练自己对工程、产品和视觉表达的综合判断力。相比只做能跑的 Demo，我更在意一个项目能不能被理解、被验证、被展示。',
+    '我是广东石油化工学院人工智能专业 2027 届本科生，主要关注 AI 应用开发、Agent 编排和 Python 后端工程。这个作品集用于整理我近期完成的项目实践、技术栈和可验证链接。目前我还在持续补基础、做项目和复盘工程细节，希望把每个项目都做得更清楚、更可靠，也更容易被别人理解。',
   focusTags: ['AI 应用开发', 'Agent 开发', 'Python 后端'],
   heroSummary: {
     label: 'Selected Work',

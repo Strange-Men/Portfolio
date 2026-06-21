@@ -2,6 +2,7 @@ import { links } from '../../data/links';
 import { profile } from '../../data/profile';
 import { BorderGlowCard, Button, SectionLabel } from '../ui';
 
+
 export function HeroSection() {
   return (
     <section
@@ -27,16 +28,14 @@ export function HeroSection() {
 
       {/* content shell */}
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col">
-        {/* portfolio label + year */}
-        <header className="hero-anim hero-fade mb-16 sm:mb-20 flex items-center gap-4" style={{ animationDelay: '0.12s' }}>
+        {/* portfolio label — minimal */}
+        <header className="hero-anim hero-fade mb-16 sm:mb-20" style={{ animationDelay: '0.12s' }}>
           <a
             href="#hero"
             className="text-label text-zinc-500 transition-colors hover:text-zinc-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
           >
             PORTFOLIO
           </a>
-          <span className="h-[1px] w-6 bg-white/15" aria-hidden="true" />
-          <span className="text-label text-zinc-600">2027</span>
         </header>
 
         {/* main hero content + info card */}
@@ -73,10 +72,6 @@ export function HeroSection() {
               </Button>
             </div>
 
-            {/* signature line */}
-            <p className="hero-anim hero-fade hero-signature mt-12 text-xs tracking-widest text-zinc-700" style={{ animationDelay: '0.68s' }}>
-              Built by 李泓轩
-            </p>
           </div>
 
           {/* right: Selected Work — editorial project index */}
