@@ -1,6 +1,23 @@
-import { codepilot } from '../../data/codepilot';
 import { profile } from '../../data/profile';
-import { BorderGlowCard, RevealOnScroll, SectionLabel, Tag } from '../ui';
+import { BorderGlowCard, RevealOnScroll, SectionLabel } from '../ui';
+
+const aboutCards = [
+  {
+    num: '01',
+    label: '身份',
+    body: '2027 届人工智能本科生',
+  },
+  {
+    num: '02',
+    label: '方向',
+    body: 'AI 应用开发 · Agent 开发 · Python 后端',
+  },
+  {
+    num: '03',
+    label: '当前重点',
+    body: 'CodePilot / EnterpriseAiDataAgent / Basjoo 二开',
+  },
+] as const;
 
 export function AboutSection() {
   return (
@@ -29,72 +46,31 @@ export function AboutSection() {
             </p>
           </RevealOnScroll>
 
-          <div className="grid gap-4 sm:grid-cols-3">
-            <RevealOnScroll delay={80} className="h-full min-w-0 w-full">
-              <BorderGlowCard
-                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
-                edgeSensitivity={34}
-                glowColor="315 90 78"
-                backgroundColor="#120F17"
-                borderRadius={24}
-                glowRadius={28}
-                glowIntensity={0.58}
-                coneSpread={24}
-                colors={['#c084fc', '#eb1f94', '#f838ea']}
-                fillOpacity={0.04}
-              >
-                <p className="text-label text-zinc-500">身份</p>
-                <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
-                  {profile.identity}
-                </p>
-              </BorderGlowCard>
-            </RevealOnScroll>
-
-            <RevealOnScroll delay={140} className="h-full min-w-0 w-full">
-              <BorderGlowCard
-                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
-                edgeSensitivity={34}
-                glowColor="315 90 78"
-                backgroundColor="#120F17"
-                borderRadius={24}
-                glowRadius={28}
-                glowIntensity={0.58}
-                coneSpread={24}
-                colors={['#c084fc', '#eb1f94', '#f838ea']}
-                fillOpacity={0.04}
-              >
-                <p className="text-label text-zinc-500">方向</p>
-                <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
-                  {profile.directions.join(' / ')}
-                </p>
-              </BorderGlowCard>
-            </RevealOnScroll>
-
-            <RevealOnScroll delay={200} className="h-full min-w-0 w-full">
-              <BorderGlowCard
-                className="h-full min-h-[112px] w-full min-w-0 rounded-3xl border border-white/10 bg-white/[0.04] p-5"
-                edgeSensitivity={34}
-                glowColor="315 90 78"
-                backgroundColor="#120F17"
-                borderRadius={24}
-                glowRadius={28}
-                glowIntensity={0.58}
-                coneSpread={24}
-                colors={['#c084fc', '#eb1f94', '#f838ea']}
-                fillOpacity={0.04}
-              >
-                <p className="text-label text-zinc-500">当前重点</p>
-                <p className="mt-3 text-base font-medium leading-relaxed text-zinc-100">
-                  {codepilot.name}
-                </p>
-              </BorderGlowCard>
-            </RevealOnScroll>
-          </div>
-
-          <RevealOnScroll delay={0}>
-            <div className="flex flex-wrap gap-2">
-              {profile.focusTags.map((tag) => (
-                <Tag key={tag}>{tag}</Tag>
+          {/* info cards — with glow animation */}
+          <RevealOnScroll delay={80}>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {aboutCards.map((card) => (
+                <BorderGlowCard
+                  key={card.num}
+                  className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-5"
+                  edgeSensitivity={40}
+                  glowColor="260 80 70"
+                  backgroundColor="#0f0f13"
+                  borderRadius={16}
+                  glowRadius={30}
+                  glowIntensity={0.6}
+                  coneSpread={20}
+                  colors={['#818cf8', '#a78bfa', '#c084fc']}
+                  fillOpacity={0.05}
+                >
+                  <p className="text-label text-zinc-600 mb-2">{card.num}</p>
+                  <p className="text-sm font-semibold text-zinc-100 tracking-tight mb-1.5">
+                    {card.label}
+                  </p>
+                  <p className="text-sm leading-relaxed text-zinc-400">
+                    {card.body}
+                  </p>
+                </BorderGlowCard>
               ))}
             </div>
           </RevealOnScroll>

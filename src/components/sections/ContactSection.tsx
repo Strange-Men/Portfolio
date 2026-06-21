@@ -19,7 +19,7 @@ export function ContactSection() {
                 id="contact-title"
                 className="text-section-title mt-5 font-semibold text-balance text-white"
               >
-                期待工作机会，也欢迎进一步沟通。
+                期待进一步沟通。
               </h2>
 
               <p className="text-body-lg mt-6 max-w-2xl text-zinc-300">
@@ -27,16 +27,12 @@ export function ContactSection() {
                 Email 联系我，也可以查看 GitHub 了解我的项目代码与迭代记录。
               </p>
 
-              <p className="text-body-default mt-4 max-w-2xl text-zinc-500">
-                当前页面只保留真实联系方式，不放未确认的 Demo 或下载链接。
-              </p>
-
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href={links.gmailHref}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border border-white/15 bg-zinc-50 text-zinc-950 hover:bg-white focus-visible:outline-zinc-50"
+                  className="contact-gmail-btn"
                 >
                   发送 Email
                 </a>
@@ -77,13 +73,16 @@ export function ContactSection() {
                   </div>
                 </div>
               </div>
-
-              <p className="text-body-default mt-8 border-t border-white/10 pt-6 text-zinc-500">
-                项目详情请在上方项目区块查看；这里仅保留联系入口。
-              </p>
             </BorderGlowCard>
           </RevealOnScroll>
         </div>
+
+        {/* signature footer */}
+        <footer className="contact-signature mt-20 border-t border-white/[0.06] pt-8">
+          <p className="text-xs tracking-widest text-zinc-600">
+            Designed and built by 李泓轩
+          </p>
+        </footer>
       </div>
     </section>
   );

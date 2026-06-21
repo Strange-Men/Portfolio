@@ -1,6 +1,6 @@
 # DEV_STATUS
 
-当前阶段：Phase 12-5
+当前阶段：Phase 13-5
 
 ## 已完成
 
@@ -394,3 +394,83 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 1. v1.33.0-application-readiness-polish：投递前最终检查
 2. v1.34.0-og-image-polish：补充 Open Graph 分享图
 3. v1.35.0-final-mobile-polish：移动端最终专项检查
+
+## Phase 13-1：Visual Identity Research
+
+本轮开始 v1.33.0-visual-identity-polish 的准备阶段。
+
+本轮完成：
+
+- 研究当前 Portfolio 的视觉优点与不足
+- 明确下一阶段主方向：Dark Editorial AI Portfolio
+- 分析 Hero / About / Projects / Contact / Global Motion / Mobile Risk
+- 新增 `docs/41_VISUAL_IDENTITY_RESEARCH.md`
+- 本轮未修改页面源码
+- 本轮未修改视觉 / 动效 / 背景
+- 本轮未打 tag
+
+下一步：
+
+进入 Phase 13-2，根据研究文档小范围增强 Hero 首屏记忆点、Projects 卡片层级、About 个人风格和全局微交互。
+
+## Phase 13-2：Visual Identity Polish
+
+本轮基于 `docs/41_VISUAL_IDENTITY_RESEARCH.md` 小范围增强 Portfolio 视觉个人风格。
+
+完成内容：
+
+- Hero 首屏增加极简 monogram 标记与签名线
+- Hero Selected Work 改为编辑式项目索引
+- Hero 背景 glow 简化为单一聚焦光晕
+- About 自我介绍文案增强个人气质表达
+- About 信息卡改为水平 info strip 布局
+- Projects 卡片增加大号项目编号锚点
+- Projects 验证方式改为左边框信任锚点样式
+- Contact 简化收尾文案，增加签名 footer
+- Contact Gmail 按钮增强为主 CTA 视觉
+- 全局增加 monogram、proof block、info strip 样式
+- 所有新增样式支持 prefers-reduced-motion 降级
+- 未新增依赖
+- 未使用 WebGL / 3D / 粒子特效
+- 未新增项目或假链接
+- build 通过
+
+## Phase 13-3：Visual Identity Fix
+
+本轮根据用户人工验收反馈修正 Phase 13-2 的视觉问题。
+
+完成内容：
+
+- 删除 Hero 中不合适的 LH monogram
+- 重做 About 区域，减少表格感和后台感
+- 增强 Projects 大号编号颜色和可见度
+- 保留 Selected Work 目录感
+- 保留 proof-block 验证方式
+- 保留 Contact 简洁收尾
+- 未新增依赖
+- 未新增图片
+- 未新增 WebGL / 3D / 粒子特效
+- build 通过
+
+## Phase 13-4：Final Visual Fix
+
+本轮根据用户第二次人工验收反馈继续修正 v1.33.0 视觉问题。
+
+完成内容：
+
+- Hero 顶部只保留 `PORTFOLIO`
+- 删除多余的 `2027` 和横线装饰
+- 删除 Hero 底部 `Built by 李泓轩` 签名
+- About 文案改为更谦逊自然的自我介绍
+- About 信息块恢复卡片动画质感（使用 BorderGlowCard）
+- 保持 Projects 和 Contact 不变
+- 未新增依赖
+- 未新增图片
+- 未新增 WebGL / 3D / 粒子特效
+- build 通过
+
+## Phase 13-5：EDA Tech Stack Label Fix
+
+本轮根据用户人工验收反馈，将 EnterpriseAiDataAgent 技术栈标签从 `Anthropic Claude API` 调整为更通用的 `LLM API`。
+
+本轮未修改页面结构、视觉、动效或项目链接。

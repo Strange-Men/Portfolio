@@ -86,7 +86,7 @@ export const projects: PortfolioProject[] = [
       'DuckDB',
       'Pandas',
       'Monaco Editor',
-      'Anthropic Claude API',
+      'LLM API',
       'SSE',
     ],
     links: [

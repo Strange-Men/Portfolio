@@ -2,6 +2,7 @@ import { links } from '../../data/links';
 import { profile } from '../../data/profile';
 import { BorderGlowCard, Button, SectionLabel } from '../ui';
 
+
 export function HeroSection() {
   return (
     <section
@@ -10,17 +11,16 @@ export function HeroSection() {
       style={{ minHeight: '100dvh' }}
       aria-labelledby="hero-title"
     >
-      {/* background glow layers */}
+      {/* background glow layers — simplified, one focal point */}
       <div className="hero-anim hero-glow pointer-events-none absolute inset-0 -z-10 overflow-hidden" style={{ animationDelay: '0.05s' }}>
         <div className="hero-premium-bg" />
-        <div className="absolute left-1/2 top-[-18rem] h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-indigo-500/20 blur-3xl" />
-        <div className="absolute right-[-10rem] top-1/3 h-[30rem] w-[30rem] rounded-full bg-cyan-400/10 blur-3xl" />
-        <div className="absolute bottom-[-12rem] left-[-8rem] h-[32rem] w-[32rem] rounded-full bg-violet-500/10 blur-3xl" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,255,255,0.08),transparent_34%)]" />
-        <div className="hero-grid-bg absolute inset-0 opacity-60" />
+        <div className="absolute left-1/2 top-[-20rem] h-[40rem] w-[40rem] -translate-x-1/2 rounded-full bg-indigo-500/18 blur-[80px]" />
+        <div className="absolute right-[-6rem] top-1/3 h-[24rem] w-[24rem] rounded-full bg-cyan-400/8 blur-[60px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(255,255,255,0.06),transparent_40%)]" />
+        <div className="hero-grid-bg absolute inset-0 opacity-50" />
       </div>
 
-      {/* bottom transition: soft fade from Hero into ambient background */}
+      {/* bottom transition */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-56 bg-gradient-to-b from-transparent via-[#09090b]/30 to-transparent"
@@ -28,11 +28,11 @@ export function HeroSection() {
 
       {/* content shell */}
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col">
-        {/* portfolio label */}
+        {/* portfolio label — minimal */}
         <header className="hero-anim hero-fade mb-16 sm:mb-20" style={{ animationDelay: '0.12s' }}>
           <a
             href="#hero"
-            className="text-label text-zinc-200 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
+            className="text-label text-zinc-500 transition-colors hover:text-zinc-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-50"
           >
             PORTFOLIO
           </a>
@@ -71,9 +71,10 @@ export function HeroSection() {
                 联系我
               </Button>
             </div>
+
           </div>
 
-          {/* right: Selected Work summary panel */}
+          {/* right: Selected Work — editorial project index */}
           <BorderGlowCard
             className="hero-anim hero-fade rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm"
             edgeSensitivity={30}
@@ -92,18 +93,28 @@ export function HeroSection() {
               {profile.heroSummary.title}
             </h2>
 
-            <p className="mt-3 text-sm leading-relaxed text-zinc-400">
+            <p className="mt-2 text-sm leading-relaxed text-zinc-400">
               {profile.heroSummary.body}
             </p>
 
-            <div className="mt-5 space-y-2">
-              {profile.heroSummary.projects.map((item) => (
-                <div key={item.index} className="flex items-center gap-3 text-sm">
-                  <span className="shrink-0 tabular-nums text-xs font-medium text-zinc-600">
+            {/* editorial project index */}
+            <div className="mt-5 space-y-0">
+              {profile.heroSummary.projects.map((item, i) => (
+                <div
+                  key={item.index}
+                  className={`group flex items-center gap-4 py-3 ${i < profile.heroSummary.projects.length - 1 ? 'border-b border-white/[0.06]' : ''}`}
+                >
+                  <span className="hero-project-index shrink-0">
                     {item.index}
                   </span>
-                  <span className="text-zinc-200">{item.name}</span>
-                  <span className="ml-auto text-xs text-zinc-500">{item.tag}</span>
+                  <div className="min-w-0 flex-1">
+                    <span className="block text-sm font-medium text-zinc-100 leading-tight">
+                      {item.name}
+                    </span>
+                  </div>
+                  <span className="shrink-0 text-[11px] tracking-wide text-zinc-600 uppercase">
+                    {item.tag}
+                  </span>
                 </div>
               ))}
             </div>
