@@ -510,3 +510,19 @@ v1.33.0-visual-identity-polish
 下一步：
 
 进入 Phase 14-2，制作并接入 `public/og/portfolio-og.svg`。
+
+## Phase 14-2：OG Image Polish
+
+本轮基于 `docs/42_OG_IMAGE_RESEARCH.md` 制作并接入 Portfolio 分享图。
+
+完成内容：
+
+- 新增 `public/og/portfolio-og.svg`
+- 新增 `public/og/portfolio-og.png`
+- 使用 Codex / GPT 多模态能力完成图片效果验收
+- 接入 `og:image`
+- 接入 `twitter:image`
+- `twitter:card` 改为 `summary_large_image`
+- 未使用 Image2
+- 未新增依赖
+- 未修改页面主体视觉

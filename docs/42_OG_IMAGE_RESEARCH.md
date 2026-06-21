@@ -327,3 +327,16 @@ Phase 14-2 建议：
 Phase 14-2 应基于本研究文档，优先实现一个可控 SVG 分享图，并接入 Open Graph / Twitter image metadata。
 
 核心原则：分享图是"链接发给 HR 时的第一张脸"，不是炫技海报。延续 Dark Technical Editorial 风格，克制、高级、清晰。
+
+## 13. Phase 14-2 Application
+
+本轮基于研究结论完成 OG Image Polish：
+
+- 新增 `public/og/portfolio-og.svg` 作为可编辑源文件
+- 新增 `public/og/portfolio-og.png` 作为正式 Open Graph / Twitter 分享图
+- 使用 Codex / GPT 多模态能力检查 PNG 效果
+- 在 `index.html` 中接入 `og:image`
+- 在 `index.html` 中接入 `twitter:image`
+- 将 `twitter:card` 调整为 `summary_large_image`
+- 分享图保持 Dark Technical Editorial 风格
+- 本轮未使用 Image2，未生成 AI 大图，未新增依赖
