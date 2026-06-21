@@ -546,3 +546,22 @@ v1.33.0-visual-identity-polish
 ```txt
 v1.34.0-og-image-polish
 ```
+
+## Phase 15-1：Final QA Research
+
+本轮开始 v1.35.0-final-qa-polish 的准备阶段。
+
+本轮完成：
+
+- 检查本地 build
+- 检查桌面端页面
+- 检查手机端页面
+- 检查线上链接与 OG 图片
+- 检查 SEO / metadata
+- 检查禁用词与假链接
+- 检查项目文案边界
+- 新增 `docs/43_FINAL_QA_RESEARCH.md`
+
+下一步：
+
+根据 QA 结果决定进入 Final QA Fix 或 Final QA Seal。
