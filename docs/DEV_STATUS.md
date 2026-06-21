@@ -323,3 +323,41 @@ Portfolio 后续设计开发建议优先从以下方向选择：
 下一步：
 
 可进入 v1.32.0-proof-polish，增强项目验证入口。
+
+## Phase 12-1：Project Proof Research
+
+本轮开始 v1.32.0-proof-polish 的准备阶段。
+
+本轮完成：
+
+- 研究 CodePilot 的 Demo、README、代码、测试与 CI 等可验证入口
+- 研究 EnterpriseAiDataAgent 的 Demo、README、代码结构、DuckDB / NL→SQL / SSE / 报告生成相关证据
+- 研究 Basjoo 二开项目的项目说明仓库与 basjoo 代码分支中的 RAG Evaluation Harness、pytest、eval cases 等证据
+- 发现 EnterpriseAiDataAgent 已部署在线 Demo（此前记录为无在线 Demo）
+- 新增 `docs/40_PROJECT_PROOF_RESEARCH.md`
+- 本轮未修改页面源码
+- 本轮未修改视觉 / 动效 / 背景
+- 本轮未打 tag
+
+下一步：
+
+进入 Phase 12-2，根据研究文档为 Portfolio 项目卡片增加轻量级"验证方式"说明。
+
+## Phase 12-2：Project Proof Polish
+
+本轮基于 `docs/40_PROJECT_PROOF_RESEARCH.md` 为三个项目增加轻量级验证方式说明。
+
+完成内容：
+
+- `src/data/links.ts` 新增 `enterpriseAiDemo` 字段
+- `src/data/projects.ts` 新增 `proof` 类型字段
+- CodePilot 增加 Demo / GitHub / 测试 / CI 的验证方式说明
+- EnterpriseAiDataAgent 增加在线演示链接
+- EnterpriseAiDataAgent 增加 Demo / GitHub / 代码 / 测试的验证方式说明
+- Basjoo 二开项目增加项目说明仓库、basjoo 分支、pytest、eval cases 的验证方式说明
+- `src/components/sections/CodePilotSection.tsx` 在项目卡片中渲染验证方式
+- 保留三项目平级展示
+- 未新增假链接
+- 未修改 Hero / About / Contact
+- 未修改视觉 / 动效 / 背景
+- build 通过

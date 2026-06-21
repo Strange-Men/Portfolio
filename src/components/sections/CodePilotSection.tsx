@@ -35,6 +35,17 @@ function ProjectCard({
             ))}
           </div>
 
+          {project.proof && (
+            <div className="mt-5">
+              <p className="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1.5">
+                验证方式
+              </p>
+              <p className="text-sm leading-relaxed text-zinc-400">
+                {project.proof}
+              </p>
+            </div>
+          )}
+
           {project.links.length > 0 && (
             <div className="mt-6 flex flex-wrap gap-3">
               {project.links.map((link) => (

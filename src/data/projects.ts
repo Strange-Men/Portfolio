@@ -16,6 +16,7 @@ export type PortfolioProject = {
   flow?: string[];
   techStack: string[];
   links: ProjectLink[];
+  proof?: string;
 };
 
 export const projects: PortfolioProject[] = [
@@ -54,6 +55,8 @@ export const projects: PortfolioProject[] = [
       { label: '查看 GitHub', href: links.codepilotGithub, type: 'github' },
       { label: '在线演示', href: links.codepilotDemo, type: 'demo' },
     ],
+    proof:
+      '可在线打开 Demo，输入 GitHub 仓库地址查看审查报告；也可在 GitHub 查看前后端代码、测试与 CI 配置。',
   },
   {
     id: 'enterprise-ai-data-agent',
@@ -88,7 +91,10 @@ export const projects: PortfolioProject[] = [
     ],
     links: [
       { label: '查看 GitHub', href: links.enterpriseAiGithub, type: 'github' },
+      { label: '在线演示', href: links.enterpriseAiDemo, type: 'demo' },
     ],
+    proof:
+      '可在线体验数据上传、SQL 工作台和数据质量等基础功能；也可在 GitHub 查看 DuckDB、NL→SQL、SSE 和报告生成相关代码与测试。',
   },
   {
     id: 'basjoo',
@@ -125,5 +131,7 @@ export const projects: PortfolioProject[] = [
       { label: '项目说明', href: links.basjooReadme, type: 'readme' },
       { label: '代码仓库', href: links.basjooCode, type: 'github' },
     ],
+    proof:
+      '可先查看项目说明仓库理解二开目标，再进入 basjoo 分支查看 RAG evaluation harness、pytest 测试、eval cases 和阶段评估记录。',
   },
 ];

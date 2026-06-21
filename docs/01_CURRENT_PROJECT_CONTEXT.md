@@ -97,9 +97,15 @@ CodePilot 仓库：
 
 当前下一阶段：
 
-- v1.31.0-github-about-polish
-- Phase 11-1 处理 GitHub 仓库 About 信息
-- 目标是让 GitHub 仓库打开时更清楚地展示 Portfolio 定位、线上地址和技术标签
+- v1.32.0-proof-polish
+- Phase 12-1 已完成项目验证入口研究
+- Phase 12-2 已完成项目验证方式说明和 EnterpriseAiDataAgent 在线演示链接
+- `src/data/links.ts` 新增 `enterpriseAiDemo`
+- `src/data/projects.ts` 新增 `proof` 字段
+- `src/components/sections/CodePilotSection.tsx` 在项目卡片中渲染验证方式
+- 当前在 `feat/v1.32.0-proof-polish` 分支验收中
+- 当前研究文档：`docs/40_PROJECT_PROOF_RESEARCH.md`
+- 关键发现：EnterpriseAiDataAgent 已部署在线 Demo
 
 ---
 
