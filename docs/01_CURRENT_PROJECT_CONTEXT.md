@@ -64,7 +64,7 @@ Portfolio 是一个面向求职展示的个人作品集网站。
 
 当前最新版本：
 
-`v1.36.0-mobile-visual-polish`
+`v1.37.0-customerops-text-sync`
 
 当前线上地址：
 
@@ -80,20 +80,15 @@ CodePilot 仓库：
 
 当前状态：
 
-当前 Portfolio 已完成 Mobile Visual Polish：
+当前 Portfolio 已完成 CustomerOps 项目展示同步：
 
-- 移动端 Hero 检查通过
-- 移动端导航检查通过
-- 移动端 About 检查通过
-- 移动端 Projects 检查通过
-- proof-block 移动端阅读体验检查通过
-- Contact 和 Gmail 按钮移动端检查通过
-- 横向溢出风险检查通过
-- 无 P0 / P1 阻断问题
+- 第三个项目已更新为「跨境电商客服 Agent 系统」
+- GitHub 指向 `https://github.com/Strange-Men/CustomerOpsAgent`
+- Demo 指向 `https://customer-ops-agent.vercel.app/`
+- 项目文案与简历中的 CustomerOpsAgent 表述保持一致
+- 页面布局、视觉风格、动画和前两个项目未改动
 
-说明：本轮主要基于源码静态分析、CSS 响应式规则和断点推导；真实手机端未检查，不伪造真机结论。
-
-当前 Portfolio 可继续作为稳定作品集使用，后续如需继续开发，应优先选择有明确收益的小版本。
+当前 Portfolio 继续作为稳定作品集版本使用。
 
 ---
 
@@ -201,7 +196,7 @@ Contact 只保留联系方式。
 
 当前下一步：
 
-- v1.36.0-mobile-visual-polish 已封存
-- Portfolio 当前已经完成手机端视觉专项检查
-- 建议后续不要再对首页做无目标大改
-- 如果继续开发，建议进入 v1.37.0-case-study-research，研究是否增加 CodePilot 深度案例区
+- v1.37.0-customerops-text-sync 已封存
+- Portfolio 第三项目展示已同步为跨境电商客服 Agent 系统
+- 等待 Vercel 自动部署完成后检查线上第三项目展示和链接
+- 后续只在发现真实问题或有明确同步需求时再小步修改
