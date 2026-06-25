@@ -16,7 +16,7 @@ export const profile = {
     projects: [
       { index: '01', name: 'CodePilot', tag: 'AI Code Review' },
       { index: '02', name: 'EnterpriseAiDataAgent', tag: 'Data Q&A Agent' },
-      { index: '03', name: 'Basjoo 二开', tag: 'RAG Eval Harness' },
+      { index: '03', name: 'CustomerOpsAgent', tag: 'RAG Customer Agent' },
     ],
   },
 } as const;

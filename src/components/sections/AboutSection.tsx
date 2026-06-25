@@ -15,7 +15,7 @@ const aboutCards = [
   {
     num: '03',
     label: '当前重点',
-    body: 'CodePilot / EnterpriseAiDataAgent / Basjoo 二开',
+    body: 'CodePilot / EnterpriseAiDataAgent / CustomerOpsAgent',
   },
 ] as const;
 
