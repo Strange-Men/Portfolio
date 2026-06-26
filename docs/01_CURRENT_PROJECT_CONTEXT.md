@@ -196,7 +196,7 @@ Contact 只保留联系方式。
 
 当前下一步：
 
-- v1.37.0-customerops-text-sync 已封存
-- Portfolio 第三项目展示已同步为跨境电商客服 Agent 系统
-- 等待 Vercel 自动部署完成后检查线上第三项目展示和链接
-- 后续只在发现真实问题或有明确同步需求时再小步修改
+- v1.38.0-project-copy-sync
+- Phase 18-1 已开始项目经历文案同步
+- 目标是基于三个项目 README 更新 Portfolio 项目区文本，突出量化结果、工程化和工作流思维
+- 当前研究文档：`docs/46_PROJECT_COPY_SYNC_RESEARCH.md`
