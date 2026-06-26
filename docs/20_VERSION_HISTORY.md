@@ -73,6 +73,7 @@
 | v1.35.0-final-qa-polish | see tag | Phase 15 | 投递前最终 QA 检查，确认页面、链接、移动端、SEO、OG 图、项目文案边界和禁用词均无阻断问题。 |
 | v1.36.0-mobile-visual-polish | see tag | Phase 16 | 手机端视觉专项检查，确认移动端 Hero、导航、About、Projects、proof-block、Contact 和横向溢出风险无阻断问题。 |
 | v1.37.0-customerops-text-sync | see tag | Phase 17 | 将第三项目展示从 Basjoo 二开同步为跨境电商客服 Agent 系统，更新 GitHub 与在线 Demo 链接，并与简历项目表述保持一致。 |
+| v1.38.0-project-copy-sync | — | Phase 18-1 | 基于 CodePilot、EnterpriseAiDataAgent、CustomerOpsAgent README 更新 Portfolio 项目经历文本，突出量化结果、工程化和工作流思维。 |
 
 ---
 
